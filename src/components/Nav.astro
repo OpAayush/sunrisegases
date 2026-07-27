@@ -1,16 +1,17 @@
 ---
 const links = [
-  { href: '/gases/', label: 'Gases' },
-  { href: '/equipment/', label: 'Equipment' },
-  { href: '/fire-safety/', label: 'Fire Safety' },
-  { href: '/balloons/', label: 'Balloons' },
+  { href: '/gases/', label: 'Gases', icon: '/images/icons/gas-cylinder.svg' },
+  { href: '/equipment/', label: 'Equipment', icon: '/images/icons/truck.svg' },
+  { href: '/fire-safety/', label: 'Fire Safety', icon: '/images/icons/fire-extinguisher.svg' },
+  { href: '/balloons/', label: 'Balloons', icon: '/images/icons/package.svg' },
   { href: '/industries/', label: 'Industries' },
   { href: '/about/', label: 'About' },
-  { href: '/contact/', label: 'Contact' },
+  { href: '/contact/', label: 'Contact', icon: '/images/icons/phone.svg' },
 ];
+const currentPath = Astro.url.pathname;
 ---
 
-<nav class="nav">
+<nav class="nav" aria-label="Primary">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
       <img src="/images/icons/flame.svg" alt="" class="nav-logo-icon" />
@@ -18,7 +19,7 @@ const links = [
     </a>
     <ul class="nav-links">
       {links.map((link) => (
-        <li><a href={link.href} class="nav-link">{link.label}</a></li>
+        <li><a href={link.href} class="nav-link" aria-current={currentPath.startsWith(link.href) && link.href !== '/' ? 'page' : undefined}>{link.icon && <img src={link.icon} alt="" class="nav-link-icon" />}{link.label}</a></li>
       ))}
     </ul>
   </div>
@@ -63,12 +64,20 @@ const links = [
     gap: 1.5rem;
   }
   .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
     font-size: var(--text-small);
     font-weight: 500;
     letter-spacing: var(--tracking-body);
     color: var(--color-text-secondary);
     transition: color var(--transition-fast);
     padding: 0.25rem 0;
+  }
+  .nav-link-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
   }
   .nav-link:hover {
     color: var(--color-accent);

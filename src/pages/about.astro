@@ -5,7 +5,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="About Us — Industrial Gas Manufacturer in Nagpur | Sunrise Gases" description="Sunrise Gases is a manufacturer and supplier of industrial, specialty, and medical gases based in Nagpur, serving Central India since 2016.">
   <article class="page">
     <header class="page-hero">
-      <h1 class="page-title">About Sunrise Gases</h1>
+      <div class="page-hero-bg" aria-hidden="true">
+        <img src="/images/products/industrial-factory.jpg" alt="" />
+      </div>
+      <div class="page-hero-overlay">
+        <h1 class="page-title">About Sunrise Gases</h1>
+      </div>
     </header>
 
     <section class="page-section">
@@ -39,13 +44,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
   .page-hero {
     margin-bottom: 2rem;
+    position: relative;
+    border-radius: var(--radius-cards);
+    overflow: hidden;
+    min-height: 240px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+  }
+  .page-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .page-hero-overlay {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(29, 30, 28, 0.7), transparent);
+    width: 100%;
   }
   .page-title {
     font-family: var(--font-serif);
     font-weight: 600;
     font-size: var(--text-hero);
     line-height: 1.2;
-    color: var(--color-text);
+    color: var(--color-paper-white);
   }
 
   .page-section {

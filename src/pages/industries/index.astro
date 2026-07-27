@@ -14,7 +14,7 @@ const industries = await getCollection('industries');
   <section class="catalog-grid">
     {industries.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((ind) => (
       <a href={`/industries/${ind.data.slug}/`} class="industry-card">
-        <span class="industry-name">{ind.data.name}</span>
+        <h2 class="industry-name">{ind.data.name}</h2>
         <span class="industry-summary">{ind.data.summary}</span>
         <span class="industry-count">{ind.data.relevantProducts.length} products</span>
       </a>

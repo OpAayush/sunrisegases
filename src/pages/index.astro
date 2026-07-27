@@ -32,7 +32,7 @@ const secondaryCategories = [
         return (
           <a href={`/gases/${gas.data.slug}/`} class="gas-card">
             {gas.data.images?.[0] && (
-              <img src={gas.data.images[0].src} alt="" class="gas-card-img" loading="lazy" />
+              <img src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="gas-card-img" loading="lazy" />
             )}
             <span class="gas-formula">{gas.data.formula || gas.data.slug.toUpperCase()}</span>
             <span class="gas-name">{gas.data.name}</span>

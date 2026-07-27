@@ -11,7 +11,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <div class="locations-grid">
       <section class="location-card">
-        <h2 class="card-title">Registered Office</h2>
+        <div class="card-header">
+          <img src="/images/icons/map-pin.svg" alt="" class="icon-inline card-icon" />
+          <h2 class="card-title">Registered Office</h2>
+        </div>
         <p class="card-label">Sadar, Nagpur</p>
         <address class="location-address">
           <strong>Sunrise Gases</strong><br />
@@ -26,7 +29,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </section>
 
       <section class="location-card">
-        <h2 class="card-title">Works</h2>
+        <div class="card-header">
+          <img src="/images/icons/map-pin.svg" alt="" class="icon-inline card-icon" />
+          <h2 class="card-title">Works</h2>
+        </div>
         <p class="card-label">MIDC, Hingna Road</p>
         <address class="location-address">
           <strong>Sunrise Gases</strong><br />
@@ -47,10 +53,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="card-title">Get in touch</h2>
         <p class="contact-note">Call or email us for pricing, availability, and technical specifications.</p>
         <div class="contact-links">
-          <a href="tel:+919422416090" class="contact-link">+91-9422416090</a>
-          <a href="mailto:contact@sunrisegases.com" class="contact-link">contact@sunrisegases.com</a>
+          <a href="tel:+919422416090" class="contact-link"><img src="/images/icons/phone.svg" alt="" class="icon-inline" /> +91-9422416090</a>
+          <a href="mailto:contact@sunrisegases.com" class="contact-link"><img src="/images/icons/email.svg" alt="" class="icon-inline" /> contact@sunrisegases.com</a>
         </div>
-        <p class="contact-hours">Mon &ndash; Sat &middot; 9:00 AM &ndash; 6:00 PM</p>
+        <p class="contact-hours"><img src="/images/icons/clock.svg" alt="" class="icon-inline" /> Mon &ndash; Sat &middot; 9:00 AM &ndash; 6:00 PM</p>
       </section>
 
       <section class="contact-card">
@@ -100,6 +106,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     flex-direction: column;
     gap: 0.75rem;
     box-shadow: var(--shadow-sm);
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .card-icon {
+    color: var(--color-accent);
   }
   .card-title {
     font-family: var(--font-display);
@@ -160,6 +174,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     gap: 0.5rem;
   }
   .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
     font-size: var(--text-body);
     font-weight: 500;
     color: var(--color-accent);
@@ -168,9 +185,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     text-decoration: underline;
   }
   .contact-hours {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
     font-size: var(--text-small);
     color: var(--color-text-secondary);
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
   .contact-form-placeholder {
     font-size: var(--text-small);

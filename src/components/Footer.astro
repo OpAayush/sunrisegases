@@ -33,6 +33,7 @@ const year = new Date().getFullYear();
     <div class="footer-col">
       <h3 class="footer-heading">Office</h3>
       <address class="footer-address">
+        <img src="/images/icons/map-pin.svg" alt="" class="footer-icon" />
         Meghraj Chawl, 212A, Gandhi Chowk<br />
         Sadar, Nagpur 440001<br />
         <a href="https://maps.app.goo.gl/pmto13xLtkvdeTrn9" target="_blank" rel="noopener">Map →</a>
@@ -41,6 +42,7 @@ const year = new Date().getFullYear();
     <div class="footer-col">
       <h3 class="footer-heading">Works</h3>
       <address class="footer-address">
+        <img src="/images/icons/map-pin.svg" alt="" class="footer-icon" />
         C/o Sharma Engineering Works<br />
         W52, MIDC, Hingna Road<br />
         Nagpur 440016<br />
@@ -100,6 +102,13 @@ const year = new Date().getFullYear();
   .footer-list a:hover {
     color: var(--color-accent);
     text-decoration: none;
+  }
+  .footer-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+    flex-shrink: 0;
   }
   .footer-address {
     font-size: var(--text-small);

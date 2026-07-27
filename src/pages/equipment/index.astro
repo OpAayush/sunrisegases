@@ -15,7 +15,10 @@ const items = await getCollection('equipment');
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (
       <a href={`/equipment/${item.data.slug}/`} class="product-card">
         <span class="product-category">{item.data.category}</span>
-        <span class="product-name">{item.data.name}</span>
+        {item.data.images?.[0] && (
+          <img src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" loading="lazy" />
+        )}
+        <h2 class="product-name">{item.data.name}</h2>
       </a>
     ))}
   </section>

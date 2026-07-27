@@ -16,8 +16,11 @@ const gases = await getCollection('gases');
       const purity = gas.data.grades?.[0]?.purity;
       return (
         <a href={`/gases/${gas.data.slug}/`} class="product-card">
+          {gas.data.images?.[0] && (
+            <img src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="product-card-img" loading="lazy" />
+          )}
           <span class="product-formula">{gas.data.formula || gas.data.slug.toUpperCase()}</span>
-          <span class="product-name">{gas.data.name}</span>
+          <h2 class="product-name">{gas.data.name}</h2>
           {purity && <span class="product-purity">{purity}</span>}
           <span class="product-summary">{gas.data.summary}</span>
         </a>
