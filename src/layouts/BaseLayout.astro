@@ -34,7 +34,13 @@ const siteName = 'Sunrise Gases';
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:site" content="@sunrisegases" />
     <meta name="twitter:image" content="https://sunrisegases.com/images/products/industrial-factory.jpg" />
+    <meta name="twitter:image:alt" content="Sunrise Gases — Industrial & Specialty Gases Manufacturer in Nagpur" />
+    <meta property="og:image:alt" content="Sunrise Gases — Industrial & Specialty Gases Manufacturer in Nagpur" />
+    <meta name="theme-color" content="#fff8f1" />
     <link rel="icon" type="image/svg+xml" href="/images/icons/flame.svg" />
     <link rel="apple-touch-icon" href="/images/icons/flame.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -123,7 +129,7 @@ const siteName = 'Sunrise Gases';
     letter-spacing: var(--tracking-body);
     color: var(--color-text);
     background: var(--color-bg);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='0.75' fill='%23fa5d00' opacity='0.04'/%3E%3C/svg%3E"), radial-gradient(ellipse 600px 400px at 10% 30%, rgba(250, 93, 0, 0.03) 0%, transparent 70%), radial-gradient(ellipse 500px 300px at 90% 70%, rgba(254, 227, 181, 0.06) 0%, transparent 70%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cline x1='0' y1='0' x2='48' y2='48' stroke='%23fa5d00' stroke-width='0.4' opacity='0.035'/%3E%3Cline x1='48' y1='0' x2='0' y2='48' stroke='%23fa5d00' stroke-width='0.4' opacity='0.035'/%3E%3C/svg%3E"), radial-gradient(ellipse 600px 400px at 10% 30%, rgba(250, 93, 0, 0.03) 0%, transparent 70%), radial-gradient(ellipse 500px 300px at 90% 70%, rgba(254, 227, 181, 0.06) 0%, transparent 70%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -164,6 +170,45 @@ const siteName = 'Sunrise Gases';
     border-radius: 4px;
   }
 
+  html {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a, button, [role="button"] {
+    cursor: pointer;
+  }
+
+  a:active, button:active {
+    opacity: 0.8;
+  }
+
+  .product-card:active {
+    transform: scale(0.98);
+  }
+  .category-card:active {
+    transform: scale(0.98);
+  }
+  .gas-card:active {
+    transform: scale(0.98);
+  }
+  .location-card:active {
+    transform: scale(0.98);
+  }
+  .contact-card:active {
+    transform: scale(0.98);
+  }
+
+  @media (hover: hover) {
+    a:hover, button:hover {
+      opacity: 1;
+    }
+  }
+
   .product-images {
     display: flex;
     gap: 1rem;
@@ -201,5 +246,21 @@ const siteName = 'Sunrise Gases';
       animation-duration: 0.01ms !important;
       transition-duration: 0.01ms !important;
     }
+  }
+
+  @media (max-width: 600px) {
+    html { font-size: 15px; }
+    .detail { padding: 1.5rem 1rem; }
+  }
+  @media (max-width: 400px) {
+    html { font-size: 14px; }
+    .catalog-hero { padding: 1.5rem 1rem 0; }
+    .catalog-title { font-size: 1.5rem; }
+    .catalog-subtitle { font-size: 0.875rem; }
+    .catalog-grid { padding: 1rem 1rem var(--space-section); }
+    .product-card { padding: 1rem; }
+    .product-name { font-size: 1rem; }
+    .product-summary { font-size: 0.8125rem; }
+    .product-formula { font-size: 1.125rem; }
   }
 </style>

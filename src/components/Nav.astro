@@ -98,15 +98,20 @@ const currentPath = Astro.url.pathname;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       padding-bottom: 0.25rem;
+      mask-image: linear-gradient(to right, transparent, black 0.5rem, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 0.5rem, black 90%, transparent);
     }
     .nav-link {
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       white-space: nowrap;
-      padding: 0.375rem 0.375rem;
-      min-height: 24px;
+      padding: 0.5rem 0.5rem;
+      min-height: 36px;
     }
     .nav-inner {
       padding: 0 1rem;
+    }
+    .nav-link-icon {
+      display: none;
     }
   }
 </style>
