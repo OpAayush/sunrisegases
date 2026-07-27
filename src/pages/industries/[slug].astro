@@ -12,9 +12,28 @@ export async function getStaticPaths() {
 
 const { item } = Astro.props;
 const { data } = item;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sunrisegases.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://sunrisegases.com/industries/" },
+    { "@type": "ListItem", "position": 3, "name": data.name, "item": `https://sunrisegases.com/industries/${data.slug}/` }
+  ]
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": data.name,
+  "description": data.summary,
+  "brand": { "@type": "Brand", "name": "Sunrise Gases" },
+  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src}` : undefined,
+};
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description}>
+<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, productSchema]}>
   <article class="detail">
     <header class="detail-hero">
       <h1 class="detail-name">{data.name}</h1>

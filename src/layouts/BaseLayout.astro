@@ -7,9 +7,10 @@ export interface Props {
   title: string;
   description: string;
   canonical?: string;
+  schemas?: Record<string, unknown>[];
 }
 
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, schemas } = Astro.props;
 const canonicalUrl = canonical || `https://sunrisegases.com${Astro.url.pathname}`;
 const siteName = 'Sunrise Gases';
 ---
@@ -19,6 +20,7 @@ const siteName = 'Sunrise Gases';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
@@ -91,6 +93,9 @@ const siteName = 'Sunrise Gases';
         ]
       }
     })} />
+    {schemas?.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
