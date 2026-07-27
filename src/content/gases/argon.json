@@ -13,7 +13,7 @@
   "applications": ["Welding and metal fabrication", "Heat treatment", "Electronics"],
   "safety": { "sdsUrl": "/documents/sds/argon.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/argon-gas-cylinder-500x500.jpg", "alt": "Argon gas cylinder" }
+    { "src": "/images/products/argon.jpg", "alt": "Argon gas cylinder" }
   ],
   "seo": {
     "title": "Industrial Argon Gas Supplier | Sunrise Gases",
