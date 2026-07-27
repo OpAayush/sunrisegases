@@ -2,6 +2,7 @@
   "name": "sunrisegases",
   "compatibility_date": "2026-07-01",
   "compatibility_flags": ["nodejs_compat"],
+  "entrypointResolution": "auto",
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

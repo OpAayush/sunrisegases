@@ -6,9 +6,12 @@ import '../styles/tokens.css';
 export interface Props {
   title: string;
   description: string;
+  canonical?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, canonical } = Astro.props;
+const canonicalUrl = canonical || `https://sunrisegases.com${Astro.url.pathname}`;
+const siteName = 'Sunrise Gases';
 ---
 
 <!DOCTYPE html>
@@ -18,9 +21,48 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content={siteName} />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sunrise Gases",
+      "description": "Industrial and specialty gases manufacturer in Nagpur, supplying across Central India.",
+      "url": "https://sunrisegases.com",
+      "telephone": "+91-992-XXX-XXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nagpur",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "foundingDate": "2013",
+      "areaServed": "Central India",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Industrial Gases",
+        "itemListElement": [
+          { "@type": "Product", "name": "Oxygen" },
+          { "@type": "Product", "name": "Nitrogen" },
+          { "@type": "Product", "name": "Argon" },
+          { "@type": "Product", "name": "Carbon Dioxide" },
+          { "@type": "Product", "name": "Hydrogen" },
+          { "@type": "Product", "name": "Helium" },
+          { "@type": "Product", "name": "Dissolved Acetylene" },
+          { "@type": "Product", "name": "LPG" },
+          { "@type": "Product", "name": "Ammonia" }
+        ]
+      }
+    })} />
   </head>
   <body>
     <Nav />

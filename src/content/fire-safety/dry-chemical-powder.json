@@ -1,0 +1,16 @@
+{
+  "slug": "dry-chemical-powder-extinguishers",
+  "name": "Dry Chemical Powder Fire Extinguishers",
+  "agentType": "Dry chemical powder",
+  "fireClassRating": ["A", "B", "C"],
+  "sizes": ["4 Kg", "6 Kg", "9 Kg"],
+  "dischargeTime": "10–20 seconds",
+  "refillInterval": "Annual inspection, refill after use",
+  "images": [
+    { "src": "/images/products/modular-extenguisher.png", "alt": "Modular fire extinguisher" }
+  ],
+  "seo": {
+    "title": "Dry Chemical Powder Fire Extinguishers | Sunrise Gases",
+    "description": "Dry chemical powder fire extinguishers for Class A, B, and C fires. Available in 4, 6, and 9 Kg. Supplied from Nagpur."
+  }
+}

@@ -2,21 +2,21 @@
   "slug": "argon",
   "name": "Argon",
   "formula": "Ar",
-  "summary": "High-purity argon for welding shielding, metal fabrication, and industrial processing. Supplied as compressed gas and liquid.",
+  "summary": "Industrial argon gas for welding shielding and metal fabrication. Supplied as compressed gas from Nagpur.",
   "grades": [
-    { "name": "Welding grade", "purity": "99.9%", "uses": ["MIG/TIG welding", "metal fabrication"] },
-    { "name": "High-purity", "purity": "99.999%", "uses": ["laboratory", "electronics"] }
+    { "name": "Industrial", "purity": "99.9%", "uses": ["MIG/TIG welding shielding", "metal fabrication"] }
   ],
   "supplyForms": ["compressed cylinder", "liquid (cryogenic)"],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] },
-    { "type": "Cryogenic dewar", "sizes": ["50L", "175L"] }
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
   ],
-  "applications": ["Welding and metal fabrication", "Electronics manufacturing", "Laboratory analysis", "Heat treatment"],
-  "safety": { "sdsUrl": "/documents/sds/argon.pdf", "hazardClass": "Inert gas / Asphyxiant" },
-  "images": [],
+  "applications": ["Welding and metal fabrication", "Heat treatment", "Electronics"],
+  "safety": { "sdsUrl": "/documents/sds/argon.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [
+    { "src": "/images/products/argon-gas-cylinder-500x500.jpg", "alt": "Argon gas cylinder" }
+  ],
   "seo": {
     "title": "Industrial Argon Gas Supplier | Sunrise Gases",
-    "description": "Welding-grade and high-purity argon gas, supplied as compressed gas and liquid. Manufactured in Nagpur for Central India."
+    "description": "Industrial argon gas for welding, metal fabrication, and heat treatment. Supplied as compressed gas. Manufactured in Nagpur."
   }
 }

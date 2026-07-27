@@ -32,6 +32,12 @@ const { data } = item;
           <span class="spec-label">Fire class rating</span>
           <span class="spec-value">{data.fireClassRating.join(', ')}</span>
         </div>
+        {data.sizes && data.sizes.length > 0 && (
+          <div class="spec-row">
+            <span class="spec-label">Available sizes</span>
+            <span class="spec-value">{data.sizes.join(', ')}</span>
+          </div>
+        )}
         <div class="spec-row">
           <span class="spec-label">Discharge time</span>
           <span class="spec-value">{data.dischargeTime}</span>

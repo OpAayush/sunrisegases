@@ -2,21 +2,21 @@
   "slug": "oxygen",
   "name": "Oxygen",
   "formula": "O₂",
-  "summary": "High-purity industrial and medical oxygen, supplied as compressed gas or liquid. Manufactured and supplied across Central India from Nagpur.",
+  "summary": "High-purity industrial oxygen, supplied as compressed gas. Manufactured and supplied across Central India from Nagpur.",
   "grades": [
-    { "name": "Industrial", "purity": "99.2%", "uses": ["metal cutting", "welding"] },
-    { "name": "Medical", "purity": "99.5%", "uses": ["hospitals", "healthcare"] }
+    { "name": "Industrial", "purity": "99.2%", "uses": ["metal cutting", "welding", "steel fabrication"] }
   ],
   "supplyForms": ["compressed cylinder", "liquid (cryogenic)", "bulk/manifold"],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] },
-    { "type": "Cryogenic dewar", "sizes": ["50L", "175L"] }
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
   ],
-  "applications": ["Steel and metal fabrication", "Healthcare and hospitals", "Water treatment"],
+  "applications": ["Steel and metal fabrication", "Water treatment", "Glass manufacturing"],
   "safety": { "sdsUrl": "/documents/sds/oxygen.pdf", "hazardClass": "Oxidizer" },
-  "images": [],
+  "images": [
+    { "src": "/images/products/oxygen.jpg", "alt": "Oxygen gas cylinder" }
+  ],
   "seo": {
-    "title": "Industrial & Medical Oxygen Gas Supplier | Sunrise Gases",
-    "description": "High-purity oxygen gas and cylinders for industrial and medical use, manufactured and supplied from Nagpur across Central India."
+    "title": "Industrial Oxygen Gas Supplier | Sunrise Gases",
+    "description": "Industrial oxygen gas and cylinders for metal cutting, welding, and fabrication. Manufactured and supplied from Nagpur across Central India."
   }
 }

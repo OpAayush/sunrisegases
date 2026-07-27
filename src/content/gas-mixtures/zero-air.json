@@ -1,0 +1,19 @@
+{
+  "slug": "zero-air",
+  "name": "Zero Air (Synthetic Air)",
+  "components": [
+    { "gas": "Nitrogen", "ratio": "79%" },
+    { "gas": "Oxygen", "ratio": "21%" }
+  ],
+  "blendRationale": "Synthetic breathing air mixture for respiratory and calibration applications. Available in multiple cylinder sizes and pressure ratings.",
+  "applications": ["Breathing air supply", "Calibration", "Laboratory", "Industrial pneumatic tools"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["1.5 Cu.M.", "7 Cu.M."] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/zero-air.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "Zero Air (Synthetic Air) Mixture | Sunrise Gases",
+    "description": "Zero air synthetic breathing mixture — 79% nitrogen, 21% oxygen. 99.999% purity. Available in 1.5 and 7 Cu.M. cylinders."
+  }
+}

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const items = await getCollection('specialty-gases');
+---
+
+<BaseLayout title="Ultra High Pure & Specialty Gases | Sunrise Gases" description="Ultra high pure gases and specialty gas products for calibration, laboratory, and research applications. 99.999% purity. Supplied from Nagpur.">
+  <header class="catalog-hero">
+    <h1 class="catalog-title">Specialty gases</h1>
+    <p class="catalog-subtitle">Ultra high pure and calibration gases for laboratory, research, and specialty applications.</p>
+  </header>
+
+  <section class="catalog-grid">
+    {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (
+      <a href={`/specialty-gases/${item.data.slug}/`} class="product-card">
+        <span class="product-name">{item.data.name}</span>
+        <span class="product-purity">{item.data.purity}</span>
+        <span class="product-cert">{item.data.certification}</span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .catalog-hero { max-width: var(--space-container); margin: 0 auto; padding: var(--space-section) 1.5rem 0; }
+  .catalog-title { font-family: var(--font-serif); font-weight: 600; font-size: var(--text-hero); line-height: 1.2; color: var(--color-text); margin-bottom: 0.5rem; }
+  .catalog-subtitle { font-size: var(--text-body); color: var(--color-text-secondary); max-width: 540px; }
+  .catalog-grid { max-width: var(--space-container); margin: 0 auto; padding: 2rem 1.5rem var(--space-section); display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .product-card { background: var(--color-card); border-radius: var(--radius-cards); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.25rem; transition: box-shadow var(--transition-fast), transform var(--transition-fast); }
+  .product-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); text-decoration: none; }
+  .product-name { font-family: var(--font-display); font-weight: 700; font-size: var(--text-h3); color: var(--color-text); }
+  .product-purity { font-size: var(--text-small); color: var(--color-accent); font-weight: 500; }
+  .product-cert { font-size: var(--text-small); color: var(--color-text-secondary); margin-top: auto; }
+  @media (max-width: 768px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .catalog-grid { grid-template-columns: 1fr; } }
+</style>

@@ -3,14 +3,18 @@
   "name": "Industrial Gas Cylinders and Valves",
   "category": "cylinders",
   "specs": [
-    { "label": "Materials", "value": "Carbon steel, alloy steel" },
-    { "label": "Pressure ratings", "value": "150–200 bar" },
-    { "label": "Sizes", "value": "10L, 20L, 47L, 50L" },
-    { "label": "Valve types", "value": "BS, DIN, CGA" }
+    { "label": "Standard", "value": "IS:7285 / PART 2:2004" },
+    { "label": "Materials", "value": "High pressure seamless steel (ISI marked)" },
+    { "label": "Sizes", "value": "5 Ltrs to 50 Ltrs water capacity" },
+    { "label": "Working pressure", "value": "150 Bar, 200 Bar, 300 Bar" },
+    { "label": "Valve types", "value": "BS, DIN, CGA compatible" }
   ],
-  "images": [],
+  "images": [
+    { "src": "/images/products/aluminium_cylinder.png", "alt": "Aluminium cylinder" },
+    { "src": "/images/products/compressed-gas-cylinder-500x500.png", "alt": "Compressed gas cylinder" }
+  ],
   "seo": {
     "title": "Industrial Gas Cylinders and Valves | Sunrise Gases",
-    "description": "Industrial gas cylinders, cylinder valves, and accessories. Available in multiple sizes and pressure ratings."
+    "description": "ISI marked high pressure seamless steel gas cylinders as per IS:7285. Sizes 5-50 Ltrs, 150-300 Bar. Supplied from Nagpur."
   }
 }

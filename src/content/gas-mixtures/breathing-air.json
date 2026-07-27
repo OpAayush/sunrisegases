@@ -1,0 +1,19 @@
+{
+  "slug": "breathing-air",
+  "name": "Breathing Air (Compressed Air)",
+  "components": [
+    { "gas": "Nitrogen", "ratio": "79%" },
+    { "gas": "Oxygen", "ratio": "21%" }
+  ],
+  "blendRationale": "High-purity compressed breathing air for respiratory protection, diving, and industrial use. Purified and filtered.",
+  "applications": ["Respiratory protection", "SCBA and SCUBA", "Industrial air tools"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["1 Cu.M.", "1.5 Cu.M."] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/breathing-air.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "Breathing Air — High Purity Compressed Air | Sunrise Gases",
+    "description": "High-purity compressed breathing air for SCBA, SCUBA, and respiratory protection. 79% N₂, 21% O₂. Available in 1 and 1.5 Cu.M. cylinders."
+  }
+}

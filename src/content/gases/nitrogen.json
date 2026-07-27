@@ -2,21 +2,21 @@
   "slug": "nitrogen",
   "name": "Nitrogen",
   "formula": "N₂",
-  "summary": "High-purity nitrogen for industrial blanketing, purging, and inerting applications. Supplied as compressed gas or liquid.",
+  "summary": "Industrial nitrogen gas for purging, blanketing, and inerting applications. Supplied as compressed gas from Nagpur.",
   "grades": [
-    { "name": "Industrial", "purity": "99.9%", "uses": ["purging", "blanketing", "food packaging"] },
-    { "name": "High-purity", "purity": "99.999%", "uses": ["electronics", "laboratory"] }
+    { "name": "Industrial", "purity": "99.5%", "uses": ["purging", "blanketing", "inerting"] }
   ],
   "supplyForms": ["compressed cylinder", "liquid (cryogenic)", "bulk/manifold"],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] },
-    { "type": "Cryogenic dewar", "sizes": ["50L", "175L", "200L"] }
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
   ],
-  "applications": ["Metal fabrication and heat treatment", "Food packaging and preservation", "Electronics manufacturing", "Oil and gas"],
-  "safety": { "sdsUrl": "/documents/sds/nitrogen.pdf", "hazardClass": "Inert gas / Asphyxiant" },
-  "images": [],
+  "applications": ["Chemical processing", "Oil and gas", "Electronics manufacturing"],
+  "safety": { "sdsUrl": "/documents/sds/nitrogen.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [
+    { "src": "/images/products/nitrogen.jpg", "alt": "Nitrogen gas cylinders" }
+  ],
   "seo": {
     "title": "Industrial Nitrogen Gas Supplier | Sunrise Gases",
-    "description": "High-purity nitrogen gas, liquid nitrogen, and cylinders for industrial applications. Supplied from Nagpur across Central India."
+    "description": "Industrial nitrogen gas for purging, blanketing, and inerting. Supplied as compressed gas or liquid. Manufactured in Nagpur."
   }
 }

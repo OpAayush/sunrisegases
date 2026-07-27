@@ -1,0 +1,20 @@
+{
+  "slug": "gas-handling-accessories",
+  "name": "Gas Handling Equipments and Accessories",
+  "category": "accessories",
+  "specs": [
+    { "label": "Products", "value": "Gas Manifolds, Cylinder Caps, Cylinder Trolleys, Industrial Regulators (Single Stage, Double Gauge)" },
+    { "label": "Safety equipment", "value": "Safety Guard for Cylinder Valve, Cylinder Cascade" },
+    { "label": "Material", "value": "Brass, stainless steel, steel" }
+  ],
+  "images": [
+    { "src": "/images/products/gas-manifold-system-500x500.jpg", "alt": "Gas manifold system" },
+    { "src": "/images/products/safety-guard-for-cylinder-valve-500x500.jpg", "alt": "Safety guard for cylinder valve" },
+    { "src": "/images/products/Cylinder-Cascade.jpg", "alt": "Cylinder cascade" },
+    { "src": "/images/products/gas-cylinder-trolley-500x500.jpg", "alt": "Gas cylinder trolley" }
+  ],
+  "seo": {
+    "title": "Gas Handling Equipments — Manifolds, Regulators & Accessories | Sunrise Gases",
+    "description": "Gas handling equipment: manifolds, regulators, cylinder caps, trolleys, safety guards, and cascade systems. Supplied from Nagpur."
+  }
+}

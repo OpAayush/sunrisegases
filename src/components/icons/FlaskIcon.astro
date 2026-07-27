@@ -1,0 +1,8 @@
+---
+export interface Props { size?: number }
+const { size = 48 } = Astro.props;
+---
+<svg width={size} height={size} viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 4H26V22L38 40C40 44 36 46 30 46H18C12 46 8 44 10 40L22 22V4Z" />
+  <line x1="16" y1="34" x2="32" y2="34" />
+</svg>

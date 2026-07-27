@@ -1,18 +1,18 @@
 {
   "slug": "gas-regulators",
   "name": "Gas Regulators",
-  "category": "accessories",
+  "category": "regulators",
   "specs": [
+    { "label": "Types", "value": "Single Stage, Double Gauge" },
     { "label": "Inlet pressure", "value": "200 bar max" },
-    { "label": "Outlet pressure", "value": "0–10 bar (adjustable)" },
-    { "label": "Materials", "value": "Brass body, stainless steel diaphragm" },
-    { "label": "Connection types", "value": "BS, DIN, CGA" },
     { "label": "Gas compatibility", "value": "Oxygen, nitrogen, argon, CO₂, acetylene, LPG" }
   ],
-  "compatibleWith": ["oxygen", "nitrogen", "argon", "carbon-dioxide", "dissolved-acetylene", "lpg"],
-  "images": [],
+  "images": [
+    { "src": "/images/products/Gas-Regulators1.jpg", "alt": "Gas regulator" },
+    { "src": "/images/products/Industrial-Gas-regulators.jpg", "alt": "Industrial gas regulator" }
+  ],
   "seo": {
-    "title": "Gas Regulators — Pressure Control for Industrial Gas Cylinders | Sunrise Gases",
-    "description": "Industrial gas regulators for oxygen, nitrogen, argon, CO₂, acetylene, and LPG. Adjustable outlet pressure, multiple connection types. Supplied from Nagpur."
+    "title": "Gas Regulators — Single Stage & Double Gauge | Sunrise Gases",
+    "description": "Industrial gas regulators — single stage and double gauge types. Compatible with oxygen, nitrogen, argon, CO₂, acetylene, LPG."
   }
 }

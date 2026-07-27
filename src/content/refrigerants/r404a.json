@@ -1,0 +1,17 @@
+{
+  "slug": "r404a",
+  "name": "R404A",
+  "grade": "99.9%",
+  "odp": 0,
+  "gwp": 3920,
+  "retrofitCompatibility": ["R22", "R407A"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["8 Kg", "45 Kg"] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/r404a.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "R404A Refrigerant Gas Supplier | Sunrise Gases",
+    "description": "R404A refrigerant gas. 99.9% purity in 8 and 45 Kg cylinders. Supplied from Nagpur."
+  }
+}

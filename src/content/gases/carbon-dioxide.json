@@ -2,19 +2,22 @@
   "slug": "carbon-dioxide",
   "name": "Carbon Dioxide",
   "formula": "CO₂",
-  "summary": "Industrial-grade carbon dioxide for welding, food processing, and industrial applications. Supplied as compressed gas and liquid.",
+  "summary": "Carbon dioxide for welding, food processing, and industrial applications. Available in industrial and ultra-high-purity grades.",
   "grades": [
-    { "name": "Industrial", "purity": "99.5%", "uses": ["welding", "fire suppression"] }
+    { "name": "Industrial", "purity": "99.90%", "uses": ["MIG welding", "food and beverage", "industrial processing"] },
+    { "name": "Ultra High Pure", "purity": "99.999%", "uses": ["calibration", "laboratory", "specialty applications"] }
   ],
-  "supplyForms": ["compressed cylinder", "liquid (cryogenic)"],
+  "supplyForms": ["compressed cylinder", "bulk"],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+    { "type": "Cylinder", "sizes": ["4.5 Kg", "6.8 Kg", "9 Kg", "15 Kg", "30 Kg"] }
   ],
-  "applications": ["Welding and metal fabrication", "Food and beverage processing", "Fire suppression systems"],
-  "safety": { "sdsUrl": "/documents/sds/carbon-dioxide.pdf", "hazardClass": "Asphyxiant" },
-  "images": [],
+  "applications": ["MIG welding", "Food and beverage carbonation", "Fire suppression", "Industrial processing"],
+  "safety": { "sdsUrl": "/documents/sds/carbon-dioxide.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [
+    { "src": "/images/products/co2.jpg", "alt": "Carbon dioxide cylinders" }
+  ],
   "seo": {
-    "title": "Carbon Dioxide Gas Supplier | Sunrise Gases",
-    "description": "Industrial carbon dioxide for welding, food processing, and industrial use. Supplied from Nagpur across Central India."
+    "title": "Carbon Dioxide Gas Supplier — Industrial & UHP | Sunrise Gases",
+    "description": "Carbon dioxide gas for welding, food processing, and industrial use. Industrial (99.90%) and Ultra High Pure (99.999%) grades. Supplied from Nagpur."
   }
 }

@@ -1,14 +1,20 @@
 {
   "slug": "advertising-balloons",
   "name": "Advertising Balloons",
-  "summary": "Custom-printed advertising balloons for events, promotions, and brand visibility. Helium-filled, available in multiple sizes and colors.",
-  "sizes": ["12-inch", "18-inch", "24-inch", "36-inch"],
-  "customization": ["Full-color digital print", "Pantone-matched colors", "Custom shapes"],
-  "heliumRequirement": "Filled on-site or supplied with helium cylinders",
-  "applications": ["Grand openings", "Trade shows", "Product launches", "Festivals and events"],
-  "images": [],
+  "summary": "Custom-printed sky and advertising balloons for events, promotions, and brand visibility. Helium-filled, available in multiple shapes, sizes, and colors.",
+  "sizes": ["8 Ft", "10 Ft", "12 Ft", "15 Ft", "20 Ft"],
+  "customization": ["Customized digital printing as per artwork", "Multiple shapes — Oval, Round, Cube, Heart, Custom", "Pantone-matched colors", "High thickness material"],
+  "heliumRequirement": "Filled on-site or supplied with helium cylinders. Variety of sizes available.",
+  "applications": ["Grand openings", "Trade shows and exhibitions", "Product launches", "Festivals and events", "Brand promotions"],
+  "images": [
+    { "src": "/images/products/helium-shapes-4.jpg", "alt": "Helium filled balloon shapes" },
+    { "src": "/images/products/ground-inflatable.jpg", "alt": "Ground inflatable balloon" },
+    { "src": "/images/products/20161213_094914.jpg", "alt": "Advertising balloon at event" },
+    { "src": "/images/products/12187707_934760639920395_5174129264238463053_n-e1587574216585.jpg", "alt": "Custom printed advertising balloon" },
+    { "src": "/images/products/king-inflatables-balloons-benz-circle-vijayawada-balloon-advertising-agencies-juk8o2.jpg", "alt": "Large advertising balloon" }
+  ],
   "seo": {
-    "title": "Custom Advertising Balloons | Sunrise Gases",
-    "description": "Custom-printed advertising balloons for events and promotions. Helium-filled, multiple sizes, full-color printing. Supplied from Nagpur."
+    "title": "Custom Advertising Balloons — Sky Balloons for Events | Sunrise Gases",
+    "description": "Custom sky and advertising balloons for events and promotions. Helium-filled, multiple shapes and sizes, full-color printing. Supplied from Nagpur."
   }
 }

@@ -1,0 +1,17 @@
+{
+  "slug": "r134a",
+  "name": "R134A (Tetrafluoroethane)",
+  "grade": "99.9%",
+  "odp": 0,
+  "gwp": 1430,
+  "retrofitCompatibility": ["R12", "R1234yf"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["10 Kg", "62 Kg"] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/r134a.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "R134A Refrigerant Gas Supplier | Sunrise Gases",
+    "description": "R134A (Tetrafluoroethane) refrigerant gas. 99.9% purity in 10 and 62 Kg cylinders. Supplied from Nagpur."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "r410a",
+  "name": "R410A",
+  "grade": "99.9%",
+  "odp": 0,
+  "gwp": 2088,
+  "retrofitCompatibility": ["R22"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["8 Kg", "45 Kg"] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/r410a.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "R410A Refrigerant Gas Supplier | Sunrise Gases",
+    "description": "R410A refrigerant gas. 99.9% purity in 8 and 45 Kg cylinders. Supplied from Nagpur."
+  }
+}

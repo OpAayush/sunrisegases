@@ -3,11 +3,15 @@
   "name": "ABC Powder Fire Extinguishers",
   "agentType": "ABC dry chemical powder",
   "fireClassRating": ["A", "B", "C"],
+  "sizes": ["1 Kg", "2 Kg", "4 Kg", "6 Kg", "9 Kg"],
   "dischargeTime": "10–20 seconds",
   "refillInterval": "Annual inspection, refill after use",
-  "images": [],
+  "images": [
+    { "src": "/images/products/abc.png", "alt": "ABC powder fire extinguisher" },
+    { "src": "/images/products/fireextenguisherssfire.png", "alt": "Fire extinguishers" }
+  ],
   "seo": {
     "title": "ABC Powder Fire Extinguishers | Sunrise Gases",
-    "description": "ABC dry chemical powder fire extinguishers for commercial and industrial fire safety. Class A, B, and C rated."
+    "description": "ABC dry chemical powder fire extinguishers for commercial and industrial fire safety. Class A, B, C. Available in 1-9 Kg."
   }
 }

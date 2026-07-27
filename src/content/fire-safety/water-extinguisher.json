@@ -1,0 +1,16 @@
+{
+  "slug": "water-fire-extinguishers",
+  "name": "Water Based Fire Extinguishers",
+  "agentType": "Water",
+  "fireClassRating": ["A"],
+  "sizes": ["9 Ltr", "50 Ltr"],
+  "dischargeTime": "30–60 seconds",
+  "refillInterval": "Annual inspection, refill after use",
+  "images": [
+    { "src": "/images/products/water-foambased.png", "alt": "Water and foam based extinguishers" }
+  ],
+  "seo": {
+    "title": "Water Based Fire Extinguishers | Sunrise Gases",
+    "description": "Water based fire extinguishers for Class A fires. Available in 9 and 50 Ltr capacities. Supplied from Nagpur."
+  }
+}

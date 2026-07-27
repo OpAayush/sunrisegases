@@ -2,19 +2,21 @@
   "slug": "ammonia",
   "name": "Ammonia",
   "formula": "NH₃",
-  "summary": "Industrial-grade anhydrous ammonia for refrigeration, chemical processing, and industrial applications.",
+  "summary": "Industrial anhydrous ammonia for refrigeration, chemical processing, and agricultural applications.",
   "grades": [
-    { "name": "Industrial", "purity": "99.5%", "uses": ["refrigeration", "chemical processing"] }
+    { "name": "Industrial", "purity": "99.50%", "uses": ["refrigeration", "chemical processing"] }
   ],
-  "supplyForms": ["compressed cylinder", "bulk"],
+  "supplyForms": ["cylinder"],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+    { "type": "Cylinder", "sizes": ["50 Kg"] }
   ],
   "applications": ["Industrial refrigeration", "Chemical processing", "Water treatment"],
-  "safety": { "sdsUrl": "/documents/sds/ammonia.pdf", "hazardClass": "Toxic / Flammable gas" },
-  "images": [],
+  "safety": { "sdsUrl": "/documents/sds/ammonia.pdf", "hazardClass": "Toxic gas" },
+  "images": [
+    { "src": "/images/products/ammonia-cylinder-storage-1.jpg", "alt": "Ammonia cylinder storage" }
+  ],
   "seo": {
     "title": "Industrial Ammonia Gas Supplier | Sunrise Gases",
-    "description": "Anhydrous ammonia for refrigeration, chemical processing, and industrial use. Supplied from Nagpur."
+    "description": "Industrial anhydrous ammonia for refrigeration and chemical processing. Available in 50 Kg cylinders. Supplied from Nagpur."
   }
 }

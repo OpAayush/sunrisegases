@@ -1,0 +1,14 @@
+{
+  "slug": "liquid-nitrogen",
+  "name": "Liquid Nitrogen",
+  "sublimationOrBoilOff": "Boils at −196°C",
+  "storageAndHandling": "Supplied in cryocans (customer's or our own). Handle with cryogenic gloves and eye protection. Store in well-ventilated area.",
+  "applications": ["Cryogenic preservation", "Industrial freezing", "Medical and laboratory", "Metal treatment"],
+  "images": [
+    { "src": "/images/products/Liquid-Nitrogen-Containers.jpg", "alt": "Liquid nitrogen" }
+  ],
+  "seo": {
+    "title": "Liquid Nitrogen Supplier | Sunrise Gases",
+    "description": "Liquid nitrogen supplied in cryocans for cryogenic preservation, industrial freezing, and laboratory applications. Supplied from Nagpur."
+  }
+}

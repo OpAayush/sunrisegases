@@ -1,0 +1,350 @@
+[
+  {
+    "name": "Oxygen",
+    "category": "Industrial Gases",
+    "description": "Industrial-grade oxygen, 99.90% purity. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filled at 150 Kgf/cm². Supplied in BIS-certified cylinders with test certificates on request.",
+    "finalLink": "/gases/oxygen"
+  },
+  {
+    "name": "Nitrogen",
+    "category": "Industrial Gases",
+    "description": "99.90% purity nitrogen gas. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filling pressure 150 Kgf/cm². BIS-certified cylinders, safety documentation available.",
+    "finalLink": "/gases/nitrogen"
+  },
+  {
+    "name": "Argon",
+    "category": "Industrial Gases",
+    "description": "99.90% purity argon gas for welding and industrial use. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filled at 150 Kgf/cm².",
+    "finalLink": "/gases/argon"
+  },
+  {
+    "name": "Hydrogen",
+    "category": "Industrial Gases",
+    "description": "99.90% purity hydrogen gas. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filling pressure 150 Kgf/cm². Supplied with safety caps and certification.",
+    "finalLink": "/gases/hydrogen"
+  },
+  {
+    "name": "Helium",
+    "category": "Industrial Gases",
+    "description": "99.90% purity helium. Cylinder sizes 1.5 Cu.M., 7 Cu.M., and 10 Cu.M., filling pressure 150–200 Kgf/cm².",
+    "finalLink": "/gases/helium"
+  },
+  {
+    "name": "Carbon Dioxide",
+    "category": "Industrial Gases",
+    "description": "99.90% purity CO₂. Available in 4.5 Kg, 6.8 Kg, 9 Kg, 15 Kg, and 30 Kg cylinders.",
+    "finalLink": "/gases/carbon-dioxide"
+  },
+  {
+    "name": "Dissolved Acetylene",
+    "category": "Industrial Gases",
+    "description": "99.90% purity acetylene for welding and cutting. Cylinder size 5–7 Cu.M.",
+    "finalLink": "/gases/dissolved-acetylene"
+  },
+  {
+    "name": "LPG",
+    "category": "Industrial Gases",
+    "description": "Industrial LPG cylinders in 15 Kg, 17 Kg, and 19 Kg sizes.",
+    "finalLink": "/gases/lpg"
+  },
+  {
+    "name": "Ammonia",
+    "category": "Industrial Gases",
+    "description": "99.50% purity ammonia, supplied in 50 Kg cylinders.",
+    "finalLink": "/gases/ammonia"
+  },
+  {
+    "name": "Oxygen (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity oxygen for lab and precision applications. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filling pressure 150 Kgf/cm².",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Nitrogen (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity nitrogen. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., 150 Kgf/cm².",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Argon (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity argon for calibration and lab use. Cylinder sizes 1.5 Cu.M. and 7 Cu.M.",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Hydrogen (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity hydrogen. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., 150 Kgf/cm².",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Helium (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity helium. Cylinder sizes 1.5 Cu.M., 7 Cu.M., and 10 Cu.M., filling pressure 150–200 Kgf/cm².",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Carbon Dioxide (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity CO₂, available in 4.5 Kg to 30 Kg cylinders.",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Dissolved Acetylene (UHP)",
+    "category": "Ultra High Pure Gases",
+    "description": "99.999% purity acetylene, cylinder size 5–7 Cu.M.",
+    "finalLink": "/specialty-gases/ultra-high-pure-gases"
+  },
+  {
+    "name": "Agroshield (Argon + CO₂)",
+    "category": "Mixture Gases",
+    "description": "Custom-ratio Argon and CO₂ blend mixed to customer specification. 7 Cu.M. cylinder, 150 Kgf/cm², 99.999% purity.",
+    "finalLink": "/gas-mixtures"
+  },
+  {
+    "name": "Zero Air",
+    "category": "Mixture Gases",
+    "description": "Nitrogen 79% + Oxygen 21% blend. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filling pressure 150–300 Bar, 99.999% purity.",
+    "finalLink": "/gas-mixtures/zero-air"
+  },
+  {
+    "name": "Argonite (Argon + Nitrogen)",
+    "category": "Mixture Gases",
+    "description": "Custom-ratio Argon and Nitrogen blend for welding and fire suppression use. 7 Cu.M. cylinder, 150–300 Bar, 99.999% purity.",
+    "finalLink": "/gas-mixtures/argonite"
+  },
+  {
+    "name": "Hydrogen + Nitrogen Mix",
+    "category": "Mixture Gases",
+    "description": "Blended to customer-specified ratio. 7 Cu.M. cylinder, 150 Kgf/cm², 99.999% purity.",
+    "finalLink": "/gas-mixtures/hydrogen-nitrogen-mixture"
+  },
+  {
+    "name": "P10 (Methane + Argon)",
+    "category": "Mixture Gases",
+    "description": "Methane 10% + Argon 90% mix for detector calibration. 7 Cu.M. cylinder, 150 Kgf/cm², 99.999% purity.",
+    "finalLink": "/gas-mixtures/p10-gas"
+  },
+  {
+    "name": "Breathing Air",
+    "category": "Mixture Gases",
+    "description": "Nitrogen 79% + Oxygen 21%, medical/industrial breathing-grade. Cylinder sizes 1 Cu.M. and 1.5 Cu.M., 150–300 Bar, 99.999% purity.",
+    "finalLink": "/gas-mixtures/breathing-air"
+  },
+  {
+    "name": "2-Component Calibration Mix",
+    "category": "Calibration and Specialty Gases",
+    "description": "Two-gas calibration blend mixed to customer specification, supplied with NABL-accredited lab certificate.",
+    "finalLink": "/specialty-gases"
+  },
+  {
+    "name": "3-Component Calibration Mix",
+    "category": "Calibration and Specialty Gases",
+    "description": "Three-gas calibration blend, custom ratios, NABL-accredited certification included.",
+    "finalLink": "/specialty-gases"
+  },
+  {
+    "name": "4-Component Calibration Mix",
+    "category": "Calibration and Specialty Gases",
+    "description": "Four-gas calibration blend for multi-gas detector calibration, NABL-accredited certification included.",
+    "finalLink": "/specialty-gases"
+  },
+  {
+    "name": "Multi-Component Calibration Mix",
+    "category": "Calibration and Specialty Gases",
+    "description": "Complex multi-gas blends for specialized calibration needs, mixed and tested to customer requirement.",
+    "finalLink": "/specialty-gases"
+  },
+  {
+    "name": "Custom Specialty Gas",
+    "category": "Calibration and Specialty Gases",
+    "description": "Specialty gas formulated to specific customer requirements, tested and supplied with lab certification.",
+    "finalLink": "/specialty-gases"
+  },
+  {
+    "name": "R22",
+    "category": "Refrigerant Gases",
+    "description": "99.9% purity refrigerant, available in 10 Kg and 61 Kg cylinders.",
+    "finalLink": "/refrigerants/r22"
+  },
+  {
+    "name": "R134A",
+    "category": "Refrigerant Gases",
+    "description": "99.9% purity refrigerant, available in 10 Kg and 62 Kg cylinders.",
+    "finalLink": "/refrigerants/r134a"
+  },
+  {
+    "name": "R404A",
+    "category": "Refrigerant Gases",
+    "description": "99.9% purity refrigerant, available in 8 Kg and 45 Kg cylinders.",
+    "finalLink": "/refrigerants/r404a"
+  },
+  {
+    "name": "R407C",
+    "category": "Refrigerant Gases",
+    "description": "99.9% purity refrigerant, available in 8 Kg and 45 Kg cylinders.",
+    "finalLink": "/refrigerants/r407c"
+  },
+  {
+    "name": "R410A",
+    "category": "Refrigerant Gases",
+    "description": "99.9% purity refrigerant, available in 8 Kg and 45 Kg cylinders.",
+    "finalLink": "/refrigerants/r410a"
+  },
+  {
+    "name": "R123",
+    "category": "Refrigerant Gases",
+    "description": "99.9% purity refrigerant, supplied in 90 Kg drums.",
+    "finalLink": "/refrigerants/r123"
+  },
+  {
+    "name": "ABC Powder Fire Extinguisher",
+    "category": "Fire Extinguishers",
+    "description": "Multi-purpose dry powder extinguisher for Class A, B, and C fires. Sizes: 1, 2, 4, 6, and 9 Kg.",
+    "finalLink": "/fire-safety/abc-powder-fire-extinguishers"
+  },
+  {
+    "name": "CO₂ Fire Extinguisher",
+    "category": "Fire Extinguishers",
+    "description": "Carbon dioxide based extinguisher, suited for electrical fires. Sizes: 1, 2, 3, 4.5, 6.8, 9, and 22.5 Kg.",
+    "finalLink": "/fire-safety/co2-fire-extinguishers"
+  },
+  {
+    "name": "Water-Based Fire Extinguisher",
+    "category": "Fire Extinguishers",
+    "description": "Water type extinguisher for Class A fires. Sizes: 9 Ltr and 50 Ltr.",
+    "finalLink": "/fire-safety/water-fire-extinguishers"
+  },
+  {
+    "name": "Foam-Based Fire Extinguisher",
+    "category": "Fire Extinguishers",
+    "description": "Foam type extinguisher for flammable liquid fires. Sizes: 9 Ltr and 50 Ltr.",
+    "finalLink": "/fire-safety/foam-fire-extinguishers"
+  },
+  {
+    "name": "Dry Chemical Powder Fire Extinguisher",
+    "category": "Fire Extinguishers",
+    "description": "Dry chemical powder extinguisher for industrial use. Sizes: 4, 6, and 9 Kg.",
+    "finalLink": "/fire-safety/dry-chemical-powder-extinguishers"
+  },
+  {
+    "name": "Dry Ice Block",
+    "category": "Dry Ice",
+    "description": "Food-grade dry ice in solid block form, for cold-chain transport, food preservation, and industrial cooling.",
+    "finalLink": "/cryogenic/dry-ice"
+  },
+  {
+    "name": "Dry Ice Powder",
+    "category": "Dry Ice",
+    "description": "Food-grade dry ice in powder form, for cleaning, cooling, and effect applications.",
+    "finalLink": "/cryogenic/dry-ice"
+  },
+  {
+    "name": "Liquid Nitrogen (Customer Cryocan)",
+    "category": "Liquid Nitrogen",
+    "description": "Liquid nitrogen filled into the customer's own cryocan.",
+    "finalLink": "/cryogenic/liquid-nitrogen"
+  },
+  {
+    "name": "Liquid Nitrogen (Our Cryocan)",
+    "category": "Liquid Nitrogen",
+    "description": "Liquid nitrogen supplied in Sunrise Gases' own cryocans, available for rent or purchase alongside the gas.",
+    "finalLink": "/cryogenic/liquid-nitrogen"
+  },
+  {
+    "name": "11 Ltr Cryocan",
+    "category": "Liquid Nitrogen Containers",
+    "description": "11-litre liquid nitrogen storage container.",
+    "finalLink": "/cryogenic/liquid-nitrogen-containers"
+  },
+  {
+    "name": "26 Ltr Cryocan",
+    "category": "Liquid Nitrogen Containers",
+    "description": "26-litre liquid nitrogen storage container.",
+    "finalLink": "/cryogenic/liquid-nitrogen-containers"
+  },
+  {
+    "name": "35 Ltr Cryocan",
+    "category": "Liquid Nitrogen Containers",
+    "description": "35-litre liquid nitrogen storage container.",
+    "finalLink": "/cryogenic/liquid-nitrogen-containers"
+  },
+  {
+    "name": "50 Ltr Cryocan",
+    "category": "Liquid Nitrogen Containers",
+    "description": "50-litre liquid nitrogen storage container.",
+    "finalLink": "/cryogenic/liquid-nitrogen-containers"
+  },
+  {
+    "name": "Carbon Steel Gas Cylinder",
+    "category": "Industrial Gas Cylinders and Valves",
+    "description": "ISI-marked, high-pressure seamless steel cylinder per IS:7285/Part 2:2004, fitted with valve, neck ring, and guard. Sizes 5–50 Ltr W.C., pressure ratings 150/200/300 Bar.",
+    "finalLink": "/equipment/cylinders-and-valves"
+  },
+  {
+    "name": "Aluminium Body Gas Cylinder",
+    "category": "Industrial Gas Cylinders and Valves",
+    "description": "ISI-marked seamless aluminium-body cylinder per IS:7285/Part 2:2004, fitted with valve, neck ring, and guard. Sizes 5–50 Ltr W.C., pressure ratings 150/200/300 Bar.",
+    "finalLink": "/equipment/cylinders-and-valves"
+  },
+  {
+    "name": "Gas Manifold",
+    "category": "Gas Handling Equipment and Accessories",
+    "description": "Multi-cylinder gas manifold system for continuous gas supply from multiple cylinders.",
+    "finalLink": "/equipment/industrial-gas-manifolds"
+  },
+  {
+    "name": "Cylinder Cap",
+    "category": "Gas Handling Equipment and Accessories",
+    "description": "Protective cap for gas cylinder valves during transport and storage.",
+    "finalLink": "/equipment/gas-handling-accessories"
+  },
+  {
+    "name": "Cylinder Trolley",
+    "category": "Gas Handling Equipment and Accessories",
+    "description": "Wheeled trolley for safe cylinder handling and transport.",
+    "finalLink": "/equipment/gas-handling-accessories"
+  },
+  {
+    "name": "Single Stage Regulator",
+    "category": "Gas Handling Equipment and Accessories",
+    "description": "Single-stage industrial gas pressure regulator.",
+    "finalLink": "/equipment/gas-regulators"
+  },
+  {
+    "name": "Double Gauge Regulator",
+    "category": "Gas Handling Equipment and Accessories",
+    "description": "Dual-gauge industrial gas pressure regulator, shows both cylinder and delivery pressure.",
+    "finalLink": "/equipment/gas-regulators"
+  },
+  {
+    "name": "Round Advertising Balloon",
+    "category": "Advertising Balloons",
+    "description": "Sky/advertising balloon in round shape, sizes 8–20 feet, digital printing available including real photographs. Available in multiple colours.",
+    "finalLink": "/balloons/advertising-balloons"
+  },
+  {
+    "name": "Oval Advertising Balloon",
+    "category": "Advertising Balloons",
+    "description": "Oval-shaped advertising balloon, sizes 8–20 feet, high-durability digital printing. Available in multiple colours.",
+    "finalLink": "/balloons/advertising-balloons"
+  },
+  {
+    "name": "Cube Advertising Balloon",
+    "category": "Advertising Balloons",
+    "description": "Cube-shaped advertising balloon, sizes 8–20 feet, full-surface branding area. Available in multiple colours.",
+    "finalLink": "/balloons/advertising-balloons"
+  },
+  {
+    "name": "Heart-Shaped Advertising Balloon",
+    "category": "Advertising Balloons",
+    "description": "Heart-shaped advertising balloon, sizes 8–20 feet, ideal for events and promotions. Available in multiple colours.",
+    "finalLink": "/balloons/advertising-balloons"
+  },
+  {
+    "name": "Custom Shape Advertising Balloon",
+    "category": "Advertising Balloons",
+    "description": "Advertising balloon built to a custom shape per customer design, with digital printing for durability and visibility. Available in multiple colours.",
+    "finalLink": "/balloons/advertising-balloons"
+  }
+]

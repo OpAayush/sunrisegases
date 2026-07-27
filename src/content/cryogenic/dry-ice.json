@@ -1,0 +1,17 @@
+{
+  "slug": "dry-ice",
+  "name": "Dry Ice",
+  "sublimationOrBoilOff": "Sublimates at −78.5°C directly to CO₂ gas",
+  "storageAndHandling": "Stored in insulated containers. Handle with protective gloves. Do not store in airtight containers.",
+  "forms": ["Block", "Powder"],
+  "grade": "Food Grade",
+  "applications": ["Food and beverage cold chain", "Industrial cleaning (dry ice blasting)", "Medical cold storage", "Special effects and fog"],
+  "images": [
+    { "src": "/images/products/Untitled-1.jpg", "alt": "Dry ice block" },
+    { "src": "/images/products/dry-ice.jpg", "alt": "Dry ice" }
+  ],
+  "seo": {
+    "title": "Food Grade Dry Ice — Block & Powder | Sunrise Gases",
+    "description": "Food grade dry ice available in block and powder form. For cold chain, industrial cleaning, medical, and special effects. Supplied from Nagpur."
+  }
+}

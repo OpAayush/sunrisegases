@@ -1,0 +1,16 @@
+{
+  "slug": "ultra-high-pure-gases",
+  "name": "Ultra High Pure Gases",
+  "tier": "ultra-high-purity",
+  "purity": "99.999%",
+  "certification": "Certificate of analysis available on request",
+  "traceability": "Batch traceable with analytical certification",
+  "applications": ["Laboratory analysis", "Instrument calibration", "Research and development", "Electronics manufacturing"],
+  "images": [
+    { "src": "/images/products/neon-ultra-high-pure-gas-500x500.jpg", "alt": "Ultra high pure neon gas" }
+  ],
+  "seo": {
+    "title": "Ultra High Pure Gases — 99.999% Purity | Sunrise Gases",
+    "description": "Ultra high pure gases for calibration, laboratory, and research applications. 99.999% purity with batch traceability. Supplied from Nagpur."
+  }
+}

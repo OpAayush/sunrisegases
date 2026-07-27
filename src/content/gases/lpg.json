@@ -1,20 +1,22 @@
 {
   "slug": "lpg",
   "name": "LPG",
-  "formula": "LPG",
-  "summary": "Liquefied petroleum gas for industrial heating, cutting, and processing applications.",
+  "formula": "C₃H₈ / C₄H₁₀",
+  "summary": "Liquefied petroleum gas for industrial heating, cutting, and processing. Supplied in standard cylinder sizes.",
   "grades": [
-    { "name": "Industrial", "purity": "Commercial grade", "uses": ["heating", "cutting", "industrial processing"] }
+    { "name": "Industrial", "purity": "", "uses": ["industrial heating", "metal cutting", "processing"] }
   ],
-  "supplyForms": ["compressed cylinder", "bulk supply"],
+  "supplyForms": ["cylinder"],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["15kg", "35kg", "50kg"] }
+    { "type": "Cylinder", "sizes": ["15 Kg", "17 Kg", "19 Kg"] }
   ],
-  "applications": ["Industrial heating", "Metal cutting", "Industrial processing"],
+  "applications": ["Industrial heating", "Metal cutting", "Material processing"],
   "safety": { "sdsUrl": "/documents/sds/lpg.pdf", "hazardClass": "Flammable gas" },
-  "images": [],
+  "images": [
+    { "src": "/images/products/industrial-lpg-500x500.jpg", "alt": "Industrial LPG cylinder" }
+  ],
   "seo": {
     "title": "Industrial LPG Supplier | Sunrise Gases",
-    "description": "Liquefied petroleum gas for industrial heating, cutting, and processing. Supplied in cylinders or bulk from Nagpur."
+    "description": "Industrial LPG for heating, cutting, and processing. Available in 15, 17, and 19 Kg cylinders. Supplied from Nagpur."
   }
 }

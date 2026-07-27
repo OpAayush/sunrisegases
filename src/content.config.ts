@@ -89,6 +89,8 @@ const cryogenic = defineCollection({
     sublimationOrBoilOff: z.string(),
     storageAndHandling: z.string(),
     applications: z.array(z.string()),
+    forms: z.array(z.string()).optional(),
+    grade: z.string().optional(),
     images: z.array(image),
     seo,
   }),
@@ -114,6 +116,7 @@ const fireSafety = defineCollection({
     name: z.string(),
     agentType: z.string(),
     fireClassRating: z.array(z.string()),
+    sizes: z.array(z.string()),
     dischargeTime: z.string(),
     refillInterval: z.string(),
     images: z.array(image),
@@ -147,16 +150,6 @@ const industries = defineCollection({
   }),
 });
 
-const company = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/company' }),
-  schema: z.record(z.any()),
-});
-
-const site = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/site' }),
-  schema: z.record(z.any()),
-});
-
 export const collections = {
   gases,
   'gas-mixtures': gasMixtures,
@@ -167,6 +160,4 @@ export const collections = {
   'fire-safety': fireSafety,
   balloons,
   industries,
-  company,
-  site,
 };

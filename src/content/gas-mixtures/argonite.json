@@ -1,0 +1,21 @@
+{
+  "slug": "argonite",
+  "name": "Argon + Nitrogen (Argonite)",
+  "components": [
+    { "gas": "Argon", "ratio": "40–50%" },
+    { "gas": "Nitrogen", "ratio": "50–60%" }
+  ],
+  "blendRationale": "Argonite is a fire suppression blend used in clean agent systems. Also used as a shielding gas mixture for specialized welding applications.",
+  "applications": ["Clean agent fire suppression", "Specialized welding", "Industrial processing"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["7 Cu.M."] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/argonite.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [
+    { "src": "/images/products/Argon-shield.jpg", "alt": "Argon shield gas" }
+  ],
+  "seo": {
+    "title": "Argonite — Argon + Nitrogen Mixture | Sunrise Gases",
+    "description": "Argonite fire suppression and shielding gas mixture. Argon 40-50%, Nitrogen 50-60%. Available in 7 Cu.M. cylinders."
+  }
+}

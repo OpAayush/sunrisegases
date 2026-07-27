@@ -1,0 +1,16 @@
+{
+  "slug": "foam-fire-extinguishers",
+  "name": "Foam Based Fire Extinguishers",
+  "agentType": "Foam",
+  "fireClassRating": ["A", "B"],
+  "sizes": ["9 Ltr", "50 Ltr"],
+  "dischargeTime": "30–60 seconds",
+  "refillInterval": "Annual inspection, refill after use",
+  "images": [
+    { "src": "/images/products/water-foambased.png", "alt": "Foam based fire extinguisher" }
+  ],
+  "seo": {
+    "title": "Foam Based Fire Extinguishers | Sunrise Gases",
+    "description": "Foam based fire extinguishers for Class A and B fires. Available in 9 and 50 Ltr capacities. Supplied from Nagpur."
+  }
+}
