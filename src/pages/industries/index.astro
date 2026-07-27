@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const industries = await getCollection('industries');
+---
+
+<BaseLayout title="Industries Served — Construction, Power, Aerospace & More | Sunrise Gases" description="Industries we serve from Nagpur: construction and engineering, power and energy, aerospace and defence, and more across Central India.">
+  <header class="catalog-hero">
+    <h1 class="catalog-title">Industries served</h1>
+    <p class="catalog-subtitle">Supplying industrial and specialty gases to key sectors across Central India from our Nagpur facility.</p>
+  </header>
+
+  <section class="catalog-grid">
+    {industries.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((ind) => (
+      <a href={`/industries/${ind.data.slug}/`} class="industry-card">
+        <span class="industry-name">{ind.data.name}</span>
+        <span class="industry-summary">{ind.data.summary}</span>
+        <span class="industry-count">{ind.data.relevantProducts.length} products</span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .catalog-hero {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .catalog-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--text-hero);
+    line-height: 1.2;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  .catalog-subtitle {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    max-width: 540px;
+  }
+
+  .catalog-grid {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: 2rem 1.5rem var(--space-section);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .industry-card {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  }
+  .industry-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .industry-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h3);
+    color: var(--color-text);
+  }
+  .industry-summary {
+    font-size: var(--text-small);
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+  }
+  .industry-count {
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    .catalog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .catalog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

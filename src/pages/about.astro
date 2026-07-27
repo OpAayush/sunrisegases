@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About Us — Industrial Gas Manufacturer in Nagpur | Sunrise Gases" description="Sunrise Gases is a manufacturer and supplier of industrial, specialty, and medical gases based in Nagpur, serving Central India since 2016.">
+  <article class="page">
+    <header class="page-hero">
+      <h1 class="page-title">About Sunrise Gases</h1>
+    </header>
+
+    <section class="page-section">
+      <p class="page-text">Sunrise Gases is an industrial gas manufacturing and supply company based in <strong>Nagpur, Maharashtra</strong>. We manufacture, package, and deliver a comprehensive range of industrial and specialty gases to customers across Central India.</p>
+      <p class="page-text">Founded with a focus on reliability and quality, we supply oxygen, nitrogen, argon, carbon dioxide, hydrogen, helium, dissolved acetylene, LPG, and ammonia — along with gas handling equipment, fire safety products, and custom advertising balloons.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-title">Manufacturing</h2>
+      <p class="page-text">Our facility in Nagpur houses cylinder filling infrastructure and quality control systems to ensure every delivery meets the specified purity and safety standards. We supply both compressed cylinder and bulk/liquid forms.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-title">Service area</h2>
+      <p class="page-text">We serve industries across Central India, including Maharashtra, Madhya Pradesh, Chhattisgarh, and neighbouring regions. Our logistics network supports timely delivery to industrial customers, hospitals, fabrication shops, and event organisers.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-title">Contact</h2>
+      <p class="page-text">Nagpur, Maharashtra<br />
+      <a href="/contact/" class="page-link">Contact us for inquiries and quotes →</a></p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem;
+  }
+  .page-hero {
+    margin-bottom: 2rem;
+  }
+  .page-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--text-hero);
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  .page-section {
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+  }
+  .page-section:last-of-type {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+  .page-text {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: 640px;
+    margin-bottom: 1rem;
+  }
+  .page-text:last-child {
+    margin-bottom: 0;
+  }
+  .page-link {
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+  .page-link:hover {
+    text-decoration: underline;
+  }
+</style>

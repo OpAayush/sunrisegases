@@ -1,0 +1,11 @@
+{
+  "links": [
+    { "label": "Gases", "href": "/gases/" },
+    { "label": "Equipment", "href": "/equipment/" },
+    { "label": "Fire Safety", "href": "/fire-safety/" },
+    { "label": "Balloons", "href": "/balloons/" },
+    { "label": "Industries", "href": "/industries/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Contact", "href": "/contact/" }
+  ]
+}

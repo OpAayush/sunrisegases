@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Quality & Safety — Industrial Gas Standards | Sunrise Gases" description="Quality control and safety standards at Sunrise Gases. We follow strict manufacturing, handling, and safety protocols for all industrial and specialty gases.">
+  <article class="page">
+    <header class="page-hero">
+      <h1 class="page-title">Quality &amp; Safety</h1>
+    </header>
+
+    <section class="page-section">
+      <h2 class="section-title">Quality control</h2>
+      <p class="page-text">Every gas cylinder we supply undergoes purity verification and pressure testing before dispatch. Our filling and handling procedures follow established industrial gas standards to ensure consistent product quality.</p>
+      <p class="page-text">We maintain documentation for batch traceability and can provide certificates of analysis on request.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-title">Safety</h2>
+      <p class="page-text">Safety is integral to our operations. We follow proper handling, storage, and transport protocols for compressed and liquefied gases. Safety Data Sheets (SDS) are available for every product we supply.</p>
+      <p class="page-text">Our cylinders are tested and maintained in accordance with regulatory requirements. Customers receive handling and storage guidance with every delivery.</p>
+    </section>
+
+    <section class="page-section">
+      <h2 class="section-title">Downloads</h2>
+      <p class="page-text">Safety Data Sheets for each gas are available on the individual product pages. Contact us if you need specific documentation or certification.</p>
+      <a href="/gases/" class="page-link">View product pages →</a>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem;
+  }
+  .page-hero {
+    margin-bottom: 2rem;
+  }
+  .page-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--text-hero);
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  .page-section {
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+  }
+  .page-section:last-of-type {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+  .page-text {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: 640px;
+    margin-bottom: 1rem;
+  }
+  .page-text:last-child {
+    margin-bottom: 0;
+  }
+  .page-link {
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+  .page-link:hover {
+    text-decoration: underline;
+  }
+</style>

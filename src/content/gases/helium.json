@@ -1,0 +1,20 @@
+{
+  "slug": "helium",
+  "name": "Helium",
+  "formula": "He",
+  "summary": "High-purity helium for industrial processing, leak detection, and laboratory applications.",
+  "grades": [
+    { "name": "Industrial", "purity": "99.9%", "uses": ["leak detection", "welding", "balloons"] }
+  ],
+  "supplyForms": ["compressed cylinder"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+  ],
+  "applications": ["Leak detection", "TIG welding", "Laboratory analysis", "Balloon inflation"],
+  "safety": { "sdsUrl": "/documents/sds/helium.pdf", "hazardClass": "Inert gas / Asphyxiant" },
+  "images": [],
+  "seo": {
+    "title": "Industrial Helium Gas Supplier | Sunrise Gases",
+    "description": "High-purity helium for leak detection, welding, and industrial applications. Supplied from Nagpur."
+  }
+}

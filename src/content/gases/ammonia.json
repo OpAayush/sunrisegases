@@ -1,0 +1,20 @@
+{
+  "slug": "ammonia",
+  "name": "Ammonia",
+  "formula": "NH₃",
+  "summary": "Industrial-grade anhydrous ammonia for refrigeration, chemical processing, and industrial applications.",
+  "grades": [
+    { "name": "Industrial", "purity": "99.5%", "uses": ["refrigeration", "chemical processing"] }
+  ],
+  "supplyForms": ["compressed cylinder", "bulk"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+  ],
+  "applications": ["Industrial refrigeration", "Chemical processing", "Water treatment"],
+  "safety": { "sdsUrl": "/documents/sds/ammonia.pdf", "hazardClass": "Toxic / Flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "Industrial Ammonia Gas Supplier | Sunrise Gases",
+    "description": "Anhydrous ammonia for refrigeration, chemical processing, and industrial use. Supplied from Nagpur."
+  }
+}

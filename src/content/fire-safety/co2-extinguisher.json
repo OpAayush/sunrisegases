@@ -1,0 +1,13 @@
+{
+  "slug": "co2-fire-extinguishers",
+  "name": "CO₂ Fire Extinguishers",
+  "agentType": "Carbon dioxide (CO₂)",
+  "fireClassRating": ["B", "C"],
+  "dischargeTime": "8–15 seconds",
+  "refillInterval": "Annual inspection, refill after use",
+  "images": [],
+  "seo": {
+    "title": "CO₂ Fire Extinguishers | Sunrise Gases",
+    "description": "CO₂ fire extinguishers for Class B and C fires. Ideal for electrical equipment and flammable liquid fires. Supplied from Nagpur."
+  }
+}

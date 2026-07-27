@@ -1,0 +1,16 @@
+{
+  "slug": "cylinders-and-valves",
+  "name": "Industrial Gas Cylinders and Valves",
+  "category": "cylinders",
+  "specs": [
+    { "label": "Materials", "value": "Carbon steel, alloy steel" },
+    { "label": "Pressure ratings", "value": "150–200 bar" },
+    { "label": "Sizes", "value": "10L, 20L, 47L, 50L" },
+    { "label": "Valve types", "value": "BS, DIN, CGA" }
+  ],
+  "images": [],
+  "seo": {
+    "title": "Industrial Gas Cylinders and Valves | Sunrise Gases",
+    "description": "Industrial gas cylinders, cylinder valves, and accessories. Available in multiple sizes and pressure ratings."
+  }
+}

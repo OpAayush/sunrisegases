@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const gases = await getCollection('gases');
+const equipment = await getCollection('equipment');
+const fireSafety = await getCollection('fire-safety');
+const balloons = await getCollection('balloons');
+const industries = await getCollection('industries');
+
+const secondaryCategories = [
+  { collection: equipment, label: 'Equipment', href: '/equipment/', description: 'Cylinders, valves, manifolds, and gas handling accessories' },
+  { collection: fireSafety, label: 'Fire Safety', href: '/fire-safety/', description: 'Extinguishers and fire suppression' },
+  { collection: balloons, label: 'Balloons', href: '/balloons/', description: 'Custom advertising balloons for events' },
+  { collection: industries, label: 'Industries', href: '/industries/', description: 'Sectors we supply across Central India' },
+];
+---
+
+<BaseLayout title="Sunrise Gases — Industrial & Specialty Gases Manufacturer in Nagpur" description="Industrial and specialty gases manufacturer based in Nagpur. Supplying oxygen, nitrogen, argon, CO₂, hydrogen, helium, and gas equipment across Central India.">
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Industrial &amp; specialty<br />gases <span class="hero-accent">manufactured in Nagpur</span></h1>
+      <p class="hero-subtitle">Oxygen &middot; Nitrogen &middot; Argon &middot; Carbon Dioxide &middot; Hydrogen &middot; Helium &middot; Dissolved Acetylene &middot; LPG &middot; Ammonia</p>
+    </div>
+  </section>
+
+  <section class="gas-grid-section">
+    <div class="gas-grid">
+      {gases.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((gas) => {
+        const purity = gas.data.grades?.[0]?.purity;
+        return (
+          <a href={`/gases/${gas.data.slug}/`} class="gas-card">
+            <span class="gas-formula">{gas.data.formula || gas.data.slug.toUpperCase()}</span>
+            <span class="gas-name">{gas.data.name}</span>
+            {purity && <span class="gas-purity">{purity}</span>}
+          </a>
+        );
+      })}
+    </div>
+    <a href="/gases/" class="gas-all-link">View all gases and products &rarr;</a>
+  </section>
+
+  <section class="also-section">
+    <p class="also-text">
+      <span class="also-label">Also</span>
+      Mixture gases &middot; Specialty &amp; calibration &middot; Refrigerants &middot; Cryogenic (LN₂, dry ice)
+    </p>
+  </section>
+
+  <section class="categories-section">
+    <div class="categories-grid">
+      {secondaryCategories.map((cat) => (
+        <a href={cat.href} class="category-card">
+          <h2 class="category-title">{cat.label}</h2>
+          <p class="category-description">{cat.description}</p>
+          <span class="category-count">{cat.collection.length} product{cat.collection.length !== 1 ? 's' : ''}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {industries.length > 0 && (
+    <section class="industries-section">
+      <h2 class="section-label">Industries served</h2>
+      <div class="industries-list">
+        {industries.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((ind) => (
+          <a href={`/industries/${ind.data.slug}/`} class="industry-chip">{ind.data.name}</a>
+        ))}
+      </div>
+      <p class="industries-footnote">Supplying across Central India from Nagpur, Maharashtra.</p>
+    </section>
+  )}
+
+  <section class="cta-section">
+    <p class="cta-text">Need a quote or have a specific requirement?</p>
+    <a href="/contact/" class="cta-button">Get a quote &rarr;</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .hero-content {
+    max-width: 800px;
+  }
+  .hero-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--text-hero);
+    line-height: 1.2;
+    color: var(--color-text);
+    margin-bottom: 0.75rem;
+  }
+  .hero-accent {
+    color: var(--color-accent);
+  }
+  .hero-subtitle {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    max-width: 600px;
+  }
+
+  .gas-grid-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .gas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .gas-card {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+    position: relative;
+  }
+  .gas-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    text-decoration: none;
+    z-index: 1;
+  }
+  .gas-formula {
+    font-family: var(--font-mono);
+    font-size: var(--text-formula);
+    font-weight: 400;
+    color: var(--color-accent);
+    line-height: 1.2;
+  }
+  .gas-name {
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--color-text);
+  }
+  .gas-purity {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.125rem;
+  }
+  .gas-all-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--color-accent);
+  }
+  .gas-all-link:hover {
+    text-decoration: underline;
+  }
+
+  .also-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .also-text {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+  .also-label {
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-right: 0.375rem;
+  }
+
+  .categories-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .category-card {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  }
+  .category-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .category-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+    color: var(--color-text);
+    line-height: var(--leading-tight);
+  }
+  .category-description {
+    font-size: var(--text-small);
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+  }
+  .category-count {
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .industries-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .section-label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h1);
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  .industries-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .industry-chip {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: var(--text-small);
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-tags);
+    color: var(--color-text);
+    transition: border-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+  .industry-chip:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+  }
+  .industries-footnote {
+    font-size: var(--text-small);
+    color: var(--color-text-secondary);
+    margin-top: 1rem;
+  }
+
+  .cta-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem;
+    text-align: center;
+  }
+  .cta-text {
+    font-size: var(--text-h3);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    color: var(--color-text);
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: var(--text-body);
+    font-weight: 600;
+    background: var(--color-cta);
+    color: #fff;
+    border-radius: var(--radius-buttons);
+    box-shadow: var(--shadow-sm);
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+  }
+  .cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  @media (max-width: 900px) {
+    .gas-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .gas-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+    .gas-card {
+      padding: 1rem;
+    }
+    .category-card {
+      padding: 1.5rem;
+    }
+  }
+</style>

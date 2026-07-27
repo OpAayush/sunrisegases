@@ -1,0 +1,13 @@
+{
+  "slug": "abc-powder-fire-extinguishers",
+  "name": "ABC Powder Fire Extinguishers",
+  "agentType": "ABC dry chemical powder",
+  "fireClassRating": ["A", "B", "C"],
+  "dischargeTime": "10–20 seconds",
+  "refillInterval": "Annual inspection, refill after use",
+  "images": [],
+  "seo": {
+    "title": "ABC Powder Fire Extinguishers | Sunrise Gases",
+    "description": "ABC dry chemical powder fire extinguishers for commercial and industrial fire safety. Class A, B, and C rated."
+  }
+}

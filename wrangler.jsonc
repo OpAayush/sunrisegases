@@ -1,0 +1,19 @@
+{
+  "name": "sunrisegases",
+  "compatibility_date": "2026-07-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+  // Add when lead-tracking is decided (§9 of plan):
+  // "d1_databases": [{ "binding": "DB", "database_name": "sunrise-leads", "database_id": "" }],
+  // "queues": {
+  //   "producers": [{ "binding": "LEAD_QUEUE", "queue": "quote-leads" }],
+  //   "consumers": [{ "queue": "quote-leads" }]
+  // }
+}

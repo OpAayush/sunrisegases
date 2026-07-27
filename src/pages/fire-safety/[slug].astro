@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const items = await getCollection('fire-safety');
+  return items.map((item) => ({
+    params: { slug: item.data.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const { data } = item;
+---
+
+<BaseLayout title={data.seo.title} description={data.seo.description}>
+  <article class="detail">
+    <header class="detail-hero">
+      <span class="detail-label">Fire Safety</span>
+      <h1 class="detail-name">{data.name}</h1>
+    </header>
+
+    <section class="detail-section">
+      <h2 class="section-title">Specifications</h2>
+      <div class="spec-list">
+        <div class="spec-row">
+          <span class="spec-label">Agent type</span>
+          <span class="spec-value">{data.agentType}</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Fire class rating</span>
+          <span class="spec-value">{data.fireClassRating.join(', ')}</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Discharge time</span>
+          <span class="spec-value">{data.dischargeTime}</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Refill interval</span>
+          <span class="spec-value">{data.refillInterval}</span>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .detail {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem;
+  }
+  .detail-hero {
+    margin-bottom: 2rem;
+  }
+  .detail-label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-small);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .detail-name {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--text-hero);
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  .detail-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+    color: var(--color-text);
+    margin-bottom: 1.25rem;
+  }
+
+  .spec-list {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.875rem 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--text-small);
+    gap: 1rem;
+  }
+  .spec-row:last-child {
+    border-bottom: none;
+  }
+  .spec-label {
+    font-weight: 500;
+    color: var(--color-text);
+    flex-shrink: 0;
+  }
+  .spec-value {
+    color: var(--color-text-secondary);
+    text-align: right;
+  }
+</style>

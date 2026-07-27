@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+const gases = await getCollection('gases');
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sunrise Gases</title>
+  </head>
+  <body>
+    <h1>Sunrise Gases</h1>
+    <ul>
+      {gases.map((g) => (
+        <li><a href={`/gases/${g.data.slug}/`}>{g.data.name}</a></li>
+      ))}
+    </ul>
+  </body>
+</html>

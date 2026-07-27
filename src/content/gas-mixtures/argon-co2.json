@@ -1,0 +1,19 @@
+{
+  "slug": "argon-co2-mixture",
+  "name": "Argon / CO₂ Mixture (MIG Welding)",
+  "components": [
+    { "gas": "Argon", "ratio": "75–80%" },
+    { "gas": "Carbon dioxide", "ratio": "20–25%" }
+  ],
+  "blendRationale": "Common shielding gas for MIG welding of carbon steel. The argon provides stable arc characteristics while the CO₂ improves penetration.",
+  "applications": ["MIG welding of carbon steel", "Fabrication and structural welding", "Automotive repair"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+  ],
+  "safety": { "sdsUrl": "/documents/sds/premixed.pdf", "hazardClass": "Non-flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "Argon/CO₂ Mixture — MIG Welding Shielding Gas | Sunrise Gases",
+    "description": "Pre-mixed argon/CO₂ shielding gas blend for MIG welding. Available in standard cylinder sizes. Manufactured in Nagpur."
+  }
+}

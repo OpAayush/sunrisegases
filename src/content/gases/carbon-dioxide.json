@@ -1,0 +1,20 @@
+{
+  "slug": "carbon-dioxide",
+  "name": "Carbon Dioxide",
+  "formula": "CO₂",
+  "summary": "Industrial-grade carbon dioxide for welding, food processing, and industrial applications. Supplied as compressed gas and liquid.",
+  "grades": [
+    { "name": "Industrial", "purity": "99.5%", "uses": ["welding", "fire suppression"] }
+  ],
+  "supplyForms": ["compressed cylinder", "liquid (cryogenic)"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+  ],
+  "applications": ["Welding and metal fabrication", "Food and beverage processing", "Fire suppression systems"],
+  "safety": { "sdsUrl": "/documents/sds/carbon-dioxide.pdf", "hazardClass": "Asphyxiant" },
+  "images": [],
+  "seo": {
+    "title": "Carbon Dioxide Gas Supplier | Sunrise Gases",
+    "description": "Industrial carbon dioxide for welding, food processing, and industrial use. Supplied from Nagpur across Central India."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "dissolved-acetylene",
+  "name": "Dissolved Acetylene",
+  "formula": "C₂H₂",
+  "summary": "High-purity dissolved acetylene for oxy-acetylene cutting, welding, and brazing applications.",
+  "grades": [
+    { "name": "Industrial", "purity": "99.5%", "uses": ["oxy-acetylene cutting", "welding", "brazing"] }
+  ],
+  "supplyForms": ["dissolved cylinder"],
+  "packaging": [
+    { "type": "Dissolved acetylene cylinder", "sizes": ["2L", "5L", "10L", "20L"] }
+  ],
+  "applications": ["Metal cutting and welding", "Brazing and soldering", "Heat treatment"],
+  "safety": { "sdsUrl": "/documents/sds/acetylene.pdf", "hazardClass": "Flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "Dissolved Acetylene Gas Supplier | Sunrise Gases",
+    "description": "High-purity dissolved acetylene for cutting, welding, and brazing. Supplied from Nagpur across Central India."
+  }
+}

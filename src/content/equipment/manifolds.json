@@ -1,0 +1,17 @@
+{
+  "slug": "gas-manifolds",
+  "name": "Gas Manifolds",
+  "category": "manifolds",
+  "specs": [
+    { "label": "Type", "value": "Single-stage, dual-stage, automatic changeover" },
+    { "label": "Bank capacity", "value": "2–10 cylinders per bank" },
+    { "label": "Materials", "value": "Brass, stainless steel" },
+    { "label": "Max inlet pressure", "value": "200 bar" },
+    { "label": "Applications", "value": "Hospital gas supply, workshop distribution" }
+  ],
+  "images": [],
+  "seo": {
+    "title": "Gas Manifolds — Cylinder Manifold Systems | Sunrise Gases",
+    "description": "Industrial gas manifolds for cylinder bank distribution. Single-stage, dual-stage, and automatic changeover systems. Supplied from Nagpur."
+  }
+}

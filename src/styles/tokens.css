@@ -1,0 +1,53 @@
+:root {
+  --color-harvest-flame: #fa5d00;
+  --color-marigold-glow: #fee3b5;
+  --color-parchment-shadow: #e3d6c5;
+  --color-ink-black: #1d1e1c;
+  --color-paper-white: #ffffff;
+  --color-cream-canvas: #fff8f1;
+  --color-mist-gray: #d9d9d9;
+  --color-warm-stone: #615f5c;
+  --color-driftwood: #8e8b87;
+  --color-bone: #c0bbb6;
+
+  --color-bg: var(--color-cream-canvas);
+  --color-text: var(--color-ink-black);
+  --color-text-secondary: var(--color-warm-stone);
+  --color-accent: var(--color-harvest-flame);
+  --color-cta: var(--color-harvest-flame);
+  --color-border: var(--color-mist-gray);
+  --color-card: var(--color-paper-white);
+  --color-card-hover: var(--color-paper-white);
+
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-serif: 'Playfair Display', serif;
+
+  --text-hero: clamp(2.75rem, 6vw, 4.5rem);
+  --text-h1: clamp(1.5rem, 3.5vw, 2.25rem);
+  --text-h2: clamp(1.25rem, 2.5vw, 1.75rem);
+  --text-h3: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-formula: clamp(1.25rem, 2.5vw, 1.5rem);
+
+  --leading-tight: 1.1;
+  --leading-body: 1.6;
+
+  --space-section: clamp(3rem, 6vw, 5rem);
+  --space-card-gap: clamp(1rem, 2vw, 1.5rem);
+  --space-container: 1200px;
+
+  --radius-cards: 20px;
+  --radius-buttons: 16px;
+  --radius-tags: 999px;
+
+  --shadow-sm: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+  --shadow-lg: rgba(250, 166, 0, 0.25) 6px 4px 24px 0px;
+
+  --tracking-body: 0.015em;
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}

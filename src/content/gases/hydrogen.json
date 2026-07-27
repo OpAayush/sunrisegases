@@ -1,0 +1,20 @@
+{
+  "slug": "hydrogen",
+  "name": "Hydrogen",
+  "formula": "H₂",
+  "summary": "High-purity hydrogen for industrial processing, heat treatment, and laboratory applications.",
+  "grades": [
+    { "name": "Industrial", "purity": "99.9%", "uses": ["heat treatment", "chemical processing"] }
+  ],
+  "supplyForms": ["compressed cylinder"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+  ],
+  "applications": ["Heat treatment of metals", "Chemical processing", "Laboratory and research"],
+  "safety": { "sdsUrl": "/documents/sds/hydrogen.pdf", "hazardClass": "Flammable gas" },
+  "images": [],
+  "seo": {
+    "title": "Industrial Hydrogen Gas Supplier | Sunrise Gases",
+    "description": "High-purity hydrogen gas for industrial processing, heat treatment, and laboratory use. Supplied from Nagpur."
+  }
+}
