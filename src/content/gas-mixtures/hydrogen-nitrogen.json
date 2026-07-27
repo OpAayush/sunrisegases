@@ -11,7 +11,9 @@
     { "type": "Cylinder", "sizes": ["7 Cu.M."] }
   ],
   "safety": { "sdsUrl": "/documents/sds/h2-n2.pdf", "hazardClass": "Flammable gas" },
-  "images": [],
+  "images": [
+    { "src": "/images/products/hydrogen-mixture.webp", "alt": "Hydrogen-nitrogen mixture cylinder" }
+  ],
   "seo": {
     "title": "Hydrogen + Nitrogen Gas Mixture | Sunrise Gases",
     "description": "Hydrogen-nitrogen blend for heat treatment and reducing atmospheres. Available in 7 Cu.M. cylinders."

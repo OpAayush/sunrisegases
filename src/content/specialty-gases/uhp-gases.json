@@ -7,7 +7,7 @@
   "traceability": "Batch traceable with analytical certification",
   "applications": ["Laboratory analysis", "Instrument calibration", "Research and development", "Electronics manufacturing"],
   "images": [
-    { "src": "/images/products/neon-ultra-high-pure-gas-500x500.jpg", "alt": "Ultra high pure neon gas" }
+    { "src": "/images/products/cylinder-uhp.svg", "alt": "Ultra high pure gas cylinder" }
   ],
   "seo": {
     "title": "Ultra High Pure Gases — 99.999% Purity | Sunrise Gases",

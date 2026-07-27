@@ -1,0 +1,21 @@
+{
+  "slug": "agroshield",
+  "name": "Agroshield (Argon + CO₂)",
+  "components": [
+    { "gas": "Argon", "ratio": "Custom" },
+    { "gas": "Carbon Dioxide", "ratio": "Custom" }
+  ],
+  "blendRationale": "Custom ratio Argon and CO₂ blend for agricultural atmosphere modification and controlled environment applications. Mixed to customer specification.",
+  "applications": ["Agricultural atmosphere modification", "Controlled environment storage", "Custom industrial processes"],
+  "packaging": [
+    { "type": "Cylinder", "sizes": ["7 Cu.M."] }
+  ],
+  "safety": { "sdsUrl": "", "hazardClass": "Non-flammable gas" },
+  "images": [
+    { "src": "/images/products/cylinder-generic.svg", "alt": "Agroshield gas mixture cylinder" }
+  ],
+  "seo": {
+    "title": "Agroshield — Argon + CO₂ Mixture | Sunrise Gases",
+    "description": "Custom-ratio Argon and CO₂ blend for agricultural and controlled environment use. Supplied from Nagpur."
+  }
+}

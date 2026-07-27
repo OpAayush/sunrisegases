@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <ellipse cx="200" cy="180" rx="75" ry="140" fill="#2563eb" stroke="#1d1e1c" stroke-width="2.5"/>
+  <path d="M190 310 Q195 340 200 355 Q205 340 210 310" fill="#2563eb" stroke="#1d1e1c" stroke-width="2"/>
+  <line x1="200" y1="355" x2="200" y2="380" stroke="#1d1e1c" stroke-width="2"/>
+  <ellipse cx="200" cy="390" rx="60" ry="8" fill="#1d1e1c" opacity="0.1"/>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff">OVAL</text>
+</svg>

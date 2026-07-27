@@ -7,7 +7,7 @@
   "dischargeTime": "30–60 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "/images/products/water-foambased.png", "alt": "Foam based fire extinguisher" }
+    { "src": "/images/products/extinguisher-foam.svg", "alt": "Foam based fire extinguisher" }
   ],
   "seo": {
     "title": "Foam Based Fire Extinguishers | Sunrise Gases",

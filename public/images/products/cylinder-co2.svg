@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect x="140" y="60" width="120" height="280" rx="16" fill="#e8e8e8" stroke="#1d1e1c" stroke-width="2"/>
+  <rect x="155" y="75" width="90" height="250" rx="8" fill="#fff" stroke="#1d1e1c" stroke-width="1.5"/>
+  <rect x="175" y="40" width="50" height="24" rx="4" fill="#2563eb"/>
+  <rect x="175" y="40" width="50" height="24" rx="4" stroke="#1d1e1c" stroke-width="1.5"/>
+  <ellipse cx="200" cy="370" rx="60" ry="8" fill="#1d1e1c" opacity="0.1"/>
+  <line x1="165" y1="150" x2="235" y2="150" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+  <line x1="165" y1="180" x2="235" y2="180" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+  <line x1="165" y1="210" x2="235" y2="210" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+  <text x="200" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2563eb">CO₂</text>
+</svg>

@@ -12,7 +12,7 @@
   ],
   "safety": { "sdsUrl": "/documents/sds/p10.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/P10-gas-cyl.jpg", "alt": "P10 gas cylinder" }
+    { "src": "/images/products/cylinder-p10.svg", "alt": "P10 gas cylinder" }
   ],
   "seo": {
     "title": "P10 Gas — Methane + Argon Mixture | Sunrise Gases",

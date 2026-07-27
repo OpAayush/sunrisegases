@@ -24,7 +24,7 @@
 
 ## Mixture Gases
 
-- **Agroshield (Argon + CO₂)** — https://sunrisegases.com/gas-mixtures
+- **Agroshield (Argon + CO₂)** — https://sunrisegases.com/gas-mixtures/agroshield
 - **Zero Air** — https://sunrisegases.com/gas-mixtures/zero-air
 - **Argonite (Argon + Nitrogen)** — https://sunrisegases.com/gas-mixtures/argonite
 - **Hydrogen + Nitrogen Mix** — https://sunrisegases.com/gas-mixtures/hydrogen-nitrogen-mixture

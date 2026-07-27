@@ -10,8 +10,8 @@
     { "label": "Valve types", "value": "BS, DIN, CGA compatible" }
   ],
   "images": [
-    { "src": "/images/products/aluminium_cylinder.png", "alt": "Aluminium cylinder" },
-    { "src": "/images/products/compressed-gas-cylinder-500x500.png", "alt": "Compressed gas cylinder" }
+    { "src": "/images/products/cylinder-steel.svg", "alt": "Carbon steel gas cylinder" },
+    { "src": "/images/products/cylinder-aluminium.svg", "alt": "Aluminium gas cylinder" }
   ],
   "seo": {
     "title": "Industrial Gas Cylinders and Valves | Sunrise Gases",

@@ -12,10 +12,6 @@ Features deferred from initial build. To be implemented when dynamic infrastruct
 - `/blog/` index and per-post pages
 - Optional: pagination for future scale
 
-## Product images / media
-- All product JSON currently has empty `images: []` arrays
-- Populate with actual product photography or technical diagrams
-
 ## Search
 - Client-side search across all product collections (gases, equipment, fire-safety, balloons)
 - Fuse.js or similar lightweight fuzzy search

@@ -9,7 +9,9 @@
     { "type": "Cylinder", "sizes": ["10 Kg", "61 Kg"] }
   ],
   "safety": { "sdsUrl": "/documents/sds/r22.pdf", "hazardClass": "Non-flammable gas" },
-  "images": [],
+  "images": [
+    { "src": "/images/products/cylinder-refrigerant.svg", "alt": "R22 refrigerant cylinder" }
+  ],
   "seo": {
     "title": "R22 Refrigerant Gas Supplier | Sunrise Gases",
     "description": "R22 (Chlorodifluoromethane) refrigerant gas. 99.9% purity in 10 and 61 Kg cylinders. Supplied from Nagpur."

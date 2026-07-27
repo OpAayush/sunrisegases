@@ -9,7 +9,7 @@
     { "label": "Max inlet pressure", "value": "200 bar" }
   ],
   "images": [
-    { "src": "/images/products/gas-manifold-system-500x500.jpg", "alt": "Gas manifold system" }
+    { "src": "/images/products/manifold.svg", "alt": "Gas manifold system" }
   ],
   "seo": {
     "title": "Gas Manifolds — Cylinder Manifold Systems | Sunrise Gases",

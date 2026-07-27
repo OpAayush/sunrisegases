@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect x="60" y="120" width="280" height="60" rx="8" fill="#fff" stroke="#1d1e1c" stroke-width="2.5"/>
+  <rect x="60" y="180" width="280" height="60" rx="8" fill="#fff" stroke="#1d1e1c" stroke-width="2.5"/>
+  <rect x="60" y="240" width="280" height="60" rx="8" fill="#fff" stroke="#1d1e1c" stroke-width="2.5"/>
+  <rect x="180" y="100" width="40" height="20" rx="3" fill="#1d1e1c"/>
+  <rect x="180" y="180" width="40" height="60" rx="3" fill="#1d1e1c"/>
+  <rect x="180" y="240" width="40" height="60" rx="3" fill="#1d1e1c"/>
+  <rect x="180" y="340" width="40" height="40" rx="3" fill="#1d1e1c"/>
+  <ellipse cx="200" cy="390" rx="80" ry="8" fill="#1d1e1c" opacity="0.1"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1d1e1c">CYLINDER 1</text>
+  <text x="200" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1d1e1c">CYLINDER 2</text>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1d1e1c">CYLINDER 3</text>
+  <circle cx="200" cy="360" r="12" fill="#fa5d00"/>
+  <text x="200" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#fff">OUT</text>
+</svg>

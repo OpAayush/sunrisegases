@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect x="110" y="60" width="180" height="280" rx="16" fill="#e8e8e8" stroke="#1d1e1c" stroke-width="2.5"/>
+  <rect x="130" y="80" width="140" height="240" rx="8" fill="#f8fafc" stroke="#1d1e1c" stroke-width="1.5"/>
+  <rect x="165" y="40" width="70" height="24" rx="4" fill="#94a3b8"/>
+  <rect x="165" y="40" width="70" height="24" rx="4" stroke="#1d1e1c" stroke-width="1.5"/>
+  <ellipse cx="200" cy="370" rx="80" ry="10" fill="#1d1e1c" opacity="0.1"/>
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#94a3b8">AL</text>
+  <line x1="145" y1="170" x2="255" y2="170" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="190" x2="255" y2="190" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="210" x2="255" y2="210" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="230" x2="255" y2="230" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="250" x2="255" y2="250" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="270" x2="255" y2="270" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+</svg>

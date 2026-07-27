@@ -9,7 +9,9 @@
     { "type": "Drum", "sizes": ["90 Kg"] }
   ],
   "safety": { "sdsUrl": "/documents/sds/r123.pdf", "hazardClass": "Non-flammable gas" },
-  "images": [],
+  "images": [
+    { "src": "/images/products/cylinder-refrigerant.svg", "alt": "R123 refrigerant drum" }
+  ],
   "seo": {
     "title": "R123 Refrigerant Gas Supplier | Sunrise Gases",
     "description": "R123 (Dichlorotrifluoroethane) refrigerant gas. 99.9% purity in 90 Kg drums. Supplied from Nagpur."

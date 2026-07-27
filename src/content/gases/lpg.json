@@ -13,7 +13,7 @@
   "applications": ["Industrial heating", "Metal cutting", "Material processing"],
   "safety": { "sdsUrl": "/documents/sds/lpg.pdf", "hazardClass": "Flammable gas" },
   "images": [
-    { "src": "/images/products/industrial-lpg-500x500.jpg", "alt": "Industrial LPG cylinder" }
+    { "src": "/images/products/cylinder-lpg.svg", "alt": "Industrial LPG cylinder" }
   ],
   "seo": {
     "title": "Industrial LPG Supplier | Sunrise Gases",

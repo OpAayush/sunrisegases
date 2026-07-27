@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect x="110" y="70" width="180" height="270" rx="20" fill="#e8e8e8" stroke="#1d1e1c" stroke-width="2.5"/>
+  <rect x="130" y="90" width="140" height="230" rx="10" fill="#fff" stroke="#1d1e1c" stroke-width="1.5"/>
+  <rect x="170" y="40" width="60" height="34" rx="6" fill="#1d1e1c"/>
+  <rect x="170" y="40" width="60" height="34" rx="6" stroke="#1d1e1c" stroke-width="2"/>
+  <ellipse cx="200" cy="370" rx="80" ry="10" fill="#1d1e1c" opacity="0.1"/>
+  <circle cx="200" cy="170" r="30" fill="none" stroke="#fa5d00" stroke-width="2.5"/>
+  <path d="M185 170 L200 180 L215 160" stroke="#fa5d00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1d1e1c">UHP</text>
+</svg>

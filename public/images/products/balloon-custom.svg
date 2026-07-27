@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <path d="M100 80 Q200 30 300 80 L320 240 Q200 300 80 240 Z" fill="#a855f7" stroke="#1d1e1c" stroke-width="2.5"/>
+  <path d="M185 285 Q192 320 200 340 Q208 320 215 285" fill="#a855f7" stroke="#1d1e1c" stroke-width="2"/>
+  <line x1="200" y1="340" x2="200" y2="380" stroke="#1d1e1c" stroke-width="2"/>
+  <ellipse cx="200" cy="390" rx="60" ry="8" fill="#1d1e1c" opacity="0.1"/>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff">CUSTOM</text>
+</svg>

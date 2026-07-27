@@ -9,22 +9,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="page-subtitle">Get a quote or ask about our products and services.</p>
     </header>
 
+    <div class="locations-grid">
+      <section class="location-card">
+        <h2 class="card-title">Registered Office</h2>
+        <p class="card-label">Sadar, Nagpur</p>
+        <address class="location-address">
+          <strong>Sunrise Gases</strong><br />
+          Meghraj Chawl, 212A, Gandhi Chowk<br />
+          Sadar, Nagpur<br />
+          Maharashtra 440001
+        </address>
+        <a href="https://maps.app.goo.gl/pmto13xLtkvdeTrn9" target="_blank" rel="noopener noreferrer" class="map-link">Open in Google Maps &rarr;</a>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=Gandhi+Chowk+Sadar+Nagpur+Maharashtra+440001&z=15&output=embed" width="100%" height="220" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="location-card">
+        <h2 class="card-title">Works</h2>
+        <p class="card-label">MIDC, Hingna Road</p>
+        <address class="location-address">
+          <strong>Sunrise Gases</strong><br />
+          C/o Sharma Engineering Works<br />
+          W52, near Digdoh Gram Panchayat<br />
+          MIDC, Hingna Road<br />
+          Nagpur 440016
+        </address>
+        <a href="https://www.google.com/maps?q=21.1154769,79.0007651&z=17&hl=en" target="_blank" rel="noopener noreferrer" class="map-link">Open in Google Maps &rarr;</a>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=21.1154769,79.0007651&z=15&output=embed" width="100%" height="220" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </div>
+
     <div class="contact-grid">
       <section class="contact-card">
-        <h2 class="card-title">Visit or call</h2>
-        <address class="contact-address">
-          <strong>Sunrise Gases</strong><br />
-          Nagpur, Maharashtra<br />
-          India
-        </address>
-        <p class="contact-note">Contact us for pricing, availability, and technical specifications.</p>
-        <a href="/gases/" class="contact-link">Browse our products &rarr;</a>
+        <h2 class="card-title">Get in touch</h2>
+        <p class="contact-note">Call or email us for pricing, availability, and technical specifications.</p>
+        <div class="contact-links">
+          <a href="tel:+91992XXX0000" class="contact-link">+91-992-XXX-0000</a>
+          <a href="mailto:info@sunrisegases.com" class="contact-link">info@sunrisegases.com</a>
+        </div>
+        <p class="contact-hours">Mon &ndash; Sat &middot; 9:00 AM &ndash; 6:00 PM</p>
       </section>
 
       <section class="contact-card">
         <h2 class="card-title">Quick inquiry</h2>
-        <p class="contact-note">Tell us what you need — gas type, quantity, delivery location, and we'll get back to you with a quote.</p>
-        <p class="contact-form-placeholder">Quote form coming soon. For now, please call or email us.</p>
+        <p class="contact-note">Tell us what you need &mdash; gas type, quantity, delivery location &mdash; and we'll get back with a quote.</p>
+        <p class="contact-form-placeholder">Online quote form coming soon. For now, please call or email.</p>
         <a href="mailto:info@sunrisegases.com" class="contact-link">info@sunrisegases.com &rarr;</a>
       </section>
     </div>
@@ -54,6 +86,55 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     max-width: 480px;
   }
 
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .location-card {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .card-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h2);
+    color: var(--color-text);
+  }
+  .card-label {
+    font-size: var(--text-small);
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+  .location-address {
+    font-style: normal;
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+  .map-link {
+    display: inline-block;
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--color-accent);
+  }
+  .map-link:hover {
+    text-decoration: underline;
+  }
+  .map-wrap {
+    margin-top: 0.25rem;
+    line-height: 0;
+  }
+  .map-wrap iframe {
+    width: 100%;
+  }
+
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -68,22 +149,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     gap: 1rem;
     box-shadow: var(--shadow-sm);
   }
-  .card-title {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--text-h2);
-    color: var(--color-text);
-  }
-  .contact-address {
-    font-style: normal;
-    font-size: var(--text-body);
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-  }
   .contact-note {
     font-size: var(--text-small);
     color: var(--color-text-secondary);
     line-height: 1.5;
+  }
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .contact-link {
+    font-size: var(--text-body);
+    font-weight: 500;
+    color: var(--color-accent);
+  }
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  .contact-hours {
+    font-size: var(--text-small);
+    color: var(--color-text-secondary);
+    margin-top: 0.25rem;
   }
   .contact-form-placeholder {
     font-size: var(--text-small);
@@ -94,18 +181,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     border: 1px dashed var(--color-border);
     text-align: center;
   }
-  .contact-link {
-    display: inline-block;
-    font-size: var(--text-body);
-    font-weight: 500;
-    color: var(--color-accent);
-    margin-top: auto;
-  }
-  .contact-link:hover {
-    text-decoration: underline;
-  }
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
+    .locations-grid,
     .contact-grid {
       grid-template-columns: 1fr;
     }

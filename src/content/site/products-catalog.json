@@ -99,10 +99,10 @@
     "name": "Agroshield (Argon + CO₂)",
     "category": "Mixture Gases",
     "description": "Custom-ratio Argon and CO₂ blend mixed to customer specification. 7 Cu.M. cylinder, 150 Kgf/cm², 99.999% purity.",
-    "finalLink": "/gas-mixtures"
-  },
-  {
-    "name": "Zero Air",
+"finalLink": "/gas-mixtures/agroshield"
+    },
+    {
+      "name": "Zero Air",
     "category": "Mixture Gases",
     "description": "Nitrogen 79% + Oxygen 21% blend. Cylinder sizes 1.5 Cu.M. and 7 Cu.M., filling pressure 150–300 Bar, 99.999% purity.",
     "finalLink": "/gas-mixtures/zero-air"

@@ -9,7 +9,9 @@
     { "type": "Cylinder", "sizes": ["8 Kg", "45 Kg"] }
   ],
   "safety": { "sdsUrl": "/documents/sds/r407c.pdf", "hazardClass": "Non-flammable gas" },
-  "images": [],
+  "images": [
+    { "src": "/images/products/cylinder-refrigerant.svg", "alt": "R407C refrigerant cylinder" }
+  ],
   "seo": {
     "title": "R407C Refrigerant Gas Supplier | Sunrise Gases",
     "description": "R407C refrigerant gas. 99.9% purity in 8 and 45 Kg cylinders. Supplied from Nagpur."

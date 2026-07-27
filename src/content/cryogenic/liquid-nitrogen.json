@@ -5,7 +5,7 @@
   "storageAndHandling": "Supplied in cryocans (customer's or our own). Handle with cryogenic gloves and eye protection. Store in well-ventilated area.",
   "applications": ["Cryogenic preservation", "Industrial freezing", "Medical and laboratory", "Metal treatment"],
   "images": [
-    { "src": "/images/products/Liquid-Nitrogen-Containers.jpg", "alt": "Liquid nitrogen" }
+    { "src": "/images/products/dewar.svg", "alt": "Liquid nitrogen dewar" }
   ],
   "seo": {
     "title": "Liquid Nitrogen Supplier | Sunrise Gases",

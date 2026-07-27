@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect x="120" y="60" width="160" height="280" rx="20" fill="#e0f2fe" stroke="#1d1e1c" stroke-width="2.5"/>
+  <rect x="135" y="80" width="130" height="240" rx="10" fill="#bae6fd" stroke="#1d1e1c" stroke-width="1.5"/>
+  <rect x="170" y="40" width="60" height="24" rx="4" fill="#38bdf8"/>
+  <rect x="170" y="40" width="60" height="24" rx="4" stroke="#1d1e1c" stroke-width="1.5"/>
+  <ellipse cx="200" cy="370" rx="80" ry="10" fill="#1d1e1c" opacity="0.1"/>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">LN₂</text>
+  <text x="200" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0284c7">-196°C</text>
+</svg>

@@ -13,7 +13,7 @@
   "applications": ["Industrial refrigeration", "Chemical processing", "Water treatment"],
   "safety": { "sdsUrl": "/documents/sds/ammonia.pdf", "hazardClass": "Toxic gas" },
   "images": [
-    { "src": "/images/products/ammonia-cylinder-storage-1.jpg", "alt": "Ammonia cylinder storage" }
+    { "src": "/images/products/cylinder-ammonia.svg", "alt": "Ammonia cylinder" }
   ],
   "seo": {
     "title": "Industrial Ammonia Gas Supplier | Sunrise Gases",

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect x="90" y="50" width="220" height="240" rx="10" fill="#eab308" stroke="#1d1e1c" stroke-width="2.5"/>
+  <path d="M185 290 Q192 330 200 350 Q208 330 215 290" fill="#eab308" stroke="#1d1e1c" stroke-width="2"/>
+  <line x1="200" y1="350" x2="200" y2="380" stroke="#1d1e1c" stroke-width="2"/>
+  <ellipse cx="200" cy="390" rx="60" ry="8" fill="#1d1e1c" opacity="0.1"/>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1d1e1c">CUBE</text>
+</svg>

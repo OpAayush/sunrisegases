@@ -8,10 +8,8 @@
     { "label": "Material", "value": "Brass, stainless steel, steel" }
   ],
   "images": [
-    { "src": "/images/products/gas-manifold-system-500x500.jpg", "alt": "Gas manifold system" },
-    { "src": "/images/products/safety-guard-for-cylinder-valve-500x500.jpg", "alt": "Safety guard for cylinder valve" },
-    { "src": "/images/products/Cylinder-Cascade.jpg", "alt": "Cylinder cascade" },
-    { "src": "/images/products/gas-cylinder-trolley-500x500.jpg", "alt": "Gas cylinder trolley" }
+    { "src": "/images/products/cylinder-cap.svg", "alt": "Cylinder cap" },
+    { "src": "/images/products/trolley.svg", "alt": "Cylinder trolley" }
   ],
   "seo": {
     "title": "Gas Handling Equipments — Manifolds, Regulators & Accessories | Sunrise Gases",

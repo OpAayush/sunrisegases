@@ -7,11 +7,11 @@
   "heliumRequirement": "Filled on-site or supplied with helium cylinders. Variety of sizes available.",
   "applications": ["Grand openings", "Trade shows and exhibitions", "Product launches", "Festivals and events", "Brand promotions"],
   "images": [
-    { "src": "/images/products/helium-shapes-4.jpg", "alt": "Helium filled balloon shapes" },
-    { "src": "/images/products/ground-inflatable.jpg", "alt": "Ground inflatable balloon" },
-    { "src": "/images/products/20161213_094914.jpg", "alt": "Advertising balloon at event" },
-    { "src": "/images/products/12187707_934760639920395_5174129264238463053_n-e1587574216585.jpg", "alt": "Custom printed advertising balloon" },
-    { "src": "/images/products/king-inflatables-balloons-benz-circle-vijayawada-balloon-advertising-agencies-juk8o2.jpg", "alt": "Large advertising balloon" }
+    { "src": "/images/products/balloon-round.svg", "alt": "Round advertising balloon" },
+    { "src": "/images/products/balloon-oval.svg", "alt": "Oval advertising balloon" },
+    { "src": "/images/products/balloon-cube.svg", "alt": "Cube advertising balloon" },
+    { "src": "/images/products/balloon-heart.svg", "alt": "Heart shaped advertising balloon" },
+    { "src": "/images/products/balloon-custom.svg", "alt": "Custom shape advertising balloon" }
   ],
   "seo": {
     "title": "Custom Advertising Balloons — Sky Balloons for Events | Sunrise Gases",
