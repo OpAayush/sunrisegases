@@ -1,6 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-  },
+  "compilerOptions": {},
   "files": ["./worker-configuration.d.ts"]
 }

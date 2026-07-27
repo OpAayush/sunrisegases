@@ -53,6 +53,8 @@ const year = new Date().getFullYear();
       <span>Manufacturing and supplying industrial gases since 2016.</span>
       <span class="footer-sep">·</span>
       <span>Nagpur, India</span>
+      <span class="footer-sep">·</span>
+      <span>Made by <a href="https://spicydevs.xyz" target="_blank" rel="noopener" class="footer-credit">SpicyDevs</a></span>
     </div>
   </div>
 </footer>
@@ -125,6 +127,13 @@ const year = new Date().getFullYear();
   }
   .footer-sep {
     color: var(--color-border);
+  }
+  .footer-credit {
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+  .footer-credit:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 768px) {

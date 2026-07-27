@@ -13,7 +13,7 @@ const links = [
 <nav class="nav">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <span class="nav-logo-mark">SG</span>
+      <img src="/images/icons/flame.svg" alt="" class="nav-logo-icon" />
       <span class="nav-logo-text">Sunrise Gases</span>
     </a>
     <ul class="nav-links">
@@ -46,14 +46,10 @@ const links = [
     align-items: center;
     gap: 0.5rem;
   }
-  .nav-logo-mark {
-    font-family: var(--font-display);
-    font-weight: 800;
-    font-size: 1.125rem;
-    background: var(--color-text);
-    color: var(--color-bg);
-    padding: 0.125rem 0.375rem;
-    line-height: 1.2;
+  .nav-logo-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
   }
   .nav-logo-text {
     font-family: var(--font-display);
