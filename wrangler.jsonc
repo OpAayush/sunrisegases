@@ -6,7 +6,7 @@
     "directory": "./dist/client",
     "binding": "ASSETS",
     "html_handling": "drop-trailing-slash",
-    "not_found_handling": "404.html",
+    "not_found_handling": "404-page",
   },
   "observability": {
     "enabled": true,
