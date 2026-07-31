@@ -124,7 +124,6 @@ const faqSchema = data.faq?.length
     <section class="detail-section detail-section--last">
       <h2 class="section-title">Safety &amp; Handling</h2>
       <div class="safety-badge">{data.safety.hazardClass}</div>
-      <a href={data.safety.sdsUrl} class="safety-link">Download SDS (Safety Data Sheet) &rarr;</a>
     </section>
   </article>
 </BaseLayout>
@@ -315,17 +314,6 @@ const faqSchema = data.faq?.length
     border-radius: var(--radius-tags);
     margin-bottom: 1rem;
   }
-  .safety-link {
-    display: inline-block;
-    font-size: var(--text-small);
-    font-weight: 500;
-    color: var(--color-accent);
-    margin-left: 1rem;
-  }
-  .safety-link:hover {
-    text-decoration: underline;
-  }
-
   @media (max-width: 600px) {
     .supply-grid {
       grid-template-columns: 1fr;

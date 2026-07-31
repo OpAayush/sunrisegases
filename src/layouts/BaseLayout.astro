@@ -8,9 +8,10 @@ export interface Props {
   description: string;
   canonical?: string;
   schemas?: Record<string, unknown>[];
+  noindex?: boolean;
 }
 
-const { title, description, canonical, schemas } = Astro.props;
+const { title, description, canonical, schemas, noindex } = Astro.props;
 const canonicalUrl = canonical || `https://sunrisegases.com${Astro.url.pathname}`;
 const siteName = 'Sunrise Gases';
 ---
@@ -20,7 +21,11 @@ const siteName = 'Sunrise Gases';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Nagpur" />
+    <meta name="geo.position" content="21.1154769;79.0007651" />
+    <meta name="ICBM" content="21.1154769, 79.0007651" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />

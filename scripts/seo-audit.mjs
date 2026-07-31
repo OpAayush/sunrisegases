@@ -3,8 +3,8 @@
 // parser approach (HTML comments stripped first), plus live-site checks.
 // Usage: node scripts/seo-audit.mjs [--live]
 
-import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs';
-import { join, relative, posix } from 'node:path';
+import { readdirSync, readFileSync, existsSync } from 'node:fs';
+import { join, relative } from 'node:path';
 
 const DIST = join(process.cwd(), 'dist', 'client');
 const ORIGIN = 'https://sunrisegases.com';
@@ -20,8 +20,9 @@ const files = [];
 })(DIST);
 
 const stripComments = (html) => html.replace(/<!--[\s\S]*?-->/g, '');
+const unescapeHtml = (s) => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 const get = (html, re) => { const m = stripComments(html).match(re); return m ? m[1] : null; };
-const getAll = (html, re) => { const out = []; const s = stripComments(html); let m; const r = new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g'); while ((m = r.exec(s))) out.push(m[1]); return out; };
+const getAll = (html, re) => { const out = []; const s = stripComments(html); let m; const r = new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g'); while ((m = r.exec(s))) out.push(m[1] ?? m[0]); return out; };
 
 const report = [];
 const flag = (sev, page, msg) => report.push({ sev, page, msg });
@@ -29,16 +30,16 @@ const sevRank = { HIGH: 0, MED: 1, LOW: 2, OK: 3 };
 
 const pages = files.map((f) => {
   const html = readFileSync(f, 'utf8');
-  const path = '/' + posix.relative(DIST, f).replace(/\\/g, '/').replace(/index\.html$/, '');
+  const path = '/' + relative(DIST, f).split('\\').join('/').replace(/index\.html$/, '');
   const clean = stripComments(html);
 
   const title = get(clean, /<title>([\s\S]*?)<\/title>/i)?.trim();
-  const desc = get(clean, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
+  const desc = get(clean, /<meta\s+name=["']description["']\s+content="([^"]*)"/i);
   const canonicals = getAll(clean, /<link\s+rel=["']canonical["']\s+href=["']([^"']*)["']/i);
   const h1s = getAll(clean, /<h1[^>]*>([\s\S]*?)<\/h1>/i).map((s) => s.replace(/<[^>]+>/g, '').trim()).filter(Boolean);
   const imgs = getAll(clean, /<img\s[^>]*>/gi).map((t) => ({ alt: get(t, /alt=["']([^"']*)["']/i) ?? null, src: get(t, /src=["']([^"']*)["']/i) ?? '?' }));
-  const og = { title: get(clean, /<meta\s+property=["']og:title["']\s+content=["']([^"']*)["']/i), desc: get(clean, /<meta\s+property=["']og:description["']\s+content=["']([^"']*)["']/i), img: get(clean, /<meta\s+property=["']og:image["']\s+content=["']([^"']*)["']/i) };
-  const tw = { card: get(clean, /<meta\s+name=["']twitter:card["']\s+content=["']([^"']*)["']/i) };
+  const og = { title: get(clean, /<meta\s+property=["']og:title["']\s+content="([^"]*)"/i), desc: get(clean, /<meta\s+property=["']og:description["']\s+content="([^"]*)"/i), img: get(clean, /<meta\s+property=["']og:image["']\s+content="([^"]*)"/i) };
+  const tw = { card: get(clean, /<meta\s+name=["']twitter:card["']\s+content="([^"]*)"/i) };
   const links = getAll(clean, /<a\s[^>]*href=["']([^"']*)["']/gi).filter((h) => !h.startsWith('#') && !h.startsWith('tel:') && !h.startsWith('mailto:') && !h.startsWith('https://wa.me') && !h.startsWith('https://www.google.com'));
   const lds = [];
   const ldRe = /<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
@@ -53,13 +54,14 @@ const pages = files.map((f) => {
 // ---- per-page checks ----
 for (const p of pages) {
   if (!p.title) flag('HIGH', p.path, 'MISSING <title>');
-  else if (p.title.length > 60) flag('MED', p.path, `title ${p.title.length} chars > 60: "${p.title}"`);
+  else if (unescapeHtml(p.title).length > 60) flag('MED', p.path, `title ${p.title.length} chars > 60: "${p.title}"`);
   else flag('OK', p.path, `title OK (${p.title.length})`);
 
   if (!p.desc) flag('HIGH', p.path, 'MISSING meta description');
-  else if (p.desc.length < 100 || p.desc.length > 165) flag('LOW', p.path, `meta description ${p.desc.length} chars (want 140-160)`);
+  else if (unescapeHtml(p.desc).length < 100 || unescapeHtml(p.desc).length > 165) flag('LOW', p.path, `meta description ${p.desc.length} chars (want 140-160)`);
 
   if (p.canonicals.length !== 1) flag('HIGH', p.path, `expected exactly 1 canonical, found ${p.canonicals.length}: ${JSON.stringify(p.canonicals)}`);
+  else if (p.path === '/404.html') flag('OK', p.path, `404 page canonical OK (intentionally ${p.canonicals[0]})`);
   else {
     const c = p.canonicals[0];
     const expect = ORIGIN + (p.path.endsWith('/') ? p.path : p.path + '/');
@@ -71,9 +73,9 @@ for (const p of pages) {
   if (p.h1s.length !== 1) flag('MED', p.path, `expected 1 H1, found ${p.h1s.length}: ${JSON.stringify(p.h1s)}`);
 
   for (const img of p.imgs) {
-    if (img.alt === null) flag('MED', p.path, `img without alt: ${img.src}`);
-    else if (img.alt === '') flag('MED', p.path, `img with EMPTY alt: ${img.src}`);
-    else if (img.alt.length < 8) flag('LOW', p.path, `img alt too short (${img.alt.length}): "${img.alt}"`);
+    if (img.alt === null) flag('MED', p.path, `img WITHOUT alt attribute: ${img.src}`);
+    else if (img.alt === '' && !/\.svg($|\?)/i.test(img.src)) flag('LOW', p.path, `non-SVG img with EMPTY alt: ${img.src}`);
+    else if (img.alt !== '' && img.alt.length < 8) flag('LOW', p.path, `img alt too short (${img.alt.length}): "${img.alt}"`);
   }
 
   if (!p.og.title || !p.og.desc || !p.og.img) flag('LOW', p.path, 'incomplete OG tags (need og:title/description/image)');
@@ -120,7 +122,7 @@ for (const p of pages) {
   }
 }
 for (const p of pages) {
-  if (p.path !== '/' && !incoming.get(p.path)) flag('MED', p.path, 'ORPHAN: no internal links point to this page');
+  if (p.path !== '/' && p.path !== '/404.html' && !incoming.get(p.path)) flag('MED', p.path, 'ORPHAN: no internal links point to this page');
 }
 
 // ---- cross-reference checks ----
@@ -132,7 +134,8 @@ else {
   const withoutSlash = locs.filter((l) => !l.endsWith('/'));
   if (withoutSlash.length) flag('HIGH', 'ALL', `sitemap locs without trailing slash: ${withoutSlash.join(', ')}`);
   const sitemapPaths = new Set(locs.map((l) => new URL(l).pathname));
-  const missing = pages.filter((p) => !sitemapPaths.has(p.path)).map((p) => p.path);
+  const EXCLUDED_FROM_SITEMAP = new Set(['/404.html']);
+  const missing = pages.filter((p) => !EXCLUDED_FROM_SITEMAP.has(p.path) && !sitemapPaths.has(p.path)).map((p) => p.path);
   if (missing.length) flag('HIGH', 'ALL', `built pages NOT in sitemap: ${missing.join(', ')}`);
   const extra = locs.filter((l) => !builtPaths.has(new URL(l).pathname));
   if (extra.length) flag('HIGH', 'ALL', `sitemap URLs NOT in build (dead): ${extra.join(', ')}`);

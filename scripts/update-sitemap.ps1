@@ -21,7 +21,6 @@ $staticMap = @{
   '/about/' = 'src\pages\about.astro'
   '/quality-and-safety/' = 'src\pages\quality-and-safety.astro'
   '/contact/' = 'src\pages\contact.astro'
-  '/404.html' = 'src\pages\404.astro'
 }
 
 function Get-SourcePath([string]$pathname) {
