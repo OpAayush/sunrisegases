@@ -13,10 +13,24 @@
   "applications": ["Chemical processing", "Oil and gas", "Electronics manufacturing"],
   "safety": { "sdsUrl": "/documents/sds/nitrogen.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/nitrogen.jpg", "alt": "Nitrogen gas cylinders" }
+    { "src": "/images/products/nitrogen.jpg", "alt": "Industrial nitrogen gas cylinder, 47L, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Nitrogen Gas Supplier | Sunrise Gases",
     "description": "Industrial nitrogen gas for purging, blanketing, and inerting. Supplied as compressed gas or liquid. Manufactured in Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "What nitrogen cylinder sizes do you supply?",
+      "answer": "Compressed nitrogen cylinders in 10L, 20L, and 47L sizes. Liquid nitrogen and bulk/manifold supply are also available."
+    },
+    {
+      "question": "What purity is industrial nitrogen?",
+      "answer": "Industrial grade nitrogen at 99.5% purity, with 99.999% ultra-high-purity (UHP) nitrogen available through our specialty gases range."
+    },
+    {
+      "question": "Can you supply nitrogen for purging and blanketing?",
+      "answer": "Yes. Nitrogen is supplied for purging, blanketing, and inerting across chemical processing, oil and gas, and electronics applications."
+    }
+  ]
 }

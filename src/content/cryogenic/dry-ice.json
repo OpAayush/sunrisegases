@@ -7,10 +7,24 @@
   "grade": "Food Grade",
   "applications": ["Food and beverage cold chain", "Industrial cleaning (dry ice blasting)", "Medical cold storage", "Special effects and fog"],
   "images": [
-    { "src": "/images/products/dry-ice.jpg", "alt": "Dry ice block and powder" }
+    { "src": "/images/products/dry-ice.jpg", "alt": "Food grade dry ice block and powder, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Food Grade Dry Ice — Block & Powder | Sunrise Gases",
     "description": "Food grade dry ice available in block and powder form. For cold chain, industrial cleaning, medical, and special effects. Supplied from Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "Do you supply dry ice in block and powder form?",
+      "answer": "Yes. Food-grade dry ice is available as solid blocks and as powder."
+    },
+    {
+      "question": "What is dry ice used for?",
+      "answer": "Cold-chain transport, food preservation, industrial cleaning (dry ice blasting), medical cold storage, and special effects."
+    },
+    {
+      "question": "How should dry ice be handled?",
+      "answer": "Dry ice sublimates at −78.5°C. Handle with protective gloves and store in insulated containers — never in airtight containers."
+    }
+  ]
 }

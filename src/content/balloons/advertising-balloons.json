@@ -7,11 +7,11 @@
   "heliumRequirement": "Filled on-site or supplied with helium cylinders. Variety of sizes available.",
   "applications": ["Grand openings", "Trade shows and exhibitions", "Product launches", "Festivals and events", "Brand promotions"],
   "images": [
-    { "src": "/images/products/balloon-round.svg", "alt": "Round advertising balloon" },
-    { "src": "/images/products/balloon-oval.svg", "alt": "Oval advertising balloon" },
-    { "src": "/images/products/balloon-cube.svg", "alt": "Cube advertising balloon" },
-    { "src": "/images/products/balloon-heart.svg", "alt": "Heart shaped advertising balloon" },
-    { "src": "/images/products/balloon-custom.svg", "alt": "Custom shape advertising balloon" }
+    { "src": "/images/products/balloon-round.svg", "alt": "Round advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
+    { "src": "/images/products/balloon-oval.svg", "alt": "Oval advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
+    { "src": "/images/products/balloon-cube.svg", "alt": "Cube advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
+    { "src": "/images/products/balloon-heart.svg", "alt": "Heart-shaped advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
+    { "src": "/images/products/balloon-custom.svg", "alt": "Custom shape advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Custom Advertising Balloons for Events | Sunrise Gases",

@@ -25,10 +25,21 @@ const breadcrumbSchema = {
 
 const productSchema = {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": data.name,
-  "description": data.summary,
-  "brand": { "@type": "Brand", "name": "Sunrise Gases" },
+  "@type": "Service",
+  "serviceType": data.name,
+  "name": `${data.name} Supply — Sunrise Gases`,
+  "description": data.summary ?? data.seo.description,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Sunrise Gases",
+    "@id": "https://sunrisegases.com/#business",
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Nagpur" },
+    { "@type": "City", "name": "Kamptee" },
+    { "@type": "City", "name": "Hingna" },
+    { "@type": "City", "name": "Kalmeshwar" },
+  ],
   "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src}` : undefined,
 };
 ---

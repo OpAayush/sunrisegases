@@ -13,7 +13,7 @@
   "applications": ["Industrial refrigeration", "Chemical processing", "Water treatment"],
   "safety": { "sdsUrl": "/documents/sds/ammonia.pdf", "hazardClass": "Toxic gas" },
   "images": [
-    { "src": "/images/products/cylinder-ammonia.svg", "alt": "Ammonia cylinder" }
+    { "src": "/images/products/cylinder-ammonia.svg", "alt": "Industrial ammonia gas cylinder, 50 Kg, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Ammonia Gas Supplier | Sunrise Gases",

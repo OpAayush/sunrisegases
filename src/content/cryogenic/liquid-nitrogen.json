@@ -5,10 +5,24 @@
   "storageAndHandling": "Supplied in cryocans (customer's or our own). Handle with cryogenic gloves and eye protection. Store in well-ventilated area.",
   "applications": ["Cryogenic preservation", "Industrial freezing", "Medical and laboratory", "Metal treatment"],
   "images": [
-    { "src": "/images/products/dewar.svg", "alt": "Liquid nitrogen dewar" }
+    { "src": "/images/products/dewar.svg", "alt": "Liquid nitrogen dewar cryocan, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Liquid Nitrogen Supplier | Sunrise Gases",
     "description": "Liquid nitrogen supplied in cryocans for cryogenic preservation, industrial freezing, and laboratory applications. Supplied from Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "Can I get my own cryocan refilled?",
+      "answer": "Yes. We refill customer-owned cryocans with liquid nitrogen."
+    },
+    {
+      "question": "Do you supply cryocans too?",
+      "answer": "Yes. Sunrise Gases' own cryocans are available for rent or purchase, in 11L, 26L, 35L, and 50L sizes."
+    },
+    {
+      "question": "What is liquid nitrogen used for?",
+      "answer": "Cryogenic preservation, industrial freezing, medical and laboratory work, and metal treatment. Liquid nitrogen boils at −196°C."
+    }
+  ]
 }

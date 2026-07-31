@@ -23,17 +23,9 @@ const breadcrumbSchema = {
   ]
 };
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": data.name,
-  "description": data.summary,
-  "brand": { "@type": "Brand", "name": "Sunrise Gases" },
-  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src}` : undefined,
-};
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, productSchema]}>
+<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema]}>
   <article class="detail">
     <header class="detail-hero">
       <h1 class="detail-name">{data.name}</h1>

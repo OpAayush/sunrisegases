@@ -49,14 +49,19 @@ const siteName = 'Sunrise Gases';
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      "@id": "https://sunrisegases.com/#business",
       "name": "Sunrise Gases",
-      "description": "Industrial and specialty gases manufacturer in Nagpur, supplying across Central India.",
+      "description": "Industrial and specialty gases manufacturer in Nagpur, supplying across Central India. Open 24 hours, 7 days a week.",
       "url": "https://sunrisegases.com",
       "telephone": "+91-9422416090",
       "email": "contact@sunrisegases.com",
       "foundingDate": "2013",
       "areaServed": "Central India",
-      "openingHours": "Mo-Sa 09:00-18:00",
+      "openingHours": "Mo-Su 00:00-24:00",
+      "sameAs": [
+        "https://www.google.com/maps/place/?q=place_id:5443013244051232339",
+        "https://wa.me/919422416090"
+      ],
       "address": [
         {
           "@type": "PostalAddress",
@@ -70,7 +75,7 @@ const siteName = 'Sunrise Gases';
         {
           "@type": "PostalAddress",
           "name": "Works",
-          "streetAddress": "C/o Sharma Engineering Works, W52, near Digdoh Gram Panchayat, MIDC, Hingna Road",
+          "streetAddress": "Sharma Engineering Works, W52, near Digdoh Gram Panchayat, MIDC, Hingna Road",
           "addressLocality": "Nagpur",
           "addressRegion": "Maharashtra",
           "postalCode": "440016",
@@ -82,22 +87,7 @@ const siteName = 'Sunrise Gases';
         "latitude": 21.1154769,
         "longitude": 79.0007651
       },
-      "hasMap": "https://www.google.com/maps?q=21.1154769,79.0007651",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Industrial Gases",
-        "itemListElement": [
-          { "@type": "Product", "name": "Oxygen" },
-          { "@type": "Product", "name": "Nitrogen" },
-          { "@type": "Product", "name": "Argon" },
-          { "@type": "Product", "name": "Carbon Dioxide" },
-          { "@type": "Product", "name": "Hydrogen" },
-          { "@type": "Product", "name": "Helium" },
-          { "@type": "Product", "name": "Dissolved Acetylene" },
-          { "@type": "Product", "name": "LPG" },
-          { "@type": "Product", "name": "Ammonia" }
-        ]
-      }
+      "hasMap": "https://www.google.com/maps?q=21.1154769,79.0007651"
     })} />
     {schemas?.map((schema) => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -32,6 +32,10 @@ const gases = defineCollection({
     safety: z.object({ sdsUrl: z.string(), hazardClass: z.string() }),
     images: z.array(image),
     seo,
+    faq: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 
@@ -93,6 +97,10 @@ const cryogenic = defineCollection({
     grade: z.string().optional(),
     images: z.array(image),
     seo,
+    faq: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 

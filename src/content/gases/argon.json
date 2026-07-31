@@ -13,10 +13,24 @@
   "applications": ["Welding and metal fabrication", "Heat treatment", "Electronics"],
   "safety": { "sdsUrl": "/documents/sds/argon.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/argon.jpg", "alt": "Argon gas cylinder" }
+    { "src": "/images/products/argon.jpg", "alt": "Industrial argon gas cylinder, 47L, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Argon Gas Supplier | Sunrise Gases",
     "description": "Industrial argon gas for welding, metal fabrication, and heat treatment. Supplied as compressed gas. Manufactured in Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "What argon cylinder sizes do you supply?",
+      "answer": "Compressed argon cylinders in 10L, 20L, and 47L sizes, plus liquid (cryogenic) argon on request."
+    },
+    {
+      "question": "What purity is industrial argon?",
+      "answer": "Industrial grade argon at 99.9% purity for MIG/TIG welding shielding and metal fabrication."
+    },
+    {
+      "question": "Do you supply argon-based gas mixtures?",
+      "answer": "Yes. We blend argon with carbon dioxide (Agroshield) and nitrogen (Argonite) to customer-specified ratios."
+    }
+  ]
 }

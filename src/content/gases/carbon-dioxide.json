@@ -14,7 +14,7 @@
   "applications": ["MIG welding", "Food and beverage carbonation", "Fire suppression", "Industrial processing"],
   "safety": { "sdsUrl": "/documents/sds/carbon-dioxide.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/cylinder-co2.svg", "alt": "Carbon dioxide cylinders" }
+    { "src": "/images/products/cylinder-co2.svg", "alt": "Carbon dioxide gas cylinder, 4.5–30 Kg, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Carbon Dioxide — Industrial & UHP Grades | Sunrise Gases",

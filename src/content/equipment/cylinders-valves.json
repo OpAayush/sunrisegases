@@ -10,8 +10,8 @@
     { "label": "Valve types", "value": "BS, DIN, CGA compatible" }
   ],
   "images": [
-    { "src": "/images/products/cylinder-steel.svg", "alt": "Carbon steel gas cylinder" },
-    { "src": "/images/products/cylinder-aluminium.svg", "alt": "Aluminium gas cylinder" }
+    { "src": "/images/products/cylinder-steel.svg", "alt": "ISI-marked carbon steel gas cylinder, IS 7285, Sunrise Gases Nagpur" },
+    { "src": "/images/products/cylinder-aluminium.svg", "alt": "ISI-marked aluminium gas cylinder, IS 7285, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Gas Cylinders and Valves | Sunrise Gases",
