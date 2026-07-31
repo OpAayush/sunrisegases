@@ -12,9 +12,72 @@ const secondaryCategories = [
   { collection: fireSafety, label: 'Fire Safety', href: '/fire-safety/', description: 'Extinguishers and fire suppression', icon: '/images/icons/extinguisher.svg' },
   { collection: balloons, label: 'Balloons', href: '/balloons/', description: 'Custom advertising balloons for events', icon: '/images/icons/package.svg' },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book a gas cylinder in Nagpur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call +91-9422416090 or message us on WhatsApp. Cylinder supply and refill are available 24 hours, 7 days a week, with delivery across Nagpur and nearby areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you a gas agency in Nagpur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sunrise Gases is a gas manufacturer and supplier in Nagpur — industrial and specialty gases, refrigerants, dry ice, fire safety equipment, and gas equipment, serving Central India since 2013."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you deliver gas cylinders near me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We deliver across Nagpur (Sadar, Gandhi Chowk, MIDC Hingna Road) and surrounding areas including Kamptee, Hingna, and Kalmeshwar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "नागपुर में गैस एजेंसी कहाँ है?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "हमारा कार्यालय मेघराज चावल, 212A, गांधी चौक, सदर, नागपुर 440001 में है और फैक्ट्री MIDC, हिंगणा रोड पर है। फोन: +91-9422416090।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "क्या आप 24 घंटे गैस सिलेंडर की डिलीवरी करते हैं?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "हाँ, हम सप्ताह के सातों दिन 24 घंटे नागपुर, कामठी, हिंगणा और कलमेश्वर में गैस सिलेंडर की डिलीवरी करते हैं।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ऑक्सीजन सिलेंडर कहाँ से मिलता है?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ऑक्सीजन, नाइट्रोजन, आर्गन, कार्बन डाइऑक्साइड, हीलियम, हाइड्रोजन, LPG और अमोनिया सिलेंडर नागपुर से सप्लाई होते हैं। 10L, 20L और 47L सिलेंडर उपलब्ध हैं।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ड्राई आइस कहाँ मिलती है?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "फूड ग्रेड ड्राई आइस ब्लॉक और पाउडर फॉर्म में नागपुर में उपलब्ध है — इवेंट, कोल्ड चेन और फूड ट्रांसपोर्ट के लिए।"
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Industrial & Specialty Gases — Sunrise Gases, Nagpur" description="Industrial and specialty gases manufacturer based in Nagpur. Supplying oxygen, nitrogen, argon, CO₂, hydrogen, helium, and gas equipment across Central India.">
+<BaseLayout title="Industrial & Specialty Gases — Sunrise Gases, Nagpur" description="Industrial and specialty gases manufacturer based in Nagpur. Supplying oxygen, nitrogen, argon, CO₂, hydrogen, helium, and gas equipment across Central India." schemas={[faqSchema]}>
   <section class="hero">
     <div class="hero-bg-decor" aria-hidden="true">
       <img src="/images/icons/flame.svg" alt="" />
@@ -22,6 +85,7 @@ const secondaryCategories = [
     <div class="hero-content">
       <h1 class="hero-title">Industrial &amp; specialty<br />gases <span class="hero-accent">manufactured in Nagpur</span></h1>
       <p class="hero-subtitle">Oxygen &middot; Nitrogen &middot; Argon &middot; Carbon Dioxide &middot; Hydrogen &middot; Helium &middot; Dissolved Acetylene &middot; LPG &middot; Ammonia</p>
+      <p class="hero-subtitle">Gas agency in Nagpur — cylinder supply, refill &amp; 24-hour delivery.</p>
     </div>
   </section>
 
@@ -78,8 +142,42 @@ const secondaryCategories = [
     </div>
   </section>
 
+  <section class="faq-section">
+    <h2 class="faq-section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-question">How do I book a gas cylinder in Nagpur?</h3>
+        <p class="faq-answer">Call +91-9422416090 or message us on WhatsApp. Cylinder supply and refill are available 24 hours, 7 days a week, with delivery across Nagpur and nearby areas.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Are you a gas agency in Nagpur?</h3>
+        <p class="faq-answer">Sunrise Gases is a gas manufacturer and supplier in Nagpur — industrial and specialty gases, refrigerants, dry ice, fire safety equipment, and gas equipment, serving Central India since 2013.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Do you deliver gas cylinders near me?</h3>
+        <p class="faq-answer">Yes. We deliver across Nagpur (Sadar, Gandhi Chowk, MIDC Hingna Road) and surrounding areas including Kamptee, Hingna, and Kalmeshwar.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">नागपुर में गैस एजेंसी कहाँ है?</h3>
+        <p class="faq-answer">हमारा कार्यालय मेघराज चावल, 212A, गांधी चौक, सदर, नागपुर 440001 में है और फैक्ट्री MIDC, हिंगणा रोड पर है। फोन: +91-9422416090।</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">क्या आप 24 घंटे गैस सिलेंडर की डिलीवरी करते हैं?</h3>
+        <p class="faq-answer">हाँ, हम सप्ताह के सातों दिन 24 घंटे नागपुर, कामठी, हिंगणा और कलमेश्वर में गैस सिलेंडर की डिलीवरी करते हैं।</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">ऑक्सीजन सिलेंडर कहाँ से मिलता है?</h3>
+        <p class="faq-answer">ऑक्सीजन, नाइट्रोजन, आर्गन, कार्बन डाइऑक्साइड, हीलियम, हाइड्रोजन, LPG और अमोनिया सिलेंडर नागपुर से सप्लाई होते हैं। 10L, 20L और 47L सिलेंडर उपलब्ध हैं।</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">ड्राई आइस कहाँ मिलती है?</h3>
+        <p class="faq-answer">फूड ग्रेड ड्राई आइस ब्लॉक और पाउडर फॉर्म में नागपुर में उपलब्ध है — इवेंट, कोल्ड चेन और फूड ट्रांसपोर्ट के लिए।</p>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section">
-    <p class="cta-text">Need a quote or have a specific requirement?</p>
+    <p class="cta-text">Need a gas cylinder refill or booking in Nagpur? We're open 24 hours, 7 days a week.</p>
     <a href="/contact/" class="cta-button">Get a quote &rarr;</a>
   </section>
 </BaseLayout>
@@ -288,6 +386,42 @@ const secondaryCategories = [
     margin: 0 auto;
     padding: var(--space-section) 1.5rem;
     text-align: center;
+  }
+  .faq-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .faq-section-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--text-hero);
+    line-height: 1.2;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .faq-item {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .faq-question {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h3);
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  .faq-answer {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
   }
   .cta-text {
     font-size: var(--text-h3);

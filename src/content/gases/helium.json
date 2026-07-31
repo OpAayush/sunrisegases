@@ -18,5 +18,19 @@
   "seo": {
     "title": "Industrial Helium Gas Supplier | Sunrise Gases",
     "description": "Industrial helium gas for balloons, welding, and leak detection. Available in 1.5, 7, and 10 Cu.M. cylinders. Supplied from Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "Do you supply helium for balloons?",
+      "answer": "Yes. Helium is supplied in 1.5, 7, and 10 Cu.M. cylinders for advertising and event balloons, from our Nagpur facility."
+    },
+    {
+      "question": "Where can I find helium gas cylinders near me in Nagpur?",
+      "answer": "Helium cylinders are available from our Nagpur facility with delivery across Nagpur, Kamptee, Hingna, and Kalmeshwar. We are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Can I get a helium gas refill in Nagpur?",
+      "answer": "Yes. Helium cylinder supply and refill are available 24 hours, 7 days a week from our Nagpur facility."
+    }
+  ]
 }

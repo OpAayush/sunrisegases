@@ -121,6 +121,20 @@ const faqSchema = data.faq?.length
       </section>
     )}
 
+    {data.faq && data.faq.length > 0 && (
+      <section class="detail-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {data.faq.map((f) => (
+            <div class="faq-item">
+              <h3 class="faq-question">{f.question}</h3>
+              <p class="faq-answer">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
     <section class="detail-section detail-section--last">
       <h2 class="section-title">Safety &amp; Handling</h2>
       <div class="safety-badge">{data.safety.hazardClass}</div>
@@ -313,6 +327,30 @@ const faqSchema = data.faq?.length
     background: var(--color-accent);
     border-radius: var(--radius-tags);
     margin-bottom: 1rem;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .faq-item {
+    background: var(--color-card);
+    border-radius: var(--radius-cards);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .faq-question {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-h3);
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  .faq-answer {
+    font-size: var(--text-body);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
   }
   @media (max-width: 600px) {
     .supply-grid {
