@@ -1,4 +1,4 @@
-[
+{"kind": "products-catalog", "items": [
   {
     "name": "Oxygen",
     "category": "Industrial Gases",
@@ -348,3 +348,4 @@
     "finalLink": "/balloons/advertising-balloons"
   }
 ]
+}

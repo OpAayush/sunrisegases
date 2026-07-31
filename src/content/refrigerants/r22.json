@@ -10,7 +10,7 @@
   ],
   "safety": { "sdsUrl": "/documents/sds/r22.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/cylinder-refrigerant.svg", "alt": "R22 refrigerant gas cylinder, 10–61 Kg, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R22 refrigerant gas cylinder, 10–61 Kg, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "R22 Refrigerant Gas Supplier | Sunrise Gases",

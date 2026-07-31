@@ -7,7 +7,7 @@
   "dischargeTime": "10–20 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "/images/products/extinguisher-abc.svg", "alt": "ABC dry chemical powder fire extinguisher, 1–9 Kg, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/extinguisher-abc.svg", "alt": "ABC dry chemical powder fire extinguisher, 1–9 Kg, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "ABC Powder Fire Extinguishers | Sunrise Gases",

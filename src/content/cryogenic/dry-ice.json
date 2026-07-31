@@ -7,7 +7,7 @@
   "grade": "Food Grade",
   "applications": ["Food and beverage cold chain", "Industrial cleaning (dry ice blasting)", "Medical cold storage", "Special effects and fog"],
   "images": [
-    { "src": "/images/products/dry-ice.jpg", "alt": "Food grade dry ice block and powder, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/dry-ice.jpg", "alt": "Food grade dry ice block and powder, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Food Grade Dry Ice — Block & Powder | Sunrise Gases",

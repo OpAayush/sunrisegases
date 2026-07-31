@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductDetailLayout from '../../layouts/ProductDetailLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -22,67 +22,32 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": data.name, "item": `https://sunrisegases.com/industries/${data.slug}/` }
   ]
 };
-
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema]}>
-  <article class="detail">
-    <header class="detail-hero">
-      <h1 class="detail-name">{data.name}</h1>
-      <p class="detail-summary">{data.summary}</p>
-    </header>
-
-    {data.relevantProducts && data.relevantProducts.length > 0 && (
-      <section class="detail-section">
-        <h2 class="section-title">Relevant products</h2>
-        <div class="product-list">
-          {data.relevantProducts.map((slug) => {
-            const formatted = slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-            return <span class="product-chip">{formatted}</span>;
-          })}
-        </div>
-      </section>
-    )}
-  </article>
-</BaseLayout>
+<ProductDetailLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  schemas={[breadcrumbSchema]}
+  hero={{
+    name: data.name,
+    summary: data.summary,
+    size: 'md',
+  }}
+>
+  {data.relevantProducts && data.relevantProducts.length > 0 && (
+    <section class="detail-section detail-section--bordered">
+      <h2 class="section-title">Relevant products</h2>
+      <div class="product-list">
+        {data.relevantProducts.map((slug) => {
+          const formatted = slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          return <span class="product-chip">{formatted}</span>;
+        })}
+      </div>
+    </section>
+  )}
+</ProductDetailLayout>
 
 <style>
-  .detail {
-    max-width: var(--space-container);
-    margin: 0 auto;
-    padding: var(--space-section) 1.5rem;
-  }
-  .detail-hero {
-    margin-bottom: 2rem;
-  }
-  .detail-name {
-    font-family: var(--font-serif);
-    font-weight: 600;
-    font-size: var(--text-hero);
-    line-height: 1.2;
-    color: var(--color-text);
-    margin-bottom: 0.75rem;
-  }
-  .detail-summary {
-    font-size: var(--text-body);
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-    max-width: 640px;
-  }
-
-  .detail-section {
-    padding: 2rem 0;
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-  }
-  .section-title {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--text-h2);
-    color: var(--color-text);
-    margin-bottom: 1rem;
-  }
-
   .product-list {
     display: flex;
     flex-wrap: wrap;

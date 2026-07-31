@@ -7,7 +7,7 @@
   "dischargeTime": "10–20 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "/images/products/extinguisher-dcp.svg", "alt": "Dry chemical powder fire extinguisher, 4–9 Kg, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/extinguisher-dcp.svg", "alt": "Dry chemical powder fire extinguisher, 4–9 Kg, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Dry Chemical Powder Fire Extinguishers | Sunrise Gases",

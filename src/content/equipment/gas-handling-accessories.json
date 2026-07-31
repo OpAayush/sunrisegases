@@ -8,8 +8,8 @@
     { "label": "Material", "value": "Brass, stainless steel, steel" }
   ],
   "images": [
-    { "src": "/images/products/cylinder-cap.svg", "alt": "Gas cylinder valve protective cap, Sunrise Gases Nagpur" },
-    { "src": "/images/products/trolley.svg", "alt": "Gas cylinder trolley, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-cap.svg", "alt": "Gas cylinder valve protective cap, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/trolley.svg", "alt": "Gas cylinder trolley, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Gas Handling Accessories & Equipment | Sunrise Gases",

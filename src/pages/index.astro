@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -9,7 +10,7 @@ const balloons = await getCollection('balloons');
 
 const secondaryCategories = [
   { collection: equipment, label: 'Equipment', href: '/equipment/', description: 'Cylinders, valves, manifolds, and gas handling accessories', icon: '/images/icons/truck.svg' },
-  { collection: fireSafety, label: 'Fire Safety', href: '/fire-safety/', description: 'Extinguishers and fire suppression', icon: '/images/icons/extinguisher.svg' },
+  { collection: fireSafety, label: 'Fire Safety', href: '/fire-safety/', description: 'Extinguishers and fire suppression', icon: '/images/icons/fire-extinguisher.svg' },
   { collection: balloons, label: 'Balloons', href: '/balloons/', description: 'Custom advertising balloons for events', icon: '/images/icons/package.svg' },
 ];
 
@@ -96,7 +97,7 @@ const faqSchema = {
         return (
           <a href={`/gases/${gas.data.slug}/`} class="gas-card">
             {gas.data.images?.[0] && (
-              <img src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="gas-card-img" loading="lazy" />
+              <Image src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="gas-card-img" widths={[48, 96]} sizes="48px" loading="lazy" />
             )}
             <span class="gas-formula">{gas.data.formula || gas.data.slug.toUpperCase()}</span>
             <span class="gas-name">{gas.data.name}</span>
@@ -263,7 +264,7 @@ const faqSchema = {
     font-family: var(--font-mono);
     font-size: var(--text-formula);
     font-weight: 400;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     line-height: 1.2;
   }
   .gas-name {
@@ -281,7 +282,7 @@ const faqSchema = {
     margin-top: 1rem;
     font-size: var(--text-small);
     font-weight: 500;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
   }
   .gas-all-link:hover {
     text-decoration: underline;
@@ -303,14 +304,14 @@ const faqSchema = {
   }
   .also-label {
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     margin-right: 0.25rem;
   }
   .also-link {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
@@ -376,7 +377,7 @@ const faqSchema = {
   }
   .category-count {
     font-size: 0.75rem;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     font-weight: 500;
     margin-top: auto;
   }

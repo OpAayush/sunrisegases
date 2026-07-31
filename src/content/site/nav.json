@@ -1,11 +1,12 @@
 {
+  "kind": "nav",
   "links": [
-    { "label": "Gases", "href": "/gases/" },
-    { "label": "Equipment", "href": "/equipment/" },
-    { "label": "Fire Safety", "href": "/fire-safety/" },
-    { "label": "Balloons", "href": "/balloons/" },
+    { "label": "Gases", "href": "/gases/", "icon": "/images/icons/gas-cylinder.svg" },
+    { "label": "Equipment", "href": "/equipment/", "icon": "/images/icons/truck.svg" },
+    { "label": "Fire Safety", "href": "/fire-safety/", "icon": "/images/icons/fire-extinguisher.svg" },
+    { "label": "Balloons", "href": "/balloons/", "icon": "/images/icons/package.svg" },
     { "label": "Industries", "href": "/industries/" },
     { "label": "About", "href": "/about/" },
-    { "label": "Contact", "href": "/contact/" }
+    { "label": "Contact", "href": "/contact/", "icon": "/images/icons/phone.svg" }
   ]
 }

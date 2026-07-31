@@ -1,11 +1,14 @@
 ---
+import { getEntry } from 'astro:content';
+const footer = await getEntry('site', 'footer');
+const footerData = footer?.data.kind === 'footer' ? footer.data : { description: '', location: '', established: '' };
 ---
 
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-col">
       <h3 class="footer-heading">Sunrise Gases</h3>
-      <p class="footer-text">Industrial and specialty gases manufactured in Nagpur, supplying industries across Central India.</p>
+      <p class="footer-text">{footerData.description}</p>
     </div>
     <div class="footer-col">
       <h3 class="footer-heading">Products</h3>
@@ -51,9 +54,9 @@
   </div>
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
-      <span>Manufacturing and supplying industrial gases since 2013.</span>
+      <span>Manufacturing and supplying industrial gases since {footerData.established}.</span>
       <span class="footer-sep">·</span>
-      <span>Nagpur, India</span>
+      <span>{footerData.location}</span>
       <span class="footer-sep">·</span>
       <span>Made by <a href="https://spicydevs.js.org" target="_blank" rel="noopener" class="footer-credit">SpicyDevs</a></span>
     </div>
@@ -99,7 +102,7 @@
     transition: color var(--transition-fast);
   }
   .footer-list a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     text-decoration: none;
   }
   .footer-icon {
@@ -116,7 +119,7 @@
     line-height: 1.5;
   }
   .footer-address a {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     font-weight: 500;
   }
   .footer-bottom {
@@ -137,7 +140,7 @@
     color: var(--color-border);
   }
   .footer-credit {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     font-weight: 500;
   }
   .footer-credit:hover {

@@ -12,7 +12,7 @@
   ],
   "safety": { "sdsUrl": "", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/cylinder-generic.svg", "alt": "Agroshield argon-carbon dioxide gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-generic.svg", "alt": "Agroshield argon-carbon dioxide gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Agroshield — Argon + CO₂ Mixture | Sunrise Gases",

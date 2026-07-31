@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductDetailLayout from '../../layouts/ProductDetailLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -40,94 +40,51 @@ const serviceSchema = {
     { "@type": "City", "name": "Hingna" },
     { "@type": "City", "name": "Kalmeshwar" },
   ],
-  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src}` : undefined,
+  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src.src}` : undefined,
 };
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, serviceSchema]}>
-  <article class="detail">
-    <header class="detail-hero">
-      <span class="detail-label">Fire Safety</span>
-      <h1 class="detail-name">{data.name}</h1>
-    </header>
-
-    {data.images && data.images.length > 0 && (
-      <div class="product-images">
-        {data.images.map((img) => (
-          <img src={img.src} alt={img.alt} class="product-image" width="400" height="400" loading="lazy" />
-        ))}
+<ProductDetailLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  schemas={[breadcrumbSchema, serviceSchema]}
+  hero={{
+    name: data.name,
+    label: 'Fire Safety',
+    size: 'sm',
+  }}
+  images={data.images}
+>
+  <section class="detail-section detail-section--bordered">
+    <h2 class="section-title">Specifications</h2>
+    <div class="spec-list">
+      <div class="spec-row">
+        <span class="spec-label">Agent type</span>
+        <span class="spec-value">{data.agentType}</span>
       </div>
-    )}
-
-    <section class="detail-section">
-      <h2 class="section-title">Specifications</h2>
-      <div class="spec-list">
-        <div class="spec-row">
-          <span class="spec-label">Agent type</span>
-          <span class="spec-value">{data.agentType}</span>
-        </div>
-        <div class="spec-row">
-          <span class="spec-label">Fire class rating</span>
-          <span class="spec-value">{data.fireClassRating.join(', ')}</span>
-        </div>
-        {data.sizes && data.sizes.length > 0 && (
-          <div class="spec-row">
-            <span class="spec-label">Available sizes</span>
-            <span class="spec-value">{data.sizes.join(', ')}</span>
-          </div>
-        )}
-        <div class="spec-row">
-          <span class="spec-label">Discharge time</span>
-          <span class="spec-value">{data.dischargeTime}</span>
-        </div>
-        <div class="spec-row">
-          <span class="spec-label">Refill interval</span>
-          <span class="spec-value">{data.refillInterval}</span>
-        </div>
+      <div class="spec-row">
+        <span class="spec-label">Fire class rating</span>
+        <span class="spec-value">{data.fireClassRating.join(', ')}</span>
       </div>
-    </section>
-  </article>
-</BaseLayout>
+      {data.sizes && data.sizes.length > 0 && (
+        <div class="spec-row">
+          <span class="spec-label">Available sizes</span>
+          <span class="spec-value">{data.sizes.join(', ')}</span>
+        </div>
+      )}
+      <div class="spec-row">
+        <span class="spec-label">Discharge time</span>
+        <span class="spec-value">{data.dischargeTime}</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Refill interval</span>
+        <span class="spec-value">{data.refillInterval}</span>
+      </div>
+    </div>
+  </section>
+</ProductDetailLayout>
 
 <style>
-  .detail {
-    max-width: var(--space-container);
-    margin: 0 auto;
-    padding: var(--space-section) 1.5rem;
-  }
-  .detail-hero {
-    margin-bottom: 2rem;
-  }
-  .detail-label {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--text-small);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--color-accent);
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  .detail-name {
-    font-family: var(--font-serif);
-    font-weight: 600;
-    font-size: var(--text-hero);
-    line-height: 1.2;
-    color: var(--color-text);
-  }
-
-  .detail-section {
-    padding: 2rem 0;
-    border-bottom: 1px solid var(--color-border);
-  }
-  .section-title {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--text-h2);
-    color: var(--color-text);
-    margin-bottom: 1.25rem;
-  }
-
   .spec-list {
     background: var(--color-card);
     border-radius: var(--radius-cards);

@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductDetailLayout from '../../layouts/ProductDetailLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -40,7 +40,7 @@ const serviceSchema = {
     { "@type": "City", "name": "Hingna" },
     { "@type": "City", "name": "Kalmeshwar" },
   ],
-  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src}` : undefined,
+  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src.src}` : undefined,
 };
 
 const faqSchema = data.faq?.length
@@ -56,139 +56,83 @@ const faqSchema = data.faq?.length
   : undefined;
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, serviceSchema, ...(faqSchema ? [faqSchema] : [])]}>
-  <article class="detail">
-    <header class="detail-hero">
-      <span class="detail-formula">{data.formula}</span>
-      <h1 class="detail-name">{data.name}</h1>
-      <p class="detail-summary">{data.summary}</p>
-    </header>
-
-    {data.images && data.images.length > 0 && (
-      <div class="product-images">
-        {data.images.map((img) => (
-          <img src={img.src} alt={img.alt} class="product-image" width="400" height="400" loading="lazy" />
+<ProductDetailLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  schemas={[breadcrumbSchema, serviceSchema, ...(faqSchema ? [faqSchema] : [])]}
+  hero={{ name: data.name, formula: data.formula, summary: data.summary, size: 'lg' }}
+  images={data.images}
+>
+  {data.grades && data.grades.length > 0 && (
+    <section class="detail-section">
+      <h2 class="section-title">Grades</h2>
+      <div class="grades-grid">
+        {data.grades.map((grade) => (
+          <div class="grade-card">
+            <div class="grade-header">
+              <span class="grade-name">{grade.name}</span>
+              <span class="grade-purity">{grade.purity}</span>
+            </div>
+            <ul class="grade-uses">
+              {grade.uses.map((use) => <li>{use}</li>)}
+            </ul>
+          </div>
         ))}
       </div>
-    )}
+    </section>
+  )}
 
-    {data.grades && data.grades.length > 0 && (
-      <section class="detail-section">
-        <h2 class="section-title">Grades</h2>
-        <div class="grades-grid">
-          {data.grades.map((grade) => (
-            <div class="grade-card">
-              <div class="grade-header">
-                <span class="grade-name">{grade.name}</span>
-                <span class="grade-purity">{grade.purity}</span>
-              </div>
-              <ul class="grade-uses">
-                {grade.uses.map((use) => <li>{use}</li>)}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-    )}
+  <section class="detail-section">
+    <h2 class="section-title">Supply &amp; Packaging</h2>
+    <div class="supply-grid">
+      <div class="supply-card">
+        <h3 class="supply-label">Supply forms</h3>
+        <ul class="supply-list">
+          {data.supplyForms.map((form) => <li>{form}</li>)}
+        </ul>
+      </div>
+      <div class="supply-card">
+        <h3 class="supply-label">Packaging</h3>
+        {data.packaging.map((pkg) => (
+          <div class="pkg-item">
+            <span class="pkg-type">{pkg.type}</span>
+            <span class="pkg-sizes">{pkg.sizes.join(', ')}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
+  {data.applications && data.applications.length > 0 && (
     <section class="detail-section">
-      <h2 class="section-title">Supply &amp; Packaging</h2>
-      <div class="supply-grid">
-        <div class="supply-card">
-          <h3 class="supply-label">Supply forms</h3>
-          <ul class="supply-list">
-            {data.supplyForms.map((form) => <li>{form}</li>)}
-          </ul>
-        </div>
-        <div class="supply-card">
-          <h3 class="supply-label">Packaging</h3>
-          {data.packaging.map((pkg) => (
-            <div class="pkg-item">
-              <span class="pkg-type">{pkg.type}</span>
-              <span class="pkg-sizes">{pkg.sizes.join(', ')}</span>
-            </div>
-          ))}
-        </div>
+      <h2 class="section-title">Applications</h2>
+      <ul class="app-list">
+        {data.applications.map((app) => <li>{app}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {data.faq && data.faq.length > 0 && (
+    <section class="detail-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        {data.faq.map((f) => (
+          <div class="faq-item">
+            <h3 class="faq-question">{f.question}</h3>
+            <p class="faq-answer">{f.answer}</p>
+          </div>
+        ))}
       </div>
     </section>
+  )}
 
-    {data.applications && data.applications.length > 0 && (
-      <section class="detail-section">
-        <h2 class="section-title">Applications</h2>
-        <ul class="app-list">
-          {data.applications.map((app) => <li>{app}</li>)}
-        </ul>
-      </section>
-    )}
-
-    {data.faq && data.faq.length > 0 && (
-      <section class="detail-section">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          {data.faq.map((f) => (
-            <div class="faq-item">
-              <h3 class="faq-question">{f.question}</h3>
-              <p class="faq-answer">{f.answer}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    )}
-
-    <section class="detail-section detail-section--last">
-      <h2 class="section-title">Safety &amp; Handling</h2>
-      <div class="safety-badge">{data.safety.hazardClass}</div>
-    </section>
-  </article>
-</BaseLayout>
+  <section class="detail-section detail-section--last">
+    <h2 class="section-title">Safety &amp; Handling</h2>
+    <div class="safety-badge">{data.safety.hazardClass}</div>
+  </section>
+</ProductDetailLayout>
 
 <style>
-  .detail {
-    max-width: var(--space-container);
-    margin: 0 auto;
-    padding: var(--space-section) 1.5rem;
-  }
-  .detail-hero {
-    margin-bottom: 3rem;
-  }
-  .detail-formula {
-    font-family: var(--font-mono);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    color: var(--color-accent);
-    display: block;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-  }
-  .detail-name {
-    font-family: var(--font-serif);
-    font-weight: 600;
-    font-size: var(--text-hero);
-    line-height: 1.2;
-    color: var(--color-text);
-    margin-bottom: 1rem;
-  }
-  .detail-summary {
-    font-size: var(--text-body);
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-    max-width: 640px;
-  }
-
-  .detail-section {
-    padding: 2rem 0;
-    border-top: 1px solid var(--color-border);
-  }
-  .detail-section--last {
-    border-bottom: 1px solid var(--color-border);
-  }
-  .section-title {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--text-h2);
-    color: var(--color-text);
-    margin-bottom: 1.25rem;
-  }
-
   .grades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -216,7 +160,7 @@ const faqSchema = data.faq?.length
   .grade-purity {
     font-family: var(--font-mono);
     font-size: var(--text-small);
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     font-weight: 500;
     white-space: nowrap;
   }
@@ -324,7 +268,7 @@ const faqSchema = data.faq?.length
     font-size: var(--text-small);
     font-weight: 600;
     color: var(--color-card);
-    background: var(--color-accent);
+    background: var(--color-accent-deep);
     border-radius: var(--radius-tags);
     margin-bottom: 1rem;
   }
@@ -355,9 +299,6 @@ const faqSchema = data.faq?.length
   @media (max-width: 600px) {
     .supply-grid {
       grid-template-columns: 1fr;
-    }
-    .detail {
-      padding: var(--space-section) 1rem;
     }
   }
 </style>

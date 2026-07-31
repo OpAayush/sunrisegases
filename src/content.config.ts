@@ -7,14 +7,9 @@ const seo = z.object({
   description: z.string(),
 });
 
-const image = z.object({
-  src: z.string(),
-  alt: z.string(),
-});
-
 const gases = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/gases' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     formula: z.string().optional(),
@@ -31,7 +26,7 @@ const gases = defineCollection({
     })),
     applications: z.array(z.string()),
     safety: z.object({ sdsUrl: z.string(), hazardClass: z.string() }),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
     faq: z.array(z.object({
       question: z.string(),
@@ -42,7 +37,7 @@ const gases = defineCollection({
 
 const gasMixtures = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/gas-mixtures' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     components: z.array(z.object({ gas: z.string(), ratio: z.string() })),
@@ -50,14 +45,14 @@ const gasMixtures = defineCollection({
     applications: z.array(z.string()),
     packaging: z.array(z.object({ type: z.string(), sizes: z.array(z.string()) })),
     safety: z.object({ sdsUrl: z.string().optional(), hazardClass: z.string().optional() }),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
   }),
 });
 
 const specialtyGases = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/specialty-gases' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     tier: z.enum(['ultra-high-purity', 'calibration']),
@@ -65,14 +60,14 @@ const specialtyGases = defineCollection({
     certification: z.string(),
     traceability: z.string(),
     applications: z.array(z.string()),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
   }),
 });
 
 const refrigerants = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/refrigerants' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     grade: z.string(),
@@ -81,14 +76,14 @@ const refrigerants = defineCollection({
     retrofitCompatibility: z.array(z.string()),
     packaging: z.array(z.object({ type: z.string(), sizes: z.array(z.string()) })),
     safety: z.object({ sdsUrl: z.string().optional(), hazardClass: z.string().optional() }),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
   }),
 });
 
 const cryogenic = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/cryogenic' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     sublimationOrBoilOff: z.string(),
@@ -96,7 +91,7 @@ const cryogenic = defineCollection({
     applications: z.array(z.string()),
     forms: z.array(z.string()).optional(),
     grade: z.string().optional(),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
     faq: z.array(z.object({
       question: z.string(),
@@ -107,20 +102,20 @@ const cryogenic = defineCollection({
 
 const equipment = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/equipment' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     category: z.string(),
     specs: z.array(z.object({ label: z.string(), value: z.string() })),
     compatibleWith: z.array(z.string()).optional(),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
   }),
 });
 
 const fireSafety = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/fire-safety' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     agentType: z.string(),
@@ -128,14 +123,14 @@ const fireSafety = defineCollection({
     sizes: z.array(z.string()),
     dischargeTime: z.string(),
     refillInterval: z.string(),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
   }),
 });
 
 const balloons = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/balloons' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     slug: z.string(),
     name: z.string(),
     summary: z.string(),
@@ -143,7 +138,7 @@ const balloons = defineCollection({
     customization: z.array(z.string()).optional(),
     heliumRequirement: z.string().optional(),
     applications: z.array(z.string()).optional(),
-    images: z.array(image),
+    images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
   }),
 });
@@ -159,6 +154,41 @@ const industries = defineCollection({
   }),
 });
 
+const site = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/site' }),
+  schema: z.discriminatedUnion('kind', [
+    z.object({
+      kind: z.literal('nav'),
+      links: z.array(z.object({
+        label: z.string(),
+        href: z.string(),
+        icon: z.string().optional(),
+      })),
+    }),
+    z.object({
+      kind: z.literal('footer'),
+      description: z.string(),
+      location: z.string(),
+      established: z.string(),
+    }),
+    z.object({
+      kind: z.literal('seo-defaults'),
+      titleSuffix: z.string(),
+      defaultDescription: z.string(),
+      siteUrl: z.string(),
+    }),
+    z.object({
+      kind: z.literal('products-catalog'),
+      items: z.array(z.object({
+        name: z.string(),
+        category: z.string(),
+        description: z.string(),
+        finalLink: z.string(),
+      })),
+    }),
+  ]),
+});
+
 export const collections = {
   gases,
   'gas-mixtures': gasMixtures,
@@ -169,4 +199,5 @@ export const collections = {
   'fire-safety': fireSafety,
   balloons,
   industries,
+  site,
 };

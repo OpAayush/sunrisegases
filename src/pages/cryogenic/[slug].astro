@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductDetailLayout from '../../layouts/ProductDetailLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -40,7 +40,7 @@ const serviceSchema = {
     { "@type": "City", "name": "Hingna" },
     { "@type": "City", "name": "Kalmeshwar" },
   ],
-  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src}` : undefined,
+  "image": data.images?.[0] ? `https://sunrisegases.com${data.images[0].src.src}` : undefined,
 };
 
 const faqSchema = data.faq?.length
@@ -56,84 +56,68 @@ const faqSchema = data.faq?.length
   : undefined;
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, serviceSchema, ...(faqSchema ? [faqSchema] : [])]}>
-  <article class="detail">
-    <header class="detail-hero">
-      <span class="detail-label">Cryogenic</span>
-      <h1 class="detail-name">{data.name}</h1>
-    </header>
+<ProductDetailLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  schemas={[breadcrumbSchema, serviceSchema, ...(faqSchema ? [faqSchema] : [])]}
+  hero={{ name: data.name, label: 'Cryogenic', size: 'md' }}
+  images={data.images}
+>
+  <section class="detail-section">
+    <h2 class="section-title">Properties</h2>
+    <div class="spec-list">
+      <div class="spec-row">
+        <span class="spec-label">Temperature</span>
+        <span class="spec-value">{data.sublimationOrBoilOff}</span>
+      </div>
+      {data.grade && (
+        <div class="spec-row">
+          <span class="spec-label">Grade</span>
+          <span class="spec-value">{data.grade}</span>
+        </div>
+      )}
+    </div>
+  </section>
 
-    {data.images && data.images.length > 0 && (
-      <div class="product-images">
-        {data.images.map((img) => (
-          <img src={img.src} alt={img.alt} class="product-image" width="400" height="400" loading="lazy" />
+  <section class="detail-section">
+    <h2 class="section-title">Storage &amp; Handling</h2>
+    <p class="storage-text">{data.storageAndHandling}</p>
+  </section>
+
+  {data.forms && data.forms.length > 0 && (
+    <section class="detail-section">
+      <h2 class="section-title">Forms</h2>
+      <div class="forms-list">
+        {data.forms.map((form) => <span class="form-chip">{form}</span>)}
+      </div>
+    </section>
+  )}
+
+  {data.applications && data.applications.length > 0 && (
+    <section class="detail-section{!data.faq?.length ? ' detail-section--last' : ''}">
+      <h2 class="section-title">Applications</h2>
+      <ul class="app-list">
+        {data.applications.map((app) => <li>{app}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {data.faq && data.faq.length > 0 && (
+    <section class="detail-section detail-section--last">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        {data.faq.map((f) => (
+          <div class="faq-item">
+            <h3 class="faq-question">{f.question}</h3>
+            <p class="faq-answer">{f.answer}</p>
+          </div>
         ))}
       </div>
-    )}
-
-    <section class="detail-section">
-      <h2 class="section-title">Properties</h2>
-      <div class="spec-list">
-        <div class="spec-row">
-          <span class="spec-label">Temperature</span>
-          <span class="spec-value">{data.sublimationOrBoilOff}</span>
-        </div>
-        {data.grade && (
-          <div class="spec-row">
-            <span class="spec-label">Grade</span>
-            <span class="spec-value">{data.grade}</span>
-          </div>
-        )}
-      </div>
     </section>
-
-    <section class="detail-section">
-      <h2 class="section-title">Storage &amp; Handling</h2>
-      <p class="storage-text">{data.storageAndHandling}</p>
-    </section>
-
-    {data.forms && data.forms.length > 0 && (
-      <section class="detail-section">
-        <h2 class="section-title">Forms</h2>
-        <div class="forms-list">
-          {data.forms.map((form) => <span class="form-chip">{form}</span>)}
-        </div>
-      </section>
-    )}
-
-    {data.applications && data.applications.length > 0 && (
-      <section class="detail-section{!data.faq?.length ? ' detail-section--last' : ''}">
-        <h2 class="section-title">Applications</h2>
-        <ul class="app-list">
-          {data.applications.map((app) => <li>{app}</li>)}
-        </ul>
-      </section>
-    )}
-
-    {data.faq && data.faq.length > 0 && (
-      <section class="detail-section detail-section--last">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          {data.faq.map((f) => (
-            <div class="faq-item">
-              <h3 class="faq-question">{f.question}</h3>
-              <p class="faq-answer">{f.answer}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    )}
-  </article>
-</BaseLayout>
+  )}
+</ProductDetailLayout>
 
 <style>
-  .detail { max-width: var(--space-container); margin: 0 auto; padding: var(--space-section) 1.5rem; }
-  .detail-hero { margin-bottom: 2rem; }
-  .detail-label { font-family: var(--font-display); font-weight: 700; font-size: var(--text-small); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); display: block; margin-bottom: 0.5rem; }
-  .detail-name { font-family: var(--font-serif); font-weight: 600; font-size: var(--text-hero); line-height: 1.2; color: var(--color-text); margin-bottom: 0.75rem; }
-  .section-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-h2); color: var(--color-text); margin-bottom: 1rem; }
-  .detail-section { padding: 2rem 0; border-top: 1px solid var(--color-border); }
-  .detail-section--last { border-bottom: 1px solid var(--color-border); }
   .spec-list { background: var(--color-card); border-radius: var(--radius-cards); overflow: hidden; box-shadow: var(--shadow-sm); }
   .spec-row { display: flex; justify-content: space-between; padding: 0.875rem 1.5rem; border-bottom: 1px solid var(--color-border); font-size: var(--text-small); gap: 1rem; }
   .spec-row:last-child { border-bottom: none; }

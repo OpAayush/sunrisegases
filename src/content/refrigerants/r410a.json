@@ -10,7 +10,7 @@
   ],
   "safety": { "sdsUrl": "/documents/sds/r410a.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "/images/products/cylinder-refrigerant.svg", "alt": "R410A refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R410A refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "R410A Refrigerant Gas Supplier | Sunrise Gases",

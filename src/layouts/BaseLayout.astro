@@ -1,6 +1,13 @@
 ---
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import '@fontsource/barlow-condensed/700.css';
+import '@fontsource/barlow-condensed/800.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/jetbrains-mono/400.css';
+import '@fontsource/playfair-display/600.css';
 import '../styles/tokens.css';
 
 export interface Props {
@@ -47,10 +54,7 @@ const siteName = 'Sunrise Gases';
     <meta property="og:image:alt" content="Sunrise Gases — Industrial & Specialty Gases Manufacturer in Nagpur" />
     <meta name="theme-color" content="#fff8f1" />
     <link rel="icon" type="image/svg+xml" href="/images/icons/flame.svg" />
-    <link rel="apple-touch-icon" href="/images/icons/flame.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
     <script is:inline type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",

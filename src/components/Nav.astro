@@ -1,13 +1,7 @@
 ---
-const links = [
-  { href: '/gases/', label: 'Gases', icon: '/images/icons/gas-cylinder.svg' },
-  { href: '/equipment/', label: 'Equipment', icon: '/images/icons/truck.svg' },
-  { href: '/fire-safety/', label: 'Fire Safety', icon: '/images/icons/fire-extinguisher.svg' },
-  { href: '/balloons/', label: 'Balloons', icon: '/images/icons/package.svg' },
-  { href: '/industries/', label: 'Industries' },
-  { href: '/about/', label: 'About' },
-  { href: '/contact/', label: 'Contact', icon: '/images/icons/phone.svg' },
-];
+import { getEntry } from 'astro:content';
+const nav = await getEntry('site', 'nav');
+const links = nav?.data.kind === 'nav' ? nav.data.links : [];
 const currentPath = Astro.url.pathname;
 ---
 
@@ -80,8 +74,12 @@ const currentPath = Astro.url.pathname;
     flex-shrink: 0;
   }
   .nav-link:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     text-decoration: none;
+  }
+  .nav-link[aria-current="page"] {
+    color: var(--color-accent-text);
+    font-weight: 600;
   }
 
   @media (max-width: 768px) {
@@ -105,7 +103,7 @@ const currentPath = Astro.url.pathname;
       font-size: 0.8125rem;
       white-space: nowrap;
       padding: 0.5rem 0.5rem;
-      min-height: 36px;
+      min-height: 44px;
     }
     .nav-inner {
       padding: 0 1rem;

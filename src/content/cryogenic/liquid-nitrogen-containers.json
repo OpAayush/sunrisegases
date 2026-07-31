@@ -5,7 +5,7 @@
   "storageAndHandling": "Cryocans designed for safe liquid nitrogen storage and transport. Vacuum insulated for minimal boil-off.",
   "applications": ["Liquid nitrogen storage and transport", "Cryogenic sample preservation", "Medical and laboratory supply"],
   "images": [
-    { "src": "/images/products/cryocan.svg", "alt": "Liquid nitrogen cryocan, vacuum insulated, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cryocan.svg", "alt": "Liquid nitrogen cryocan, vacuum insulated, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Liquid Nitrogen Containers — Cryocans | Sunrise Gases",

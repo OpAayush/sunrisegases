@@ -9,7 +9,7 @@
     { "label": "Max inlet pressure", "value": "200 bar" }
   ],
   "images": [
-    { "src": "/images/products/manifold.svg", "alt": "Industrial gas manifold cylinder bank system, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/manifold.svg", "alt": "Industrial gas manifold cylinder bank system, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Gas Manifolds — Cylinder Manifold Systems | Sunrise Gases",

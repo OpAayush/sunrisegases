@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import BaseLayout from './BaseLayout.astro';
+import '../styles/product-detail.css';
+
+interface Props {
+  title: string;
+  description: string;
+  schemas?: Record<string, unknown>[];
+  hero: {
+    name: string;
+    label?: string;
+    category?: string;
+    formula?: string;
+    summary?: string;
+    blend?: string;
+    size?: 'lg' | 'md' | 'sm';
+  };
+  images?: { src: ImageMetadata; alt: string }[];
+}
+
+const {
+  title,
+  description,
+  schemas,
+  hero,
+  images,
+} = Astro.props;
+
+const heroClass = `detail-hero${hero.size === 'lg' ? ' detail-hero--lg' : ''}`;
+const nameClass = `detail-name${hero.size === 'lg' ? ' detail-name--lg' : hero.size === 'sm' ? ' detail-name--sm' : ''}`;
+---
+
+<BaseLayout title={title} description={description} schemas={schemas}>
+  <article class="detail">
+    <header class={heroClass}>
+      {hero.category ? (
+        <span class="detail-category">{hero.category}</span>
+      ) : hero.label ? (
+        <span class="detail-label">{hero.label}</span>
+      ) : null}
+      {hero.formula && <span class="detail-formula">{hero.formula}</span>}
+      <h1 class={nameClass}>{hero.name}</h1>
+      {hero.summary && <p class="detail-summary">{hero.summary}</p>}
+      {hero.blend && <p class="detail-blend">{hero.blend}</p>}
+    </header>
+
+    {images && images.length > 0 && (
+      <div class="product-images">
+        {images.map((img) => (
+          <Image
+            src={img.src}
+            alt={img.alt}
+            class="product-image"
+            widths={[400, 800]}
+            sizes="(max-width: 600px) 400px, 800px"
+            loading="lazy"
+          />
+        ))}
+      </div>
+    )}
+
+    <slot />
+  </article>
+</BaseLayout>

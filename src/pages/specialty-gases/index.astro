@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -15,7 +16,7 @@ const items = await getCollection('specialty-gases');
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (
       <a href={`/specialty-gases/${item.data.slug}/`} class="product-card">
         {item.data.images?.[0] && (
-          <img src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" loading="lazy" />
+          <Image src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" widths={[48, 96]} sizes="48px" loading="lazy" />
         )}
         <h2 class="product-name">{item.data.name}</h2>
         <span class="product-purity">{item.data.purity}</span>
@@ -33,7 +34,7 @@ const items = await getCollection('specialty-gases');
   .product-card { background: var(--color-card); border-radius: var(--radius-cards); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.25rem; transition: box-shadow var(--transition-fast), transform var(--transition-fast); }
   .product-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); text-decoration: none; }
   .product-name { font-family: var(--font-display); font-weight: 700; font-size: var(--text-h3); color: var(--color-text); }
-  .product-purity { font-size: var(--text-small); color: var(--color-accent); font-weight: 500; }
+  .product-purity { font-size: var(--text-small); color: var(--color-accent-text); font-weight: 500; }
   .product-cert { font-size: var(--text-small); color: var(--color-text-secondary); margin-top: auto; }
   @media (max-width: 768px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 480px) { .catalog-grid { grid-template-columns: 1fr; } }

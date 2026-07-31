@@ -14,6 +14,8 @@
   --color-text: var(--color-ink-black);
   --color-text-secondary: var(--color-warm-stone);
   --color-accent: var(--color-harvest-flame);
+  --color-accent-text: #c94900;
+  --color-accent-deep: #c94900;
   --color-cta: var(--color-harvest-flame);
   --color-border: var(--color-mist-gray);
   --color-card: var(--color-paper-white);
