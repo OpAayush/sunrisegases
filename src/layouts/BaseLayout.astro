@@ -46,7 +46,7 @@ const siteName = 'Sunrise Gases';
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": "https://sunrisegases.com/#business",
@@ -90,7 +90,7 @@ const siteName = 'Sunrise Gases';
       "hasMap": "https://www.google.com/maps?q=21.1154769,79.0007651"
     })} />
     {schemas?.map((schema) => (
-      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+      <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
   </head>
   <body>

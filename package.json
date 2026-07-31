@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "astro dev",
         "build": "astro build",
+        "check": "astro check",
         "preview": "wrangler dev",
         "deploy": "astro build && wrangler deploy",
         "types": "wrangler types"
@@ -15,6 +16,8 @@
         "zod": "^3.23.0"
     },
     "devDependencies": {
+        "@astrojs/check": "^0.9.10",
+        "typescript": "^6.0.3",
         "wrangler": "^4.114.0"
     }
 }
