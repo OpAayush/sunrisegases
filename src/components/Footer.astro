@@ -1,13 +1,18 @@
 ---
 import { getEntry } from 'astro:content';
+import type { ImageMetadata } from 'astro';
 const footer = await getEntry('site', 'footer');
 const footerData = footer?.data.kind === 'footer' ? footer.data : { description: '', location: '', established: '' };
+const icons = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/icon-*.svg', { eager: true });
+const mapPin = icons['/src/assets/products/icon-map-pin.svg'].default.src;
+const logo = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/logo-sunrise-gases.webp', { eager: true });
+const logoSrc = logo['/src/assets/products/logo-sunrise-gases.webp'].default.src;
 ---
 
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-col">
-      <h3 class="footer-heading">Sunrise Gases</h3>
+      <img src={logoSrc} alt="Sunrise Gases — industrial and specialty gas manufacturer in Nagpur" class="footer-logo" />
       <p class="footer-text">{footerData.description}</p>
     </div>
     <div class="footer-col">
@@ -35,7 +40,7 @@ const footerData = footer?.data.kind === 'footer' ? footer.data : { description:
     <div class="footer-col">
       <h3 class="footer-heading">Office</h3>
       <address class="footer-address">
-        <img src="/images/icons/map-pin.svg" alt="" class="footer-icon" />
+        <img src={mapPin} alt="" class="footer-icon" />
         Meghraj Chawl, 212A, Gandhi Chowk<br />
         Sadar, Nagpur 440001<br />
         <a href="https://maps.app.goo.gl/pmto13xLtkvdeTrn9" target="_blank" rel="noopener">Map →</a>
@@ -44,7 +49,7 @@ const footerData = footer?.data.kind === 'footer' ? footer.data : { description:
     <div class="footer-col">
       <h3 class="footer-heading">Works</h3>
       <address class="footer-address">
-        <img src="/images/icons/map-pin.svg" alt="" class="footer-icon" />
+        <img src={mapPin} alt="" class="footer-icon" />
         Sharma Engineering Works<br />
         W52, MIDC, Hingna Road<br />
         Nagpur 440016<br />
@@ -76,6 +81,11 @@ const footerData = footer?.data.kind === 'footer' ? footer.data : { description:
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
+  }
+  .footer-logo {
+    height: 36px;
+    width: auto;
+    margin-bottom: 0.75rem;
   }
   .footer-heading {
     font-family: var(--font-display);

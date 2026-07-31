@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -17,7 +17,7 @@ const items = await getCollection('equipment');
       <a href={`/equipment/${item.data.slug}/`} class="product-card">
         <span class="product-category">{item.data.category}</span>
         {item.data.images?.[0] && (
-          <Image src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" widths={[48, 96]} sizes="48px" loading="lazy" />
+          <ProductImage src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" widths={[96, 160]} sizes="48px" loading="lazy" />
         )}
         <h2 class="product-name">{item.data.name}</h2>
       </a>

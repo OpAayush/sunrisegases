@@ -7,7 +7,8 @@
   "traceability": "Batch traceable with analytical certification",
   "applications": ["Laboratory analysis", "Instrument calibration", "Research and development", "Electronics manufacturing"],
   "images": [
-    { "src": "../../assets/products/cylinder-uhp.svg", "alt": "Ultra high pure gas cylinder, 99.999% purity, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-uhp.svg", "alt": "Ultra high pure gas cylinder, 99.999% purity, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/calibration-gas-mixtures.webp", "alt": "Calibration gas mixtures for instrument calibration, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Ultra High Pure Gases — 99.999% Purity | Sunrise Gases",

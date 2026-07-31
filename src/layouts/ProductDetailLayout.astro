@@ -48,16 +48,20 @@ const nameClass = `detail-name${hero.size === 'lg' ? ' detail-name--lg' : hero.s
 
     {images && images.length > 0 && (
       <div class="product-images">
-        {images.map((img) => (
-          <Image
-            src={img.src}
-            alt={img.alt}
-            class="product-image"
-            widths={[400, 800]}
-            sizes="(max-width: 600px) 400px, 800px"
-            loading="lazy"
-          />
-        ))}
+        {images.map((img) =>
+          img.src.format === 'svg' ? (
+            <img src={img.src.src} alt={img.alt} class="product-image" loading="lazy" />
+          ) : (
+            <Image
+              src={img.src}
+              alt={img.alt}
+              class="product-image"
+              widths={[400, 800]}
+              sizes="(max-width: 600px) 400px, 800px"
+              loading="lazy"
+            />
+          )
+        )}
       </div>
     )}
 

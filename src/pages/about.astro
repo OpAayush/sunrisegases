@@ -1,12 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import type { ImageMetadata } from 'astro';
+const factory = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/factory-nagpur.webp', { eager: true });
+const factorySrc = factory['/src/assets/products/factory-nagpur.webp'].default.src;
 ---
 
 <BaseLayout title="About Us — Sunrise Gases, Nagpur Manufacturer" description="Sunrise Gases is a manufacturer and supplier of industrial, specialty, and medical gases based in Nagpur, serving Central India since 2013.">
   <article class="page">
     <header class="page-hero">
       <div class="page-hero-bg" aria-hidden="true">
-        <img src="/images/products/industrial-factory.jpg" alt="Sunrise Gases manufacturing facility in Nagpur, Maharashtra" />
+        <img src={factorySrc} alt="Sunrise Gases manufacturing facility in Nagpur, Maharashtra" />
       </div>
       <div class="page-hero-overlay">
         <h1 class="page-title">About Sunrise Gases</h1>

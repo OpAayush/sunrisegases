@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import type { ImageMetadata } from 'astro';
+const icons = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/icon-*.svg', { eager: true });
+const iconSrc = (name: string) => icons[`/src/assets/products/${name}.svg`].default.src;
 ---
 
 <BaseLayout title="Contact — Get a Quote for Industrial Gases | Sunrise Gases" description="Get in touch with Sunrise Gases for industrial gas supply, equipment, fire safety, and balloon inquiries. Based in Nagpur, serving Central India.">
@@ -12,7 +15,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="locations-grid">
       <section class="location-card">
         <div class="card-header">
-          <img src="/images/icons/map-pin.svg" alt="" class="icon-inline card-icon" />
+          <img src={iconSrc('icon-map-pin')} alt="" class="icon-inline card-icon" />
           <h2 class="card-title">Registered Office</h2>
         </div>
         <p class="card-label">Sadar, Nagpur</p>
@@ -30,7 +33,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <section class="location-card">
         <div class="card-header">
-          <img src="/images/icons/map-pin.svg" alt="" class="icon-inline card-icon" />
+          <img src={iconSrc('icon-map-pin')} alt="" class="icon-inline card-icon" />
           <h2 class="card-title">Works</h2>
         </div>
         <p class="card-label">MIDC, Hingna Road</p>
@@ -53,10 +56,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="card-title">Get in touch</h2>
         <p class="contact-note">Call or email us for pricing, availability, and technical specifications.</p>
         <div class="contact-links">
-          <a href="tel:+919422416090" class="contact-link"><img src="/images/icons/phone.svg" alt="" class="icon-inline" /> +91-9422416090</a>
-          <a href="mailto:contact@sunrisegases.com" class="contact-link"><img src="/images/icons/email.svg" alt="" class="icon-inline" /> contact@sunrisegases.com</a>
+          <a href="tel:+919422416090" class="contact-link"><img src={iconSrc('icon-phone')} alt="" class="icon-inline" /> +91-9422416090</a>
+          <a href="mailto:contact@sunrisegases.com" class="contact-link"><img src={iconSrc('icon-email')} alt="" class="icon-inline" /> contact@sunrisegases.com</a>
         </div>
-        <p class="contact-hours"><img src="/images/icons/clock.svg" alt="" class="icon-inline" /> Open 24 Hours &middot; 7 Days a Week</p>
+        <p class="contact-hours"><img src={iconSrc('icon-clock')} alt="" class="icon-inline" /> Open 24 Hours &middot; 7 Days a Week</p>
       </section>
 
       <section class="contact-card">

@@ -7,6 +7,8 @@
   "heliumRequirement": "Filled on-site or supplied with helium cylinders. Variety of sizes available.",
   "applications": ["Grand openings", "Trade shows and exhibitions", "Product launches", "Festivals and events", "Brand promotions"],
   "images": [
+    { "src": "../../assets/products/advertising-balloon-1.webp", "alt": "Advertising balloon at event, 8–20 Ft, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/advertising-balloon-2.webp", "alt": "Branded advertising balloon display, 8–20 Ft, Sunrise Gases Nagpur" },
     { "src": "../../assets/products/balloon-round.svg", "alt": "Round advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
     { "src": "../../assets/products/balloon-oval.svg", "alt": "Oval advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
     { "src": "../../assets/products/balloon-cube.svg", "alt": "Cube advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },

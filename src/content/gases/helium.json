@@ -13,7 +13,8 @@
   "applications": ["Advertising balloons", "TIG welding", "Leak detection", "Laboratory analysis"],
   "safety": { "sdsUrl": "/documents/sds/helium.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "../../assets/products/cylinder-helium.svg", "alt": "Industrial helium gas cylinder, 1.5–10 Cu.M., Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-helium.svg", "alt": "Industrial helium gas cylinder, 1.5–10 Cu.M., Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/helium-cylinder.webp", "alt": "Helium gas cylinder for balloon filling, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Helium Gas Supplier | Sunrise Gases",

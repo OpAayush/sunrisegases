@@ -12,7 +12,8 @@
   ],
   "safety": { "sdsUrl": "/documents/sds/p10.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "../../assets/products/cylinder-p10.svg", "alt": "P10 methane-argon calibration gas cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/cylinder-p10.svg", "alt": "P10 methane-argon calibration gas cylinder, 7 Cu.M., Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/p10-gas-cylinder.webp", "alt": "P10 methane-argon gas cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "P10 Gas — Methane + Argon Mixture | Sunrise Gases",

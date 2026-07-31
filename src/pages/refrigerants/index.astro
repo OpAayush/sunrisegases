@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -16,7 +16,7 @@ const items = await getCollection('refrigerants');
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (
       <a href={`/refrigerants/${item.data.slug}/`} class="product-card">
         {item.data.images?.[0] && (
-          <Image src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" widths={[48, 96]} sizes="48px" loading="lazy" />
+          <ProductImage src={item.data.images[0].src} alt={item.data.images[0].alt} class="product-card-img" widths={[96, 160]} sizes="48px" loading="lazy" />
         )}
         <h2 class="product-name">{item.data.name}</h2>
         <span class="product-grade">{item.data.grade} purity</span>

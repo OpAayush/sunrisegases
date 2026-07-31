@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -18,7 +18,7 @@ const gases = await getCollection('gases');
       return (
         <a href={`/gases/${gas.data.slug}/`} class="product-card">
           {gas.data.images?.[0] && (
-            <Image src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="product-card-img" loading="lazy" />
+            <ProductImage src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="product-card-img" widths={[96, 160]} sizes="48px" loading="lazy" />
           )}
           <span class="product-formula">{gas.data.formula || gas.data.slug.toUpperCase()}</span>
           <h2 class="product-name">{gas.data.name}</h2>

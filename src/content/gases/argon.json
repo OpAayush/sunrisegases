@@ -13,7 +13,8 @@
   "applications": ["Welding and metal fabrication", "Heat treatment", "Electronics"],
   "safety": { "sdsUrl": "/documents/sds/argon.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "../../assets/products/argon.jpg", "alt": "Industrial argon gas cylinder, 47L, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/argon.jpg", "alt": "Industrial argon gas cylinder, 47L, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/argon-shield.webp", "alt": "Argon shielding gas for MIG/TIG welding, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Argon Gas Supplier | Sunrise Gases",

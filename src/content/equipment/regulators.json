@@ -9,7 +9,9 @@
   ],
   "images": [
     { "src": "../../assets/products/regulator.svg", "alt": "Single stage gas regulator, 200 bar, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/regulator-dual.svg", "alt": "Dual gauge gas regulator, 200 bar, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/regulator-dual.svg", "alt": "Dual gauge gas regulator, 200 bar, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/gas-regulators.webp", "alt": "Single stage gas regulators, 200 bar, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/industrial-gas-regulators.webp", "alt": "Industrial double gauge gas regulators, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Gas Regulators — Single Stage, Double Gauge | Sunrise Gases",

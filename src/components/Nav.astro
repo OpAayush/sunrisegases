@@ -1,19 +1,23 @@
 ---
 import { getEntry } from 'astro:content';
+import type { ImageMetadata } from 'astro';
 const nav = await getEntry('site', 'nav');
 const links = nav?.data.kind === 'nav' ? nav.data.links : [];
 const currentPath = Astro.url.pathname;
+const icons = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/icon-*.svg', { eager: true });
+const iconSrc = (name?: string) => (name ? icons[`/src/assets/products/${name}.svg`]?.default.src : undefined);
+const logo = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/logo-sunrise-gases.webp', { eager: true });
+const logoSrc = logo['/src/assets/products/logo-sunrise-gases.webp'].default.src;
 ---
 
 <nav class="nav" aria-label="Primary">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <img src="/images/icons/flame.svg" alt="" class="nav-logo-icon" />
-      <span class="nav-logo-text">Sunrise Gases</span>
+      <img src={logoSrc} alt="Sunrise Gases" class="nav-logo-img" />
     </a>
     <ul class="nav-links">
       {links.map((link) => (
-        <li><a href={link.href} class="nav-link" aria-current={currentPath.startsWith(link.href) && link.href !== '/' ? 'page' : undefined}>{link.icon && <img src={link.icon} alt="" class="nav-link-icon" />}{link.label}</a></li>
+        <li><a href={link.href} class="nav-link" aria-current={currentPath.startsWith(link.href) && link.href !== '/' ? 'page' : undefined}>{link.icon && <img src={iconSrc(link.icon)} alt="" class="nav-link-icon" />}{link.label}</a></li>
       ))}
     </ul>
   </div>
@@ -41,16 +45,10 @@ const currentPath = Astro.url.pathname;
     align-items: center;
     gap: 0.5rem;
   }
-  .nav-logo-icon {
-    width: 22px;
-    height: 22px;
-    flex-shrink: 0;
-  }
-  .nav-logo-text {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.125rem;
-    color: var(--color-text);
+  .nav-logo-img {
+    height: 28px;
+    width: auto;
+    display: block;
   }
   .nav-links {
     display: flex;
@@ -85,9 +83,6 @@ const currentPath = Astro.url.pathname;
   @media (max-width: 768px) {
     .nav-links {
       gap: 0.75rem;
-    }
-    .nav-logo-text {
-      display: none;
     }
   }
   @media (max-width: 600px) {

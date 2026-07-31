@@ -13,7 +13,8 @@
   "applications": ["Chemical processing", "Oil and gas", "Electronics manufacturing"],
   "safety": { "sdsUrl": "/documents/sds/nitrogen.pdf", "hazardClass": "Non-flammable gas" },
   "images": [
-    { "src": "../../assets/products/nitrogen.jpg", "alt": "Industrial nitrogen gas cylinder, 47L, Sunrise Gases Nagpur" }
+    { "src": "../../assets/products/nitrogen.jpg", "alt": "Industrial nitrogen gas cylinder, 47L, Sunrise Gases Nagpur" },
+    { "src": "../../assets/products/nitrogen-cylinder.webp", "alt": "Nitrogen gas cylinder for purging and blanketing, Sunrise Gases Nagpur" }
   ],
   "seo": {
     "title": "Industrial Nitrogen Gas Supplier | Sunrise Gases",

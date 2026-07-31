@@ -1,7 +1,16 @@
 ---
 import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductImage from '../components/ProductImage.astro';
 import { getCollection } from 'astro:content';
+
+const homepageImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/homepage-*.webp', { eager: true });
+const homepage1 = homepageImages['/src/assets/products/homepage-1.webp'].default;
+const homepage2 = homepageImages['/src/assets/products/homepage-2.webp'].default;
+
+const icons = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/icon-*.svg', { eager: true });
+const iconSrc = (name: string) => icons[`/src/assets/products/${name}.svg`].default.src;
 
 const gases = await getCollection('gases');
 const equipment = await getCollection('equipment');
@@ -9,9 +18,9 @@ const fireSafety = await getCollection('fire-safety');
 const balloons = await getCollection('balloons');
 
 const secondaryCategories = [
-  { collection: equipment, label: 'Equipment', href: '/equipment/', description: 'Cylinders, valves, manifolds, and gas handling accessories', icon: '/images/icons/truck.svg' },
-  { collection: fireSafety, label: 'Fire Safety', href: '/fire-safety/', description: 'Extinguishers and fire suppression', icon: '/images/icons/fire-extinguisher.svg' },
-  { collection: balloons, label: 'Balloons', href: '/balloons/', description: 'Custom advertising balloons for events', icon: '/images/icons/package.svg' },
+  { collection: equipment, label: 'Equipment', href: '/equipment/', description: 'Cylinders, valves, manifolds, and gas handling accessories', icon: 'icon-truck' },
+  { collection: fireSafety, label: 'Fire Safety', href: '/fire-safety/', description: 'Extinguishers and fire suppression', icon: 'icon-fire-extinguisher' },
+  { collection: balloons, label: 'Balloons', href: '/balloons/', description: 'Custom advertising balloons for events', icon: 'icon-package' },
 ];
 
 const faqSchema = {
@@ -81,7 +90,7 @@ const faqSchema = {
 <BaseLayout title="Industrial & Specialty Gases — Sunrise Gases, Nagpur" description="Industrial and specialty gases manufacturer based in Nagpur. Supplying oxygen, nitrogen, argon, CO₂, hydrogen, helium, and gas equipment across Central India." schemas={[faqSchema]}>
   <section class="hero">
     <div class="hero-bg-decor" aria-hidden="true">
-      <img src="/images/icons/flame.svg" alt="" />
+      <img src={iconSrc('icon-flame')} alt="" />
     </div>
     <div class="hero-content">
       <h1 class="hero-title">Industrial &amp; specialty<br />gases <span class="hero-accent">manufactured in Nagpur</span></h1>
@@ -97,7 +106,7 @@ const faqSchema = {
         return (
           <a href={`/gases/${gas.data.slug}/`} class="gas-card">
             {gas.data.images?.[0] && (
-              <Image src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="gas-card-img" widths={[48, 96]} sizes="48px" loading="lazy" />
+              <ProductImage src={gas.data.images[0].src} alt={gas.data.images[0].alt} class="gas-card-img" widths={[96, 160]} sizes="48px" loading="lazy" />
             )}
             <span class="gas-formula">{gas.data.formula || gas.data.slug.toUpperCase()}</span>
             <span class="gas-name">{gas.data.name}</span>
@@ -113,16 +122,16 @@ const faqSchema = {
     <div class="also-row">
       <span class="also-label">Also</span>
       <a href="/gas-mixtures/" class="also-link">
-        <img src="/images/icons/flame.svg" alt="" class="also-icon" /> Mixture gases
+        <img src={iconSrc('icon-flame')} alt="" class="also-icon" /> Mixture gases
       </a>
       <a href="/specialty-gases/" class="also-link">
-        <img src="/images/icons/shield.svg" alt="" class="also-icon" /> Specialty &amp; calibration
+        <img src={iconSrc('icon-shield')} alt="" class="also-icon" /> Specialty &amp; calibration
       </a>
       <a href="/refrigerants/" class="also-link">
-        <img src="/images/icons/snowflake.svg" alt="" class="also-icon" /> Refrigerants
+        <img src={iconSrc('icon-snowflake')} alt="" class="also-icon" /> Refrigerants
       </a>
       <a href="/cryogenic/" class="also-link">
-        <img src="/images/icons/snowflake.svg" alt="" class="also-icon" /> Cryogenic
+        <img src={iconSrc('icon-snowflake')} alt="" class="also-icon" /> Cryogenic
       </a>
       (LN₂, dry ice)
     </div>
@@ -133,13 +142,20 @@ const faqSchema = {
       {secondaryCategories.map((cat) => (
         <a href={cat.href} class="category-card">
           <div class="category-card-icon">
-            <img src={cat.icon} alt="" />
+            <img src={iconSrc(cat.icon)} alt="" />
           </div>
           <h2 class="category-title">{cat.label}</h2>
           <p class="category-description">{cat.description}</p>
           <span class="category-count">{cat.collection.length} product{cat.collection.length !== 1 ? 's' : ''}</span>
         </a>
       ))}
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery">
+      <Image src={homepage1} alt="Sunrise Gases facility, Nagpur" class="gallery-img" widths={[160, 320]} sizes="(max-width: 600px) 160px, 200px" loading="lazy" />
+      <Image src={homepage2} alt="Gas cylinders at Sunrise Gases, Nagpur" class="gallery-img" widths={[160, 320]} sizes="(max-width: 600px) 160px, 200px" loading="lazy" />
     </div>
   </section>
 
@@ -253,7 +269,7 @@ const faqSchema = {
     text-decoration: none;
     z-index: 1;
   }
-  .gas-card-img {
+  :global(.gas-card-img) {
     width: 48px;
     height: 48px;
     object-fit: contain;
@@ -380,6 +396,25 @@ const faqSchema = {
     color: var(--color-accent-text);
     font-weight: 500;
     margin-top: auto;
+  }
+
+  .gallery-section {
+    max-width: var(--space-container);
+    margin: 0 auto;
+    padding: var(--space-section) 1.5rem 0;
+  }
+  .gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .gallery-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
   }
 
   .cta-section {
