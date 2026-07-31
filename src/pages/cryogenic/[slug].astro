@@ -23,7 +23,7 @@ const breadcrumbSchema = {
   ]
 };
 
-const productSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": data.name,
@@ -56,7 +56,7 @@ const faqSchema = data.faq?.length
   : undefined;
 ---
 
-<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, productSchema, ...(faqSchema ? [faqSchema] : [])]}>
+<BaseLayout title={data.seo.title} description={data.seo.description} schemas={[breadcrumbSchema, serviceSchema, ...(faqSchema ? [faqSchema] : [])]}>
   <article class="detail">
     <header class="detail-hero">
       <span class="detail-label">Cryogenic</span>
