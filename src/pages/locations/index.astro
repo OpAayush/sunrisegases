@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BUSINESS } from '../../data/business';
+import '../../styles/local-pages.css';
+---
+<BaseLayout title="Sunrise Gases Locations in Nagpur | Sadar & Hingna Road" description="Sunrise Gases offices in Nagpur: Sadar registered office and MIDC Hingna Road office, godown and dispatch. Address, map and phone +91-9422416090." businessSchema="full" crumbName="Locations">
+  <article class="lp">
+    <h1 class="lp-title">Sunrise Gases locations in Nagpur</h1>
+    <p class="lp-lead">We work from two places in Nagpur: our registered office in Sadar and our office, godown and dispatch base on MIDC Hingna Road.</p>
+    <div class="lp-grid">
+      {BUSINESS.branches.map((b) => (
+        <section class="lp-card">
+          <h2 class="lp-h2" style="margin-top:0">{b.name}</h2>
+          <p class="lp-p">{b.streetAddress}, Nagpur {b.postalCode}</p>
+          <p class="lp-p">{b.blurb}</p>
+          <a class="lp-link" href={`/locations/${b.slug}/`}>Details &amp; map &rarr;</a>
+        </section>
+      ))}
+    </div>
+  </article>
+</BaseLayout>

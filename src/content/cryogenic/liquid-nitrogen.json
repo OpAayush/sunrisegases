@@ -3,13 +3,21 @@
   "name": "Liquid Nitrogen",
   "sublimationOrBoilOff": "Boils at −196°C",
   "storageAndHandling": "Supplied in cryocans (customer's or our own). Handle with cryogenic gloves and eye protection. Store in well-ventilated area.",
-  "applications": ["Cryogenic preservation", "Industrial freezing", "Medical and laboratory", "Metal treatment"],
+  "applications": [
+    "Cryogenic preservation",
+    "Industrial freezing",
+    "Medical and laboratory",
+    "Metal treatment"
+  ],
   "images": [
-    { "src": "../../assets/products/dewar.svg", "alt": "Liquid nitrogen dewar cryocan, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/dewar.svg",
+      "alt": "Liquid nitrogen dewar cryocan, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Liquid Nitrogen Supplier | Sunrise Gases",
-    "description": "Liquid nitrogen supplied in cryocans for cryogenic preservation, industrial freezing, and laboratory applications. Supplied from Nagpur."
+    "title": "Liquid Nitrogen in Nagpur | Sunrise Gases",
+    "description": "Liquid nitrogen in Nagpur for cryogenic freezing, labs and events. Cryocans and delivery across Nagpur. Call +91-9422416090."
   },
   "faq": [
     {
@@ -24,5 +32,10 @@
       "question": "What is liquid nitrogen used for?",
       "answer": "Cryogenic preservation, industrial freezing, medical and laboratory work, and metal treatment. Liquid nitrogen boils at −196°C."
     }
-  ]
+  ],
+  "about": [
+    "Liquid nitrogen (LN₂) is nitrogen cooled to about −196 °C. It is used for cryogenic freezing and shrink-fitting, cold storage of biological samples, food freezing and chilling, and as a cold source in laboratories and events.",
+    "It is stored in vacuum-insulated containers that vent as it slowly boils off, so never seal a container tightly. Use cryogenic gloves and face protection and handle it only in well-ventilated areas."
+  ],
+  "hindi": "नागपुर में लिक्विड नाइट्रोजन — क्रायोजेनिक फ्रीज़िंग, जैविक नमूनों के भंडारण और प्रयोगशाला उपयोग के लिए। लिक्विड नाइट्रोजन के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

@@ -4,19 +4,58 @@
   "formula": "NH₃",
   "summary": "Industrial anhydrous ammonia for refrigeration, chemical processing, and agricultural applications.",
   "grades": [
-    { "name": "Industrial", "purity": "99.50%", "uses": ["refrigeration", "chemical processing"] }
+    {
+      "name": "Industrial",
+      "purity": "99.50%",
+      "uses": [
+        "refrigeration",
+        "chemical processing"
+      ]
+    }
   ],
-  "supplyForms": ["cylinder"],
+  "supplyForms": [
+    "cylinder"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["50 Kg"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "50 Kg"
+      ]
+    }
   ],
-  "applications": ["Industrial refrigeration", "Chemical processing", "Water treatment"],
-  "safety": { "sdsUrl": "/documents/sds/ammonia.pdf", "hazardClass": "Toxic gas" },
+  "applications": [
+    "Industrial refrigeration",
+    "Chemical processing",
+    "Water treatment"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/ammonia.pdf",
+    "hazardClass": "Toxic gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-ammonia.svg", "alt": "Industrial ammonia gas cylinder, 50 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-ammonia.svg",
+      "alt": "Industrial ammonia gas cylinder, 50 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Industrial Ammonia Gas Supplier | Sunrise Gases",
-    "description": "Industrial anhydrous ammonia for refrigeration and chemical processing. Available in 50 Kg cylinders. Supplied from Nagpur."
-  }
+    "title": "Ammonia Gas Cylinders in Nagpur | Sunrise Gases",
+    "description": "Ammonia gas cylinders in Nagpur for refrigeration, cold storage and water treatment. Call +91-9422416090 for availability and delivery."
+  },
+  "about": [
+    "Ammonia (NH₃) is a toxic, pungent gas supplied as a liquefied gas in cylinders. Industrially it is used as a refrigerant (R717) in cold storage and ice plants, in metal treatment such as nitriding, in water and effluent treatment and as a chemical raw material.",
+    "Ammonia is corrosive and toxic if inhaled. Only trained staff should handle it, with suitable PPE, leak detection and ventilation. Ask us for the Safety Data Sheet before your first order."
+  ],
+  "faq": [
+    {
+      "question": "Is ammonia gas dangerous?",
+      "answer": "Yes. Ammonia is toxic and corrosive. Use it only with proper PPE, ventilation and trained staff, and request the Safety Data Sheet before use."
+    },
+    {
+      "question": "Where can I buy ammonia gas in Nagpur?",
+      "answer": "Sunrise Gases supplies ammonia cylinders from Nagpur. Call or WhatsApp us to confirm availability and delivery."
+    }
+  ],
+  "hindi": "नागपुर में अमोनिया गैस सिलेंडर — कोल्ड स्टोरेज, रेफ्रिजरेशन और वॉटर ट्रीटमेंट के लिए। अमोनिया विषैली गैस है; केवल प्रशिक्षित कर्मचारी ही संभालें। ऑर्डर के लिए +91-9422416090 पर संपर्क करें।"
 }

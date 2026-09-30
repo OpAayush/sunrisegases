@@ -1,4 +1,5 @@
 ---
+import '../../styles/local-pages.css';
 import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -6,11 +7,13 @@ import { getCollection } from 'astro:content';
 const items = await getCollection('gas-mixtures');
 ---
 
-<BaseLayout title="Gas Mixtures — Argonite, P10 & Zero Air | Sunrise Gases" description="Precision gas mixtures including Argonite, P10, Zero Air, Breathing Air, and Hydrogen-Nitrogen blends. Manufactured in Nagpur.">
+<BaseLayout title="Gas Mixtures in Nagpur — P10, Zero Air | Sunrise Gases" description="Precision gas mixtures including Argonite, P10, Zero Air, Breathing Air, and Hydrogen-Nitrogen blends. Manufactured in Nagpur.">
   <header class="catalog-hero">
     <h1 class="catalog-title">Gas mixtures</h1>
     <p class="catalog-subtitle">Precision-blended gas mixtures for industrial, calibration, and specialty applications.</p>
   </header>
+
+  <div class="lp" style="padding-block: 1.25rem 0"><p class="lp-p">Pre-blended gas mixtures give consistent composition from cylinder to cylinder. We supply P10 (90% argon + 10% methane) for XRF and radiation detectors, welding mixtures, zero air, breathing air and forming gas in Nagpur. Tell us the blend and application and we will confirm availability. <a class="lp-link" href="/gas-cylinder-refill-nagpur/">Cylinder refill and delivery</a> across Nagpur.</p></div>
 
   <section class="catalog-grid">
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (

@@ -2,9 +2,24 @@
   "slug": "power-and-energy",
   "name": "Power and Energy",
   "summary": "Industrial gases for power generation, plant maintenance, and energy sector applications.",
-  "relevantProducts": ["nitrogen", "hydrogen", "carbon-dioxide", "oxygen"],
+  "relevantProducts": [
+    "nitrogen",
+    "hydrogen",
+    "carbon-dioxide",
+    "oxygen"
+  ],
   "seo": {
-    "title": "Industrial Gases for Power and Energy | Sunrise Gases",
+    "title": "Gases for Power & Energy in Nagpur | Sunrise Gases",
     "description": "Nitrogen, hydrogen, CO₂, and oxygen for power generation and energy sector applications. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Power plants use gases for maintenance and safe operation. Hydrogen cools turbine generators; nitrogen blankets and purges transformers, boilers and pipelines; argon, CO₂ and oxygen support welding and cutting during shutdowns; helium is used for leak detection.",
+    "Plants across the Nagpur region can call us for cylinder supply at any hour — orders are taken 24 hours a day, 7 days a week."
+  ],
+  "faq": [
+    {
+      "question": "Which gases do you supply for power and energy?",
+      "answer": "Relevant products include nitrogen, hydrogen, carbon dioxide, oxygen. Call or WhatsApp us with your requirement and we will advise."
+    }
+  ]
 }

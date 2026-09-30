@@ -15,7 +15,7 @@ const files = [];
   for (const e of readdirSync(dir, { withFileTypes: true })) {
     const p = join(dir, e.name);
     if (e.isDirectory()) walk(p);
-    else if (e.name.endsWith('.html')) files.push(p);
+    else if (e.name.endsWith('.html') && !/^google[0-9a-f]+\.html$/.test(e.name)) files.push(p);
   }
 })(DIST);
 
@@ -126,9 +126,9 @@ for (const p of pages) {
 }
 
 // ---- cross-reference checks ----
-const sitemapPath = join(process.cwd(), 'public', 'sitemap.xml');
+const sitemapPath = join(DIST, 'sitemap.xml');
 const sitemapXml = existsSync(sitemapPath) ? readFileSync(sitemapPath, 'utf8') : null;
-if (!sitemapXml) flag('HIGH', 'ALL', 'public/sitemap.xml missing');
+if (!sitemapXml) flag('HIGH', 'ALL', 'dist sitemap.xml missing (run build first)');
 else {
   const locs = getAll(sitemapXml, /<loc>([^<]*)<\/loc>/g);
   const withoutSlash = locs.filter((l) => !l.endsWith('/'));
@@ -145,7 +145,7 @@ else {
 }
 
 for (const f of ['robots.txt', 'llms.txt']) {
-  if (!existsSync(join(process.cwd(), 'public', f))) flag('MED', 'ALL', `public/${f} missing`);
+  if (!existsSync(join(DIST, f))) flag('MED', 'ALL', `public/${f} missing`);
   else flag('OK', 'ALL', `public/${f} present`);
 }
 

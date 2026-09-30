@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+import MapEmbed from '../../components/MapEmbed.astro';
+import { BUSINESS, telLink, mailtoLink } from '../../data/business';
+import '../../styles/local-pages.css';
+
+export function getStaticPaths() {
+  return BUSINESS.branches.map((b) => ({ params: { slug: b.slug }, props: { b } }));
+}
+const { b } = Astro.props;
+const other = BUSINESS.branches.find((x) => x.slug !== b.slug)!;
+const isOffice = b.slug === 'sadar';
+const title = isOffice ? 'Sunrise Gases Sadar Office, Nagpur | Orders & Enquiries' : 'Sunrise Gases MIDC Hingna Road Godown, Nagpur';
+const description = isOffice
+  ? `Sunrise Gases registered office at Gandhi Chowk, Sadar, Nagpur — enquiries, orders and billing. Cylinders delivered across Nagpur. Call ${BUSINESS.phone}.`
+  : `Sunrise Gases office, godown and cylinder dispatch at MIDC Hingna Road, Nagpur. Open 24 hours. Delivery across Nagpur. Call ${BUSINESS.phone}.`;
+const does = isOffice
+  ? ['Enquiries, quotations and order booking', 'Billing and accounts', 'Cylinders transported to Sadar, with delivery across Nagpur']
+  : ['Cylinder stock and dispatch', 'Deliveries across Nagpur and nearby districts', 'Cylinders transported to our Sadar office as well', 'Enquiries and order booking'];
+const faqs = isOffice
+  ? [
+      { q: 'Do you deliver cylinders to Sadar and central Nagpur?', a: `Yes. Cylinders are transported to Sadar as well as dispatched from our MIDC Hingna Road godown, and delivered across Nagpur. Call ${BUSINESS.phone} or WhatsApp with your gas, quantity and address.` },
+      { q: 'How do I place an order?', a: `Call ${BUSINESS.phone} or message us on WhatsApp with the gas, quantity and delivery location. Orders are taken 24 hours a day.` },
+    ]
+  : [
+      { q: 'Where are gas cylinders delivered from?', a: 'Deliveries across Nagpur and nearby districts are dispatched from our MIDC Hingna Road godown, and cylinders are transported to our Sadar office as well.' },
+      { q: 'How do I place an order?', a: `Call ${BUSINESS.phone} or message us on WhatsApp with the gas, quantity and delivery location. Orders are taken 24 hours a day.` },
+      { q: 'Is the Hingna Road office open at night?', a: 'Yes. This location is open 24 hours a day, 7 days a week.' },
+    ];
+const schemas = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
+---
+<BaseLayout title={title} description={description} businessSchema="full" schemas={schemas} crumbName={b.name}>
+  <article class="lp">
+    <h1 class="lp-title">Sunrise Gases — {b.name}, Nagpur</h1>
+    <p class="lp-lead">{b.blurb}</p>
+    <div class="lp-grid">
+      <section class="lp-card">
+        <h2 class="lp-h2" style="margin-top:0">Address &amp; contact</h2>
+        <address>{b.streetAddress}<br />Nagpur, Maharashtra {b.postalCode}</address>
+        <p class="lp-p"><a class="lp-link" href={b.mapUrl} target="_blank" rel="noopener">Open in Google Maps →</a></p>
+        <p class="lp-p">Phone: <a class="lp-link" href={telLink}>{BUSINESS.phone}</a><br />Email: <a class="lp-link" href={mailtoLink('Enquiry')}>{BUSINESS.email}</a><br />{b.open24 ? BUSINESS.hoursText : 'Call or WhatsApp any time — orders are taken 24 hours a day.'}</p>
+      </section>
+      <section class="lp-card"><MapEmbed src={b.embedUrl} title={`Map of ${b.name}`} height={260} /></section>
+    </div>
+    <ContactCTA />
+    <h2 class="lp-h2">What happens here</h2>
+    <ul class="lp-list">{does.map((d) => <li>{d}</li>)}</ul>
+    <p class="lp-p">Browse our range: <a class="lp-link" href="/gases/">industrial gases</a>, <a class="lp-link" href="/gas-mixtures/">gas mixtures</a>, <a class="lp-link" href="/cryogenic/">liquid nitrogen and dry ice</a>, <a class="lp-link" href="/refrigerants/">refrigerants</a>, <a class="lp-link" href="/equipment/">regulators and cylinders</a> and <a class="lp-link" href="/fire-safety/">fire extinguishers</a>. See <a class="lp-link" href="/service-area/">delivery areas</a>. Our other location is the <a class="lp-link" href={`/locations/${other.slug}/`}>{other.name}</a>.</p>
+    <h2 class="lp-h2">Frequently asked questions</h2>
+    {faqs.map((f) => (<><h3 class="lp-q">{f.q}</h3><p class="lp-p">{f.a}</p></>))}
+  </article>
+</BaseLayout>

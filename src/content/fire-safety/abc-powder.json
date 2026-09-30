@@ -2,16 +2,47 @@
   "slug": "abc-powder-fire-extinguishers",
   "name": "ABC Powder Fire Extinguishers",
   "agentType": "ABC dry chemical powder",
-  "fireClassRating": ["A", "B", "C"],
-  "sizes": ["1 Kg", "2 Kg", "4 Kg", "6 Kg", "9 Kg"],
+  "fireClassRating": [
+    "A",
+    "B",
+    "C"
+  ],
+  "sizes": [
+    "1 Kg",
+    "2 Kg",
+    "4 Kg",
+    "6 Kg",
+    "9 Kg"
+  ],
   "dischargeTime": "10–20 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "../../assets/products/extinguisher-abc.svg", "alt": "ABC dry chemical powder fire extinguisher, 1–9 Kg, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/fire-extinguishers.webp", "alt": "ABC dry chemical powder fire extinguishers, 1–9 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/extinguisher-abc.svg",
+      "alt": "ABC dry chemical powder fire extinguisher, 1–9 Kg, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/fire-extinguishers.webp",
+      "alt": "ABC dry chemical powder fire extinguishers, 1–9 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "ABC Powder Fire Extinguishers | Sunrise Gases",
-    "description": "ABC dry chemical powder fire extinguishers for commercial and industrial fire safety. Class A, B, C. Available in 1-9 Kg."
-  }
+    "title": "ABC Fire Extinguisher in Nagpur | Sunrise Gases",
+    "description": "ABC dry chemical powder fire extinguishers for commercial and industrial fire safety. Class A, B, C. Available in 1-9. Delivery in Nagpur. Call +91-9422416090."
+  },
+  "faq": [
+    {
+      "question": "Do you refill ABC Powder Fire Extinguishers extinguishers in Nagpur?",
+      "answer": "Call or WhatsApp us with the extinguisher type and capacity and we will confirm refilling or replacement. We are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Which fires is a ABC Powder Fire Extinguishers extinguisher for?",
+      "answer": "It is rated for A, B, C. Always check the label on your extinguisher and never use an unsuitable type on electrical or flammable-liquid fires."
+    }
+  ],
+  "hindi": "नागपुर में ABC पाउडर अग्निशामक यंत्र (फायर एक्सटिंग्विशर) — ऑफिस, दुकान, वाहन और वर्कशॉप के लिए। रिफिलिंग या नया यंत्र लेने के लिए +91-9422416090 पर कॉल या WhatsApp करें।",
+  "about": [
+    "ABC powder extinguishers use mono-ammonium phosphate powder and are rated for Class A (solids), B (flammable liquids) and C (gas) fires. They are the most versatile choice for offices, shops, vehicles and workshops.",
+    "The powder leaves a residue that can damage electronics, so avoid it in server rooms and food preparation areas. Extinguishers need periodic inspection and refilling after any use."
+  ]
 }

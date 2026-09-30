@@ -1,4 +1,5 @@
 ---
+import '../../styles/local-pages.css';
 import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -6,11 +7,13 @@ import { getCollection } from 'astro:content';
 const items = await getCollection('cryogenic');
 ---
 
-<BaseLayout title="Cryogenic Gases — Dry Ice & Liquid Nitrogen | Sunrise Gases" description="Cryogenic products including food grade dry ice (block and powder) and liquid nitrogen supplied in cryocans. Manufactured in Nagpur.">
+<BaseLayout title="Dry Ice & Liquid Nitrogen in Nagpur | Sunrise Gases" description="Cryogenic products including food grade dry ice (block and powder) and liquid nitrogen supplied in cryocans. Manufactured in Nagpur.">
   <header class="catalog-hero">
     <h1 class="catalog-title">Cryogenic</h1>
     <p class="catalog-subtitle">Dry ice, liquid nitrogen, and cryogenic containers for industrial, medical, and food applications.</p>
   </header>
+
+  <div class="lp" style="padding-block: 1.25rem 0"><p class="lp-p">Dry ice and liquid nitrogen for cold chain, food freezing, laboratories and events in Nagpur. Cryogenic products are extremely cold — use gloves and face protection, keep them in vented containers and never seal them airtight. See also our <a class="lp-link" href="/bulk-industrial-gas-supply-nagpur/">bulk supply</a> options.</p></div>
 
   <section class="catalog-grid">
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (

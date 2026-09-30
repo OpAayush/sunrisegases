@@ -4,21 +4,68 @@
   "formula": "H₂",
   "summary": "Industrial hydrogen gas for processing, heat treatment, and fuel applications. Supplied as compressed gas from Nagpur.",
   "grades": [
-    { "name": "Industrial", "purity": "99.9%", "uses": ["heat treatment", "chemical processing"] }
+    {
+      "name": "Industrial",
+      "purity": "99.9%",
+      "uses": [
+        "heat treatment",
+        "chemical processing"
+      ]
+    }
   ],
-  "supplyForms": ["compressed cylinder"],
+  "supplyForms": [
+    "compressed cylinder"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "10L",
+        "20L",
+        "47L"
+      ]
+    }
   ],
-  "applications": ["Heat treatment of metals", "Chemical processing", "Laboratory applications"],
-  "safety": { "sdsUrl": "/documents/sds/hydrogen.pdf", "hazardClass": "Flammable gas" },
+  "applications": [
+    "Heat treatment of metals",
+    "Chemical processing",
+    "Laboratory applications"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/hydrogen.pdf",
+    "hazardClass": "Flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/hydrogen.jpg", "alt": "Industrial hydrogen gas cylinder, 47L, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/hydrogen-gas-cylinder.webp", "alt": "Hydrogen gas cylinder with valve, 47L, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/hydrogen-pallet.webp", "alt": "Pallet of industrial hydrogen gas cylinders, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/hydrogen.jpg",
+      "alt": "Industrial hydrogen gas cylinder, 47L, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/hydrogen-gas-cylinder.webp",
+      "alt": "Hydrogen gas cylinder with valve, 47L, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/hydrogen-pallet.webp",
+      "alt": "Pallet of industrial hydrogen gas cylinders, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Hydrogen Gas Supplier | Sunrise Gases",
-    "description": "Industrial hydrogen gas for heat treatment, chemical processing, and laboratory use. Supplied as compressed gas from Nagpur."
-  }
+    "title": "Industrial Hydrogen Gas Supplier in Nagpur | Sunrise Gases",
+    "description": "Industrial hydrogen gas cylinders in Nagpur for annealing, generator cooling and labs. Delivery across Nagpur. Call +91-9422416090."
+  },
+  "about": [
+    "Hydrogen (H₂) is the lightest gas and burns with a nearly invisible flame. Industrial hydrogen is used as a protective or reducing atmosphere in annealing and heat treatment, for generator cooling in power plants, in chemical processing, and as a carrier or fuel gas in laboratory instruments.",
+    "Hydrogen is flammable over a very wide range in air (about 4% to 75% by volume) and leaks easily through small gaps. Keep it away from ignition sources and oxidisers, ventilate at high points where it would collect, and use regulators and fittings rated for hydrogen."
+  ],
+  "faq": [
+    {
+      "question": "Do you supply hydrogen gas cylinders in Nagpur?",
+      "answer": "Yes. Industrial hydrogen cylinders are supplied from Nagpur with delivery across Nagpur and nearby areas. Call or WhatsApp to confirm sizes, purity and availability — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is hydrogen gas flammable?",
+      "answer": "Yes. Hydrogen is highly flammable and forms explosive mixtures with air. Store cylinders upright, away from ignition sources and oxidisers, and use only hydrogen-rated regulators."
+    }
+  ],
+  "hindi": "नागपुर में औद्योगिक हाइड्रोजन गैस सिलेंडर — एनीलिंग, जनरेटर कूलिंग और प्रयोगशाला उपयोग के लिए। हाइड्रोजन अत्यंत ज्वलनशील है, इसलिए सुरक्षा निर्देशों का पालन करें। ऑर्डर के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

@@ -1,11 +1,12 @@
 ---
+import '../styles/local-pages.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import type { ImageMetadata } from 'astro';
 const factory = import.meta.glob<{ default: ImageMetadata }>('/src/assets/products/factory-nagpur.webp', { eager: true });
 const factorySrc = factory['/src/assets/products/factory-nagpur.webp'].default.src;
 ---
 
-<BaseLayout title="About Us — Sunrise Gases, Nagpur Manufacturer" description="Sunrise Gases is a manufacturer and supplier of industrial, specialty, and medical gases based in Nagpur, serving Central India since 2013.">
+<BaseLayout businessSchema="full" title="About Sunrise Gases — Industrial Gas Supplier, Nagpur" description="Sunrise Gases has supplied industrial and specialty gases in Nagpur since 2013. Sadar office and MIDC Hingna Road godown. Orders 24×7.">
   <article class="page">
     <header class="page-hero">
       <div class="page-hero-bg" aria-hidden="true">
@@ -37,6 +38,10 @@ const factorySrc = factory['/src/assets/products/factory-nagpur.webp'].default.s
       <a href="/contact/" class="page-link">Contact us for inquiries and quotes →</a></p>
     </section>
   </article>
+  <section class="lp" style="padding-top:0">
+    <h2 class="lp-h2">Where we work</h2>
+    <p class="lp-p">Our <a class="lp-link" href="/locations/sadar/">Sadar office</a> is our registered office for enquiries, orders and billing. Our <a class="lp-link" href="/locations/hingna-midc/">MIDC Hingna Road office and godown</a> is where cylinders are stocked and deliveries are dispatched. Orders are taken 24 hours a day; see our <a class="lp-link" href="/service-area/">delivery areas</a>.</p>
+  </section>
 </BaseLayout>
 
 <style>

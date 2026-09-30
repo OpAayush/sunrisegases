@@ -2,20 +2,55 @@
   "slug": "argonite",
   "name": "Argon + Nitrogen (Argonite)",
   "components": [
-    { "gas": "Argon", "ratio": "40–50%" },
-    { "gas": "Nitrogen", "ratio": "50–60%" }
+    {
+      "gas": "Argon",
+      "ratio": "40–50%"
+    },
+    {
+      "gas": "Nitrogen",
+      "ratio": "50–60%"
+    }
   ],
   "blendRationale": "Argonite is a fire suppression blend used in clean agent systems. Also used as a shielding gas mixture for specialized welding applications.",
-  "applications": ["Clean agent fire suppression", "Specialized welding", "Industrial processing"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["7 Cu.M."] }
+  "applications": [
+    "Clean agent fire suppression",
+    "Specialized welding",
+    "Industrial processing"
   ],
-  "safety": { "sdsUrl": "/documents/sds/argonite.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "7 Cu.M."
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/argonite.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/argonite.jpg", "alt": "Argonite argon-nitrogen fire suppression gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/argonite.jpg",
+      "alt": "Argonite argon-nitrogen fire suppression gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Argonite — Argon + Nitrogen Mixture | Sunrise Gases",
-    "description": "Argonite fire suppression and shielding gas mixture. Argon 40-50%, Nitrogen 50-60%. Available in 7 Cu.M. cylinders."
-  }
+    "title": "Argonite (Argon + Nitrogen) Gas Nagpur | Sunrise Gases",
+    "description": "Argonite fire suppression and shielding gas mixture. Argon 40-50%, Nitrogen 50-60%. Available in 7 Cu.M. cylinders. Delivery in Nagpur. Call +91-9422416090."
+  },
+  "about": [
+    "Argonite is supplied as a pre-blended argon and nitrogen mixture with a fixed, repeatable composition. Argon–nitrogen blends are inert and are used where a controlled protective atmosphere or shielding gas is needed.",
+    "Please confirm the intended application and the blend ratio you need when ordering so that the mixture matches your process."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Argon + Nitrogen (Argonite) in Nagpur?",
+      "answer": "Sunrise Gases supplies Argon + Nitrogen (Argonite) from our Nagpur branches in 7 Cu.M.. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is a certificate of analysis available?",
+      "answer": "Composition and purity details are available on request. Ask when you place your order."
+    }
+  ]
 }

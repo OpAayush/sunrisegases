@@ -1,4 +1,5 @@
 ---
+import { COLLECTION_LABELS } from '../lib/facts';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import BaseLayout from './BaseLayout.astro';
@@ -30,9 +31,12 @@ const {
 
 const heroClass = `detail-hero${hero.size === 'lg' ? ' detail-hero--lg' : ''}`;
 const nameClass = `detail-name${hero.size === 'lg' ? ' detail-name--lg' : hero.size === 'sm' ? ' detail-name--sm' : ''}`;
+const section = Astro.url.pathname.split('/').filter(Boolean)[0] ?? '';
+const sectionLabel = COLLECTION_LABELS[section] ?? 'Products';
+const mdHref = Astro.url.pathname.replace(/\/$/, '') + '.md';
 ---
 
-<BaseLayout title={title} description={description} schemas={schemas}>
+<BaseLayout mdHref={mdHref} crumbName={hero.name} title={title} description={description} schemas={schemas}>
   <article class="detail">
     <header class={heroClass}>
       {hero.category ? (
@@ -68,3 +72,4 @@ const nameClass = `detail-name${hero.size === 'lg' ? ' detail-name--lg' : hero.s
     <slot />
   </article>
 </BaseLayout>
+

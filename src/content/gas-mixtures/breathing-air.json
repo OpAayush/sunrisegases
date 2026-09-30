@@ -2,18 +2,51 @@
   "slug": "breathing-air",
   "name": "Breathing Air (Compressed Air)",
   "components": [
-    { "gas": "Nitrogen", "ratio": "79%" },
-    { "gas": "Oxygen", "ratio": "21%" }
+    {
+      "gas": "Nitrogen",
+      "ratio": "79%"
+    },
+    {
+      "gas": "Oxygen",
+      "ratio": "21%"
+    }
   ],
   "blendRationale": "High-purity compressed breathing air for respiratory protection, diving, and industrial use. Purified and filtered.",
-  "applications": ["Respiratory protection", "SCBA and SCUBA", "Industrial air tools"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["1 Cu.M.", "1.5 Cu.M."] }
+  "applications": [
+    "Respiratory protection",
+    "SCBA and SCUBA",
+    "Industrial air tools"
   ],
-  "safety": { "sdsUrl": "/documents/sds/breathing-air.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "1 Cu.M.",
+        "1.5 Cu.M."
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/breathing-air.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [],
   "seo": {
-    "title": "Breathing Air — High Purity Compressed Air | Sunrise Gases",
-    "description": "High-purity compressed breathing air for SCBA, SCUBA, and respiratory protection. 79% N₂, 21% O₂. Available in 1 and 1.5 Cu.M. cylinders."
-  }
+    "title": "Breathing Air Cylinders in Nagpur | Sunrise Gases",
+    "description": "High-purity compressed breathing air for SCBA, SCUBA, and respiratory protection. 79% N₂, 21% O₂. Available in 1 and. Delivery in Nagpur. Call +91-9422416090."
+  },
+  "about": [
+    "Breathing air is compressed air prepared to breathing quality, with controlled oxygen content and very low moisture, oil and contaminant levels. It is used in breathing apparatus, confined-space entry, fire and rescue training and diving support. Standards such as EN 12021 are commonly referenced.",
+    "Never use ordinary industrial compressed air, or a cylinder of another gas, for breathing. Ask us for the specification before ordering for safety-critical use."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Breathing Air (Compressed Air) in Nagpur?",
+      "answer": "Sunrise Gases supplies Breathing Air (Compressed Air) from our Nagpur branches in 1 Cu.M., 1.5 Cu.M.. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is a certificate of analysis available?",
+      "answer": "Composition and purity details are available on request. Ask when you place your order."
+    }
+  ]
 }

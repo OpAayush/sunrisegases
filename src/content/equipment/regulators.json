@@ -3,18 +3,49 @@
   "name": "Gas Regulators",
   "category": "regulators",
   "specs": [
-    { "label": "Types", "value": "Single Stage, Double Gauge" },
-    { "label": "Inlet pressure", "value": "200 bar max" },
-    { "label": "Gas compatibility", "value": "Oxygen, nitrogen, argon, CO₂, acetylene, LPG" }
+    {
+      "label": "Types",
+      "value": "Single Stage, Double Gauge"
+    },
+    {
+      "label": "Inlet pressure",
+      "value": "200 bar max"
+    },
+    {
+      "label": "Gas compatibility",
+      "value": "Oxygen, nitrogen, argon, CO₂, acetylene, LPG"
+    }
   ],
   "images": [
-    { "src": "../../assets/products/regulator.svg", "alt": "Single stage gas regulator, 200 bar, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/regulator-dual.svg", "alt": "Dual gauge gas regulator, 200 bar, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/gas-regulators.webp", "alt": "Single stage gas regulators, 200 bar, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/industrial-gas-regulators.webp", "alt": "Industrial double gauge gas regulators, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/regulator.svg",
+      "alt": "Single stage gas regulator, 200 bar, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/regulator-dual.svg",
+      "alt": "Dual gauge gas regulator, 200 bar, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/gas-regulators.webp",
+      "alt": "Single stage gas regulators, 200 bar, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/industrial-gas-regulators.webp",
+      "alt": "Industrial double gauge gas regulators, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Gas Regulators — Single Stage, Double Gauge | Sunrise Gases",
-    "description": "Industrial gas regulators — single stage and double gauge types. Compatible with oxygen, nitrogen, argon, CO₂, acetylene, LPG."
-  }
+    "title": "Gas Regulators in Nagpur | Sunrise Gases",
+    "description": "Industrial gas regulators — single stage and double gauge types. Compatible with oxygen, nitrogen, argon, CO₂,. Delivery in Nagpur. Call +91-9422416090."
+  },
+  "about": [
+    "A gas regulator reduces high cylinder pressure to a steady working pressure. Single-stage regulators are simple and suit short jobs, while two-stage regulators hold delivery pressure more steadily as the cylinder empties. A double-gauge regulator shows both cylinder contents and outlet pressure.",
+    "Use a regulator made for the specific gas — oxygen, acetylene, hydrogen and inert gases each need the correct connection and material. Never use oil or grease on oxygen regulators, and replace regulators that leak or have damaged gauges."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Gas Regulators in Nagpur?",
+      "answer": "Sunrise Gases supplies Gas Regulators from our Nagpur branches. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    }
+  ]
 }

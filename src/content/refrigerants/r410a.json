@@ -4,16 +4,44 @@
   "grade": "99.9%",
   "odp": 0,
   "gwp": 2088,
-  "retrofitCompatibility": ["R22"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["8 Kg", "45 Kg"] }
+  "retrofitCompatibility": [
+    "R22"
   ],
-  "safety": { "sdsUrl": "/documents/sds/r410a.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "8 Kg",
+        "45 Kg"
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/r410a.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R410A refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-refrigerant.svg",
+      "alt": "R410A refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "R410A Refrigerant Gas Supplier | Sunrise Gases",
+    "title": "R410A Refrigerant Gas in Nagpur | Sunrise Gases",
     "description": "High-pressure R410A refrigerant gas, 99.9% pure, in 8 Kg and 45 Kg cylinders. Retrofit for R22 systems. Supplied 24/7 from Nagpur by Sunrise Gases."
-  }
+  },
+  "about": [
+    "R410A is a near-azeotropic blend of R32 and R125 used in most modern split and packaged air conditioners. It operates at higher pressure than R22, and equipment is designed specifically for it.",
+    "Never put R410A in a system built for R22 or R407C; the higher pressure can damage components. Use gauges, hoses and cylinders rated for R410A."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy R410A in Nagpur?",
+      "answer": "Sunrise Gases supplies R410A from our Nagpur branches in 8 Kg, 45 Kg. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is R410A flammable?",
+      "answer": "R410A is classified as non-flammable, but it is stored under pressure and can displace oxygen in enclosed spaces. Handle it through a trained technician with proper gauges, recovery equipment and ventilation."
+    }
+  ]
 }

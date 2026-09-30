@@ -3,16 +3,30 @@
   "name": "Dry Ice",
   "sublimationOrBoilOff": "Sublimates at −78.5°C directly to CO₂ gas",
   "storageAndHandling": "Stored in insulated containers. Handle with protective gloves. Do not store in airtight containers.",
-  "forms": ["Block", "Powder"],
+  "forms": [
+    "Block",
+    "Powder"
+  ],
   "grade": "Food Grade",
-  "applications": ["Food and beverage cold chain", "Industrial cleaning (dry ice blasting)", "Medical cold storage", "Special effects and fog"],
+  "applications": [
+    "Food and beverage cold chain",
+    "Industrial cleaning (dry ice blasting)",
+    "Medical cold storage",
+    "Special effects and fog"
+  ],
   "images": [
-    { "src": "../../assets/products/dry-ice.jpg", "alt": "Food grade dry ice block and powder, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/dry-ice-blocks.webp", "alt": "Dry ice blocks for cold chain and industrial cleaning, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/dry-ice.jpg",
+      "alt": "Food grade dry ice block and powder, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/dry-ice-blocks.webp",
+      "alt": "Dry ice blocks for cold chain and industrial cleaning, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Food Grade Dry Ice — Block & Powder | Sunrise Gases",
-    "description": "Food grade dry ice available in block and powder form. For cold chain, industrial cleaning, medical, and special effects. Supplied from Nagpur."
+    "title": "Dry Ice in Nagpur | Sunrise Gases",
+    "description": "Dry ice in Nagpur for cold chain, food delivery and events. Order by call or WhatsApp on +91-9422416090."
   },
   "faq": [
     {
@@ -35,5 +49,10 @@
       "question": "Can I buy dry ice as an individual?",
       "answer": "Yes. Dry ice is available in block and powder form for events, food transport, and cold-chain use. Call or WhatsApp for availability."
     }
-  ]
+  ],
+  "about": [
+    "Dry ice is solid carbon dioxide at about −78.5 °C. It does not melt into liquid; it sublimates directly into CO₂ gas, so it keeps food and pharma products cold without leaving water behind. Typical uses are cold-chain shipping, food transport, event fog effects and cleaning.",
+    "Never touch it with bare hands and never store it in an airtight container or an unventilated space, including a closed car. Order close to when you need it, because dry ice sublimates steadily even in insulated boxes."
+  ],
+  "hindi": "नागपुर में ड्राई आइस — खाद्य पदार्थ और दवाओं की कोल्ड चेन तथा इवेंट में धुएँ के प्रभाव के लिए। ड्राई आइस को कभी हाथ से न छुएँ और बंद डिब्बे में न रखें। ऑर्डर के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

@@ -4,23 +4,61 @@
   "formula": "O₂",
   "summary": "High-purity industrial oxygen, supplied as compressed gas. Manufactured and supplied across Central India from Nagpur.",
   "grades": [
-    { "name": "Industrial", "purity": "99.2%", "uses": ["metal cutting", "welding", "steel fabrication"] }
+    {
+      "name": "Industrial",
+      "purity": "99.2%",
+      "uses": [
+        "metal cutting",
+        "welding",
+        "steel fabrication"
+      ]
+    }
   ],
-  "supplyForms": ["compressed cylinder", "liquid (cryogenic)", "bulk/manifold"],
+  "supplyForms": [
+    "compressed cylinder",
+    "liquid (cryogenic)",
+    "bulk/manifold"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "10L",
+        "20L",
+        "47L"
+      ]
+    }
   ],
-  "applications": ["Steel and metal fabrication", "Water treatment", "Glass manufacturing"],
-  "safety": { "sdsUrl": "/documents/sds/oxygen.pdf", "hazardClass": "Oxidizer" },
+  "applications": [
+    "Steel and metal fabrication",
+    "Water treatment",
+    "Glass manufacturing"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/oxygen.pdf",
+    "hazardClass": "Oxidizer"
+  },
   "images": [
-    { "src": "../../assets/products/oxygen.jpg", "alt": "Industrial oxygen gas cylinder, 47L, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/oxygen-cylinder.webp", "alt": "Industrial oxygen gas cylinder close-up, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/oxygen-cylinder-blue.webp", "alt": "Blue oxygen gas cylinder for industrial use, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/oxygen-cylinder-industrial.webp", "alt": "Industrial oxygen cylinder in factory, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/oxygen.jpg",
+      "alt": "Industrial oxygen gas cylinder, 47L, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/oxygen-cylinder.webp",
+      "alt": "Industrial oxygen gas cylinder close-up, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/oxygen-cylinder-blue.webp",
+      "alt": "Blue oxygen gas cylinder for industrial use, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/oxygen-cylinder-industrial.webp",
+      "alt": "Industrial oxygen cylinder in factory, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Industrial Oxygen Gas Supplier | Sunrise Gases",
-    "description": "Industrial oxygen gas and cylinders for metal cutting, welding, and fabrication. Manufactured and supplied from Nagpur across Central India."
+    "title": "Oxygen Cylinder Refill in Nagpur | Sunrise Gases",
+    "description": "Industrial oxygen cylinders in Nagpur for cutting, welding and steel work. Refill and delivery, orders 24×7. Call +91-9422416090."
   },
   "faq": [
     {
@@ -39,5 +77,10 @@
       "question": "Do you refill oxygen cylinders?",
       "answer": "Yes. Oxygen cylinder refill is available from our Nagpur facility — open 24 hours, 7 days a week. Cylinders in 10L, 20L, and 47L."
     }
-  ]
+  ],
+  "about": [
+    "Oxygen (O₂) makes up about 21% of air and strongly supports combustion, which is why industrial oxygen is the working gas for flame cutting, brazing and welding when combined with a fuel gas such as dissolved acetylene or LPG. It is also used in steel making, glass melting and water treatment.",
+    "Oxygen is an oxidiser: keep regulators, valves and fittings free of oil and grease, store cylinders upright and away from fuel gases, and never use oxygen to dust off clothing or equipment. Industrial oxygen is not a substitute for medical oxygen."
+  ],
+  "hindi": "नागपुर में औद्योगिक ऑक्सीजन सिलेंडर — गैस कटिंग, वेल्डिंग, स्टील और कांच उद्योग के लिए। सनराइज़ गैसेस से ऑक्सीजन सिलेंडर रिफिल और डिलीवरी के लिए +91-9422416090 पर कॉल या WhatsApp करें; ऑर्डर 24 घंटे लिए जाते हैं।"
 }

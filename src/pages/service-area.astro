@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import { BUSINESS } from '../data/business';
+import { LOCAL_PAGES } from '../data/local-pages';
+import '../styles/local-pages.css';
+
+const faqs = [
+  { q: 'Which areas do you deliver gas cylinders to?', a: `We deliver across Nagpur (${BUSINESS.serviceCore.slice(0, 6).join(', ')} and more) and to nearby towns such as ${BUSINESS.serviceCore.slice(6, 11).join(', ')}. Delivery to districts within roughly 200 km of Nagpur is possible — call to confirm your location.` },
+  { q: 'Do you deliver outside Nagpur?', a: `Yes, on request. We serve customers within roughly 200 km of Nagpur, such as ${BUSINESS.serviceExtended.slice(0, 5).join(', ')}, and can arrange longer distances for larger orders.` },
+  { q: 'Where do deliveries dispatch from?', a: 'Deliveries go out from our office and godown on MIDC Hingna Road, Nagpur.' },
+  { q: 'How do I order a gas cylinder delivery in Nagpur?', a: `Call ${BUSINESS.phone} or message us on WhatsApp with the gas, quantity and delivery location. Orders are taken 24 hours a day, 7 days a week.` },
+];
+const schemas = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }];
+---
+<BaseLayout title="Gas Cylinder Delivery in Nagpur & Nearby | Sunrise Gases" description="Industrial gas cylinder delivery across Nagpur, Kamptee, Hingna, Butibori, Wardha, Bhandara and more. Orders 24×7. Call +91-9422416090." schemas={schemas} crumbName="Delivery areas">
+  <article class="lp">
+    <h1 class="lp-title">Gas cylinder delivery in Nagpur and nearby areas</h1>
+    <p class="lp-lead">Sunrise Gases delivers industrial and specialty gas cylinders across Nagpur and the surrounding region. Deliveries are dispatched from our office and godown on MIDC Hingna Road, and orders are taken 24 hours a day.</p>
+    <h2 class="lp-h2">Nagpur and nearby towns</h2>
+    <ul class="lp-chips">{BUSINESS.serviceCore.map((a) => <li>{a}</li>)}</ul>
+    <h2 class="lp-h2">Within roughly 200 km</h2>
+    <p class="lp-p">We also serve customers in these districts. Please call to confirm delivery and timing for your location.</p>
+    <ul class="lp-chips">{BUSINESS.serviceExtended.map((a) => <li>{a}</li>)}</ul>
+    <h2 class="lp-h2">How ordering works</h2>
+    <ol class="lp-steps">
+      <li>Call {BUSINESS.phone} or WhatsApp us the gas or product, quantity and delivery location.</li>
+      <li>We confirm availability and delivery time.</li>
+      <li>Your cylinders are transported to your address from our <a class="lp-link" href="/locations/hingna-midc/">MIDC Hingna Road godown</a>.</li>
+    </ol>
+    <ContactCTA />
+    <h2 class="lp-h2">Related services</h2>
+    <ul class="lp-chips">{LOCAL_PAGES.map((p) => <li><a class="lp-link" href={`/${p.slug}/`}>{p.crumb}</a></li>)}</ul>
+    <h2 class="lp-h2">Frequently asked questions</h2>
+    {faqs.map((f) => (<><h3 class="lp-q">{f.q}</h3><p class="lp-p">{f.a}</p></>))}
+  </article>
+</BaseLayout>

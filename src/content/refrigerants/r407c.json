@@ -4,16 +4,45 @@
   "grade": "99.9%",
   "odp": 0,
   "gwp": 1774,
-  "retrofitCompatibility": ["R22", "R407A"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["8 Kg", "45 Kg"] }
+  "retrofitCompatibility": [
+    "R22",
+    "R407A"
   ],
-  "safety": { "sdsUrl": "/documents/sds/r407c.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "8 Kg",
+        "45 Kg"
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/r407c.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R407C refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-refrigerant.svg",
+      "alt": "R407C refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "R407C Refrigerant Gas Supplier | Sunrise Gases",
+    "title": "R407C Refrigerant Gas in Nagpur | Sunrise Gases",
     "description": "Low-ODP R407C refrigerant gas, 99.9% pure, in 8 Kg and 45 Kg cylinders. Retrofit for R22 and R407A systems. Supplied from Nagpur by Sunrise Gases."
-  }
+  },
+  "about": [
+    "R407C is a blend of R32, R125 and R134a and is a common replacement for R22 in air-conditioning systems. It is non-flammable and works at pressures close to R22.",
+    "R407C has temperature glide, so charge it as a liquid and use polyolester (POE) oil. Confirm compressor compatibility before changing refrigerant."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy R407C in Nagpur?",
+      "answer": "Sunrise Gases supplies R407C from our Nagpur branches in 8 Kg, 45 Kg. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is R407C flammable?",
+      "answer": "R407C is classified as non-flammable, but it is stored under pressure and can displace oxygen in enclosed spaces. Handle it through a trained technician with proper gauges, recovery equipment and ventilation."
+    }
+  ]
 }

@@ -4,19 +4,61 @@
   "formula": "C₃H₈ / C₄H₁₀",
   "summary": "Liquefied petroleum gas for industrial heating, cutting, and processing. Supplied in standard cylinder sizes.",
   "grades": [
-    { "name": "Industrial", "purity": "", "uses": ["industrial heating", "metal cutting", "processing"] }
+    {
+      "name": "Industrial",
+      "purity": "",
+      "uses": [
+        "industrial heating",
+        "metal cutting",
+        "processing"
+      ]
+    }
   ],
-  "supplyForms": ["cylinder"],
+  "supplyForms": [
+    "cylinder"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["15 Kg", "17 Kg", "19 Kg"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "15 Kg",
+        "17 Kg",
+        "19 Kg"
+      ]
+    }
   ],
-  "applications": ["Industrial heating", "Metal cutting", "Material processing"],
-  "safety": { "sdsUrl": "/documents/sds/lpg.pdf", "hazardClass": "Flammable gas" },
+  "applications": [
+    "Industrial heating",
+    "Metal cutting",
+    "Material processing"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/lpg.pdf",
+    "hazardClass": "Flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-lpg.svg", "alt": "Industrial LPG cylinder, 15–19 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-lpg.svg",
+      "alt": "Industrial LPG cylinder, 15–19 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Industrial LPG Supplier | Sunrise Gases",
-    "description": "Industrial LPG for heating, cutting, and processing. Available in 15, 17, and 19 Kg cylinders. Supplied from Nagpur."
-  }
+    "title": "Industrial LPG Cylinders in Nagpur | Sunrise Gases",
+    "description": "Industrial LPG cylinders in Nagpur for cutting, heating and furnaces. Delivery across Nagpur, orders 24×7. Call +91-9422416090."
+  },
+  "about": [
+    "Industrial LPG (liquefied petroleum gas) is mainly propane and butane. With oxygen it is used for flame cutting and heating of steel, and it fuels furnaces, ovens and drying and heating processes where a clean-burning fuel is required.",
+    "LPG is heavier than air and pools at floor level if it leaks. Store cylinders upright in ventilated areas away from ignition sources and drains, and use regulators and hoses made for LPG."
+  ],
+  "faq": [
+    {
+      "question": "Is this LPG for home use?",
+      "answer": "This page covers industrial LPG cylinders for cutting, heating and process use. For domestic cooking-gas connections, please contact your authorised LPG distributor."
+    },
+    {
+      "question": "Do you supply industrial LPG in Nagpur?",
+      "answer": "Yes. Call or WhatsApp us with your application and quantity — we are open 24 hours, 7 days a week."
+    }
+  ],
+  "hindi": "नागपुर में औद्योगिक LPG सिलेंडर — कटिंग, हीटिंग और भट्टी के उपयोग के लिए (घरेलू रसोई गैस नहीं)। औद्योगिक LPG के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

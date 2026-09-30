@@ -4,16 +4,45 @@
   "grade": "99.9%",
   "odp": 0,
   "gwp": 3920,
-  "retrofitCompatibility": ["R22", "R407A"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["8 Kg", "45 Kg"] }
+  "retrofitCompatibility": [
+    "R22",
+    "R407A"
   ],
-  "safety": { "sdsUrl": "/documents/sds/r404a.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "8 Kg",
+        "45 Kg"
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/r404a.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R404A refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-refrigerant.svg",
+      "alt": "R404A refrigerant gas cylinder, 8–45 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "R404A Refrigerant Gas Supplier | Sunrise Gases",
+    "title": "R404A Refrigerant Gas in Nagpur | Sunrise Gases",
     "description": "Low-ODP R404A refrigerant gas, 99.9% pure, in 8 Kg and 45 Kg cylinders. Retrofit for R22 and R407A systems. Supplied from Nagpur by Sunrise Gases."
-  }
+  },
+  "about": [
+    "R404A is a blend of R125, R143a and R134a used mainly in commercial low- and medium-temperature refrigeration such as cold rooms, display cabinets and refrigerated transport. It is non-flammable.",
+    "R404A is charged as a liquid because it is a blend. It has a high global warming potential, so use it for existing systems and avoid venting."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy R404A in Nagpur?",
+      "answer": "Sunrise Gases supplies R404A from our Nagpur branches in 8 Kg, 45 Kg. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is R404A flammable?",
+      "answer": "R404A is classified as non-flammable, but it is stored under pressure and can displace oxygen in enclosed spaces. Handle it through a trained technician with proper gauges, recovery equipment and ventilation."
+    }
+  ]
 }

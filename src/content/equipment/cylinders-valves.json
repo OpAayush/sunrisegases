@@ -3,19 +3,53 @@
   "name": "Industrial Gas Cylinders and Valves",
   "category": "cylinders",
   "specs": [
-    { "label": "Standard", "value": "IS:7285 / PART 2:2004" },
-    { "label": "Materials", "value": "High pressure seamless steel (ISI marked)" },
-    { "label": "Sizes", "value": "5 Ltrs to 50 Ltrs water capacity" },
-    { "label": "Working pressure", "value": "150 Bar, 200 Bar, 300 Bar" },
-    { "label": "Valve types", "value": "BS, DIN, CGA compatible" }
+    {
+      "label": "Standard",
+      "value": "IS:7285 / PART 2:2004"
+    },
+    {
+      "label": "Materials",
+      "value": "High pressure seamless steel (ISI marked)"
+    },
+    {
+      "label": "Sizes",
+      "value": "5 Ltrs to 50 Ltrs water capacity"
+    },
+    {
+      "label": "Working pressure",
+      "value": "150 Bar, 200 Bar, 300 Bar"
+    },
+    {
+      "label": "Valve types",
+      "value": "BS, DIN, CGA compatible"
+    }
   ],
   "images": [
-    { "src": "../../assets/products/cylinder-steel.svg", "alt": "ISI-marked carbon steel gas cylinder, IS 7285, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/cylinder-aluminium.svg", "alt": "ISI-marked aluminium gas cylinder, IS 7285, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/cylinder-safety-guards.webp", "alt": "Safety guards for gas cylinder valves, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-steel.svg",
+      "alt": "ISI-marked carbon steel gas cylinder, IS 7285, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/cylinder-aluminium.svg",
+      "alt": "ISI-marked aluminium gas cylinder, IS 7285, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/cylinder-safety-guards.webp",
+      "alt": "Safety guards for gas cylinder valves, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Industrial Gas Cylinders and Valves | Sunrise Gases",
+    "title": "Gas Cylinders & Valves in Nagpur | Sunrise Gases",
     "description": "ISI marked high pressure seamless steel gas cylinders as per IS:7285. Sizes 5-50 Ltrs, 150-300 Bar. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Gas cylinders are seamless steel (or aluminium) pressure vessels fitted with a valve whose outlet thread depends on the gas — fuel gases typically use left-hand threads and oxidisers right-hand, so fittings are not interchangeable. Choose capacity by how long you want a cylinder to last at your flow rate.",
+    "Cylinders must be pressure-tested at regular intervals; check the test date stamped on the shoulder before filling or use. Ask us about sizes, valve types and cylinder exchange."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Industrial Gas Cylinders and Valves in Nagpur?",
+      "answer": "Sunrise Gases supplies Industrial Gas Cylinders and Valves from our Nagpur branches. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    }
+  ]
 }

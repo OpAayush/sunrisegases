@@ -1,4 +1,5 @@
 ---
+import '../../styles/local-pages.css';
 import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -6,11 +7,13 @@ import { getCollection } from 'astro:content';
 const items = await getCollection('fire-safety');
 ---
 
-<BaseLayout title="Fire Extinguishers & Fire Safety Equipment | Sunrise Gases" description="Fire extinguishers and fire suppression equipment for commercial and industrial use. ABC powder, CO₂, and more. Supplied from Nagpur.">
+<BaseLayout title="Fire Extinguishers & Refilling in Nagpur | Sunrise Gases" description="Fire extinguishers and fire suppression equipment for commercial and industrial use. ABC powder, CO₂, and more. Supplied from Nagpur.">
   <header class="catalog-hero">
     <h1 class="catalog-title">Fire safety</h1>
     <p class="catalog-subtitle">Extinguishers and fire suppression equipment for industrial and commercial applications.</p>
   </header>
+
+  <div class="lp" style="padding-block: 1.25rem 0"><p class="lp-p">Fire extinguishers for offices, shops, vehicles, workshops and industrial sites in Nagpur: ABC powder, CO₂, foam, water and dry chemical powder. Choose the type by the fire class it is rated for. See our <a class="lp-link" href="/fire-extinguisher-refilling-nagpur/">fire extinguisher refilling</a> guide.</p></div>
 
   <section class="catalog-grid">
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (

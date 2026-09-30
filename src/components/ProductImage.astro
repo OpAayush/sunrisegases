@@ -15,7 +15,7 @@ const { src, alt, class: className, widths, sizes, loading = 'lazy' } = Astro.pr
 ---
 
 {src.format === 'svg' ? (
-  <img src={src.src} alt={alt} class={className} loading={loading} />
+  <img src={src.src} alt="" aria-hidden="true" class={className} loading={loading} />
 ) : (
   <Image src={src} alt={alt} class={className} widths={widths} sizes={sizes} loading={loading} />
 )}

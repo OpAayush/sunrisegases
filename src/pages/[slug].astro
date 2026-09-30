@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import { LOCAL_PAGES } from '../data/local-pages';
+import { BUSINESS } from '../data/business';
+import '../styles/local-pages.css';
+
+export function getStaticPaths() {
+  return LOCAL_PAGES.map((p) => ({ params: { slug: p.slug }, props: { page: p } }));
+}
+const { page } = Astro.props;
+const schemas = [
+  { '@context': 'https://schema.org', '@type': 'Service', name: page.h1, serviceType: page.serviceType, provider: { '@type': 'Organization', '@id': `${BUSINESS.url}/#organization`, name: BUSINESS.name }, areaServed: { '@type': 'City', name: 'Nagpur' }, url: `${BUSINESS.url}/${page.slug}/` },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+];
+---
+<BaseLayout title={page.title} description={page.description} schemas={schemas} crumbName={page.crumb}>
+  <article class="lp">
+    <h1 class="lp-title">{page.h1}</h1>
+    <p class="lp-lead">{page.lead}</p>
+    <ContactCTA product={page.crumb} />
+    {page.sections.map((s) => (
+      <section>
+        <h2 class="lp-h2">{s.h2}</h2>
+        {s.paras?.map((t) => <p class="lp-p">{t}</p>)}
+        {s.table && (
+          <table class="lp-table">
+            <thead><tr>{s.table.head.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+            <tbody>{s.table.rows.map((r) => <tr>{r.map((c, i) => (i === 0 ? <th scope="row">{c}</th> : <td>{c}</td>))}</tr>)}</tbody>
+          </table>
+        )}
+        {s.list && (s.ordered ? <ol class="lp-list">{s.list.map((t) => <li>{t}</li>)}</ol> : <ul class="lp-list">{s.list.map((t) => <li>{t}</li>)}</ul>)}
+        {s.links && <ul class="lp-chips" style="margin-top:0.75rem">{s.links.map((l) => <li><a class="lp-link" href={l.href}>{l.label}</a></li>)}</ul>}
+      </section>
+    ))}
+    <h2 class="lp-h2">Frequently asked questions</h2>
+    {page.faq.map((f) => (<><h3 class="lp-q">{f.q}</h3><p class="lp-p">{f.a}</p></>))}
+    <h2 class="lp-h2">More services in Nagpur</h2>
+    <ul class="lp-chips">{LOCAL_PAGES.filter((p) => p.slug !== page.slug).map((p) => <li><a class="lp-link" href={`/${p.slug}/`}>{p.crumb}</a></li>)}<li><a class="lp-link" href="/service-area/">Delivery areas</a></li></ul>
+  </article>
+</BaseLayout>

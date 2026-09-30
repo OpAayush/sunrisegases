@@ -1,4 +1,5 @@
 ---
+import '../../styles/local-pages.css';
 import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -6,11 +7,13 @@ import { getCollection } from 'astro:content';
 const items = await getCollection('equipment');
 ---
 
-<BaseLayout title="Gas Equipment, Cylinders & Regulators | Sunrise Gases" description="Industrial gas equipment including cylinders, valves, regulators, manifolds, and gas handling accessories. Supplied from Nagpur.">
+<BaseLayout title="Gas Regulators & Cylinders in Nagpur | Sunrise Gases" description="Industrial gas equipment including cylinders, valves, regulators, manifolds, and gas handling accessories. Supplied from Nagpur.">
   <header class="catalog-hero">
     <h1 class="catalog-title">Equipment</h1>
     <p class="catalog-subtitle">Cylinders, regulators, manifolds, and gas handling accessories.</p>
   </header>
+
+  <div class="lp" style="padding-block: 1.25rem 0"><p class="lp-p">Regulators, cylinders, valves, manifolds and handling accessories for industrial gas use in Nagpur. Always use equipment rated for the specific gas and pressure. Tell us your gas and set-up and we will suggest suitable equipment. <a class="lp-link" href="/cylinder-rental-and-exchange-nagpur/">Cylinder rental and exchange</a> is also available on request.</p></div>
 
   <section class="catalog-grid">
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (

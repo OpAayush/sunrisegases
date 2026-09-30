@@ -3,18 +3,49 @@
   "name": "Gas Manifolds",
   "category": "manifolds",
   "specs": [
-    { "label": "Types", "value": "Single-stage, dual-stage, automatic changeover" },
-    { "label": "Bank capacity", "value": "2–10 cylinders per bank" },
-    { "label": "Materials", "value": "Brass, stainless steel" },
-    { "label": "Max inlet pressure", "value": "200 bar" }
+    {
+      "label": "Types",
+      "value": "Single-stage, dual-stage, automatic changeover"
+    },
+    {
+      "label": "Bank capacity",
+      "value": "2–10 cylinders per bank"
+    },
+    {
+      "label": "Materials",
+      "value": "Brass, stainless steel"
+    },
+    {
+      "label": "Max inlet pressure",
+      "value": "200 bar"
+    }
   ],
   "images": [
-    { "src": "../../assets/products/manifold.svg", "alt": "Industrial gas manifold cylinder bank system, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/gas-cylinder-manifolds.webp", "alt": "Gas cylinder manifold bank, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/gas-manifold-system.webp", "alt": "Gas manifold system for cylinder bank distribution, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/manifold.svg",
+      "alt": "Industrial gas manifold cylinder bank system, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/gas-cylinder-manifolds.webp",
+      "alt": "Gas cylinder manifold bank, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/gas-manifold-system.webp",
+      "alt": "Gas manifold system for cylinder bank distribution, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Gas Manifolds — Cylinder Manifold Systems | Sunrise Gases",
+    "title": "Gas Manifold Systems Nagpur | Sunrise Gases",
     "description": "Industrial gas manifolds for cylinder bank distribution. Single-stage, dual-stage, and automatic changeover systems. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "A cylinder manifold connects several cylinders to one supply line so gas flows continuously; when one bank empties the other takes over. Manifolds are used in workshops, laboratories and production lines where changing cylinders by hand would interrupt work.",
+    "Manifold design depends on the gas, flow rate and number of cylinders. Share these details with us and we will advise on a suitable system."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Gas Manifolds in Nagpur?",
+      "answer": "Sunrise Gases supplies Gas Manifolds from our Nagpur branches. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    }
+  ]
 }

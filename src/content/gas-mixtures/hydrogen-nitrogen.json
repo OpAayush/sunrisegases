@@ -2,20 +2,55 @@
   "slug": "hydrogen-nitrogen-mixture",
   "name": "Hydrogen + Nitrogen Mixture",
   "components": [
-    { "gas": "Hydrogen", "ratio": "2–10%" },
-    { "gas": "Nitrogen", "ratio": "90–98%" }
+    {
+      "gas": "Hydrogen",
+      "ratio": "2–10%"
+    },
+    {
+      "gas": "Nitrogen",
+      "ratio": "90–98%"
+    }
   ],
   "blendRationale": "Hydrogen-nitrogen mixture used for heat treatment atmospheres and as a reducing gas in industrial furnaces.",
-  "applications": ["Heat treatment of metals", "Reducing atmosphere furnaces", "Laboratory"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["7 Cu.M."] }
+  "applications": [
+    "Heat treatment of metals",
+    "Reducing atmosphere furnaces",
+    "Laboratory"
   ],
-  "safety": { "sdsUrl": "/documents/sds/h2-n2.pdf", "hazardClass": "Flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "7 Cu.M."
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/h2-n2.pdf",
+    "hazardClass": "Flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/hydrogen-mixture.webp", "alt": "Hydrogen-nitrogen gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/hydrogen-mixture.webp",
+      "alt": "Hydrogen-nitrogen gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Hydrogen + Nitrogen Gas Mixture | Sunrise Gases",
-    "description": "Hydrogen-nitrogen blend for heat treatment and reducing atmospheres. Available in 7 Cu.M. cylinders."
-  }
+    "title": "Hydrogen + Nitrogen Mixture Nagpur | Sunrise Gases",
+    "description": "Hydrogen-nitrogen blend for heat treatment and reducing atmospheres. Available in 7 Cu.M. cylinders. Delivery in Nagpur. Call +91-9422416090."
+  },
+  "about": [
+    "A hydrogen–nitrogen mixture, often called forming gas, gives a protective, mildly reducing atmosphere. It is used in annealing and brazing furnaces, in electronics processing and — in low-hydrogen blends — as a tracer gas for leak detection.",
+    "Because it contains hydrogen, handle it as a flammable gas: ventilate, keep ignition sources away and use suitable regulators. Confirm the exact hydrogen percentage you need when ordering."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Hydrogen + Nitrogen Mixture in Nagpur?",
+      "answer": "Sunrise Gases supplies Hydrogen + Nitrogen Mixture from our Nagpur branches in 7 Cu.M.. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is a certificate of analysis available?",
+      "answer": "Composition and purity details are available on request. Ask when you place your order."
+    }
+  ]
 }

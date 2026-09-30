@@ -1,5 +1,6 @@
 ---
 import ProductDetailLayout from '../../layouts/ProductDetailLayout.astro';
+import DetailExtras from '../../components/DetailExtras.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -30,9 +31,9 @@ const serviceSchema = {
   "name": `${data.name} Supply — Sunrise Gases`,
   "description": data.seo.description,
   "provider": {
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": "Sunrise Gases",
-    "@id": "https://sunrisegases.com/#business",
+    "@id": "https://sunrisegases.com/#organization",
   },
   "areaServed": [
     { "@type": "City", "name": "Nagpur" },
@@ -63,6 +64,7 @@ const faqSchema = data.faq?.length
   hero={{ name: data.name, label: 'Cryogenic', size: 'md' }}
   images={data.images}
 >
+  <DetailExtras part="top" data={data} collection="cryogenic" />
   <section class="detail-section">
     <h2 class="section-title">Properties</h2>
     <div class="spec-list">
@@ -115,6 +117,7 @@ const faqSchema = data.faq?.length
       </div>
     </section>
   )}
+  <DetailExtras part="bottom" data={data} collection="cryogenic" showFaq={false} />
 </ProductDetailLayout>
 
 <style>

@@ -2,20 +2,55 @@
   "slug": "agroshield",
   "name": "Agroshield (Argon + CO₂)",
   "components": [
-    { "gas": "Argon", "ratio": "Custom" },
-    { "gas": "Carbon Dioxide", "ratio": "Custom" }
+    {
+      "gas": "Argon",
+      "ratio": "Custom"
+    },
+    {
+      "gas": "Carbon Dioxide",
+      "ratio": "Custom"
+    }
   ],
   "blendRationale": "Custom ratio Argon and CO₂ blend for agricultural atmosphere modification and controlled environment applications. Mixed to customer specification.",
-  "applications": ["Agricultural atmosphere modification", "Controlled environment storage", "Custom industrial processes"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["7 Cu.M."] }
+  "applications": [
+    "Agricultural atmosphere modification",
+    "Controlled environment storage",
+    "Custom industrial processes"
   ],
-  "safety": { "sdsUrl": "", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "7 Cu.M."
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-generic.svg", "alt": "Agroshield argon-carbon dioxide gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-generic.svg",
+      "alt": "Agroshield argon-carbon dioxide gas mixture cylinder, 7 Cu.M., Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Agroshield — Argon + CO₂ Mixture | Sunrise Gases",
+    "title": "Agroshield (Argon + CO₂) Mixture Nagpur | Sunrise Gases",
     "description": "Custom-ratio Argon and CO₂ blend for agricultural and controlled environment use. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Agroshield is a pre-blended argon and carbon dioxide mixture. Argon–CO₂ blends are widely used as shielding gas for MIG/MAG welding, where the argon gives a stable arc and the CO₂ improves penetration on carbon and low-alloy steels.",
+    "Buying the mixture pre-blended avoids on-site mixing errors and keeps the composition consistent. Tell us your welding process and material so we can confirm it suits your job."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Agroshield (Argon + CO₂) in Nagpur?",
+      "answer": "Sunrise Gases supplies Agroshield (Argon + CO₂) from our Nagpur branches in 7 Cu.M.. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is a certificate of analysis available?",
+      "answer": "Composition and purity details are available on request. Ask when you place your order."
+    }
+  ]
 }

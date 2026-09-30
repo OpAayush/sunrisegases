@@ -4,21 +4,53 @@
   "formula": "N₂",
   "summary": "Industrial nitrogen gas for purging, blanketing, and inerting applications. Supplied as compressed gas from Nagpur.",
   "grades": [
-    { "name": "Industrial", "purity": "99.5%", "uses": ["purging", "blanketing", "inerting"] }
+    {
+      "name": "Industrial",
+      "purity": "99.5%",
+      "uses": [
+        "purging",
+        "blanketing",
+        "inerting"
+      ]
+    }
   ],
-  "supplyForms": ["compressed cylinder", "liquid (cryogenic)", "bulk/manifold"],
+  "supplyForms": [
+    "compressed cylinder",
+    "liquid (cryogenic)",
+    "bulk/manifold"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "10L",
+        "20L",
+        "47L"
+      ]
+    }
   ],
-  "applications": ["Chemical processing", "Oil and gas", "Electronics manufacturing"],
-  "safety": { "sdsUrl": "/documents/sds/nitrogen.pdf", "hazardClass": "Non-flammable gas" },
+  "applications": [
+    "Chemical processing",
+    "Oil and gas",
+    "Electronics manufacturing"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/nitrogen.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/nitrogen.jpg", "alt": "Industrial nitrogen gas cylinder, 47L, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/nitrogen-cylinder.webp", "alt": "Nitrogen gas cylinder for purging and blanketing, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/nitrogen.jpg",
+      "alt": "Industrial nitrogen gas cylinder, 47L, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/nitrogen-cylinder.webp",
+      "alt": "Nitrogen gas cylinder for purging and blanketing, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Industrial Nitrogen Gas Supplier | Sunrise Gases",
-    "description": "Industrial nitrogen gas for purging, blanketing, and inerting. Supplied as compressed gas or liquid. Manufactured in Nagpur."
+    "title": "Nitrogen Gas Supplier in Nagpur | Sunrise Gases",
+    "description": "Nitrogen gas cylinders and bulk supply in Nagpur for blanketing, purging and packaging. Refill and delivery, 24×7. Call +91-9422416090."
   },
   "faq": [
     {
@@ -41,5 +73,10 @@
       "question": "Do you refill nitrogen cylinders in Nagpur?",
       "answer": "Yes. Nitrogen cylinder refill is available from our Nagpur facility, open 24 hours, 7 days a week."
     }
-  ]
+  ],
+  "about": [
+    "Nitrogen (N₂) is a colourless, inert gas that makes up about 78% of air. Because it does not react with most materials, it is used to blanket and purge tanks and pipelines, protect food in packaging, pressurise systems and shield laser cutting.",
+    "We supply compressed nitrogen in cylinders and can arrange liquid nitrogen for cryogenic uses. Nitrogen displaces oxygen, so use it only in well-ventilated areas and never enter tanks or confined spaces that have been purged with it."
+  ],
+  "hindi": "नागपुर में नाइट्रोजन गैस सिलेंडर — खाद्य पैकेजिंग, पाइपलाइन पर्जिंग, प्रेशर टेस्टिंग और लेज़र कटिंग के लिए। नाइट्रोजन सिलेंडर रिफिल, किराये और डिलीवरी के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

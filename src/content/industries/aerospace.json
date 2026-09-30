@@ -2,9 +2,24 @@
   "slug": "aerospace",
   "name": "Aerospace",
   "summary": "High-purity gases for aerospace manufacturing, testing, and maintenance operations.",
-  "relevantProducts": ["nitrogen", "argon", "helium", "oxygen"],
+  "relevantProducts": [
+    "nitrogen",
+    "argon",
+    "helium",
+    "oxygen"
+  ],
   "seo": {
-    "title": "Industrial Gases for Aerospace | Sunrise Gases",
+    "title": "Industrial Gases for Aerospace in Nagpur | Sunrise Gases",
     "description": "High-purity nitrogen, argon, helium, and oxygen for aerospace manufacturing, testing, and maintenance. Supplied 24/7 by Sunrise Gases, Nagpur, Central India."
-  }
+  },
+  "about": [
+    "Aerospace manufacturing and maintenance (MRO) use gases for welding, inerting, leak testing, cleaning, cooling and calibration. Nitrogen is used to purge and pressure-test systems and inflate tyres; argon and helium for welding and leak detection; oxygen for cutting and process use.",
+    "Nagpur’s MIHAN aviation and industrial zone and nearby engineering units are within reach of our Nagpur branches. Talk to us about purity, cylinder size and delivery schedules for your operation."
+  ],
+  "faq": [
+    {
+      "question": "Which gases do you supply for aerospace?",
+      "answer": "Relevant products include nitrogen, argon, helium, oxygen. Call or WhatsApp us with your requirement and we will advise."
+    }
+  ]
 }

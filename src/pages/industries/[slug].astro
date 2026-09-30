@@ -1,5 +1,6 @@
 ---
 import ProductDetailLayout from '../../layouts/ProductDetailLayout.astro';
+import DetailExtras from '../../components/DetailExtras.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -34,6 +35,7 @@ const breadcrumbSchema = {
     size: 'md',
   }}
 >
+  <DetailExtras part="top" data={data} collection="industries" />
   {data.relevantProducts && data.relevantProducts.length > 0 && (
     <section class="detail-section detail-section--bordered">
       <h2 class="section-title">Relevant products</h2>
@@ -45,6 +47,7 @@ const breadcrumbSchema = {
       </div>
     </section>
   )}
+  <DetailExtras part="bottom" data={data} collection="industries" showFaq={true} />
 </ProductDetailLayout>
 
 <style>

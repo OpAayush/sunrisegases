@@ -4,16 +4,45 @@
   "grade": "99.9%",
   "odp": 0,
   "gwp": 1430,
-  "retrofitCompatibility": ["R12", "R1234yf"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["10 Kg", "62 Kg"] }
+  "retrofitCompatibility": [
+    "R12",
+    "R1234yf"
   ],
-  "safety": { "sdsUrl": "/documents/sds/r134a.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "10 Kg",
+        "62 Kg"
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/r134a.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R134a refrigerant gas cylinder, 10–62 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-refrigerant.svg",
+      "alt": "R134a refrigerant gas cylinder, 10–62 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "R134A Refrigerant Gas Supplier | Sunrise Gases",
+    "title": "R134a Refrigerant Gas in Nagpur | Sunrise Gases",
     "description": "R134A (Tetrafluoroethane) refrigerant gas. 99.9% purity in 10 and 62 Kg cylinders. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "R134a (HFC-134a) is a non-ozone-depleting refrigerant used in car air conditioning, domestic and commercial refrigerators, water coolers and some chillers. It is non-flammable and works at medium pressure.",
+    "It is not a drop-in for R12 or R22 systems without checking oil and component compatibility. Use the correct manifold gauges and oil for the system."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy R134A (Tetrafluoroethane) in Nagpur?",
+      "answer": "Sunrise Gases supplies R134A (Tetrafluoroethane) from our Nagpur branches in 10 Kg, 62 Kg. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is R134A (Tetrafluoroethane) flammable?",
+      "answer": "R134A (Tetrafluoroethane) is classified as non-flammable, but it is stored under pressure and can displace oxygen in enclosed spaces. Handle it through a trained technician with proper gauges, recovery equipment and ventilation."
+    }
+  ]
 }

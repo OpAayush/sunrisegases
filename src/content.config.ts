@@ -2,6 +2,15 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const extras = {
+  overview: z.string().optional(),
+  hindi: z.string().optional(),
+  about: z.array(z.string()).optional(),
+  keyFacts: z.array(z.object({ label: z.string(), value: z.string() })).optional(),
+  faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
+};
+
+
 const seo = z.object({
   title: z.string(),
   description: z.string(),
@@ -28,6 +37,7 @@ const gases = defineCollection({
     safety: z.object({ sdsUrl: z.string(), hazardClass: z.string() }),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
     faq: z.array(z.object({
       question: z.string(),
       answer: z.string(),
@@ -47,6 +57,7 @@ const gasMixtures = defineCollection({
     safety: z.object({ sdsUrl: z.string().optional(), hazardClass: z.string().optional() }),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
   }),
 });
 
@@ -62,6 +73,7 @@ const specialtyGases = defineCollection({
     applications: z.array(z.string()),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
   }),
 });
 
@@ -78,6 +90,7 @@ const refrigerants = defineCollection({
     safety: z.object({ sdsUrl: z.string().optional(), hazardClass: z.string().optional() }),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
   }),
 });
 
@@ -93,6 +106,7 @@ const cryogenic = defineCollection({
     grade: z.string().optional(),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
     faq: z.array(z.object({
       question: z.string(),
       answer: z.string(),
@@ -110,6 +124,7 @@ const equipment = defineCollection({
     compatibleWith: z.array(z.string()).optional(),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
   }),
 });
 
@@ -125,6 +140,7 @@ const fireSafety = defineCollection({
     refillInterval: z.string(),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
   }),
 });
 
@@ -140,6 +156,7 @@ const balloons = defineCollection({
     applications: z.array(z.string()).optional(),
     images: z.array(z.object({ src: image(), alt: z.string() })),
     seo,
+    ...extras,
   }),
 });
 
@@ -151,6 +168,7 @@ const industries = defineCollection({
     summary: z.string(),
     relevantProducts: z.array(z.string()),
     seo,
+    ...extras,
   }),
 });
 

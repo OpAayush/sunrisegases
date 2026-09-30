@@ -1,4 +1,5 @@
 ---
+import '../../styles/local-pages.css';
 import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -6,11 +7,13 @@ import { getCollection } from 'astro:content';
 const items = await getCollection('balloons');
 ---
 
-<BaseLayout title="Advertising Balloons for Events | Sunrise Gases" description="Custom advertising balloons for events, promotions, and brand visibility. Helium-filled, multiple sizes, full-color printing. Supplied from Nagpur.">
+<BaseLayout title="Advertising Balloons in Nagpur | Sunrise Gases" description="Custom advertising balloons for events, promotions, and brand visibility. Helium-filled, multiple sizes, full-color printing. Supplied from Nagpur.">
   <header class="catalog-hero">
     <h1 class="catalog-title">Balloons</h1>
     <p class="catalog-subtitle">Custom advertising and event balloons, helium-filled and delivered across Central India.</p>
   </header>
+
+  <div class="lp" style="padding-block: 1.25rem 0"><p class="lp-p">Advertising balloons for events, shop openings and promotions in Nagpur, filled with helium on request. Check the helium requirement for each size, and see our guide on <a class="lp-link" href="/helium-cylinder-for-balloons-nagpur/">how many balloons a helium cylinder fills</a>.</p></div>
 
   <section class="catalog-grid">
     {items.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((item) => (

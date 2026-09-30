@@ -4,16 +4,44 @@
   "grade": "99.9%",
   "odp": 0.012,
   "gwp": 77,
-  "retrofitCompatibility": ["R11", "R113"],
-  "packaging": [
-    { "type": "Drum", "sizes": ["90 Kg"] }
+  "retrofitCompatibility": [
+    "R11",
+    "R113"
   ],
-  "safety": { "sdsUrl": "/documents/sds/r123.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Drum",
+      "sizes": [
+        "90 Kg"
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/r123.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R123 refrigerant drum, 90 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-refrigerant.svg",
+      "alt": "R123 refrigerant drum, 90 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "R123 Refrigerant Gas Supplier | Sunrise Gases",
+    "title": "R123 Refrigerant Gas in Nagpur | Sunrise Gases",
     "description": "R123 (Dichlorotrifluoroethane) refrigerant gas, 99.9% pure, in 90 Kg drums. Low-GWP retrofit for R11 and R113 systems. Supplied from Nagpur by Sunrise Gases."
-  }
+  },
+  "about": [
+    "R123 (HCFC-123) is a low-pressure refrigerant used in centrifugal chillers, mainly in large commercial air-conditioning plants. Its ozone-depletion and global-warming potentials are low compared with many refrigerants, but it is more toxic than most, so leak detection and ventilation in plant rooms matter.",
+    "Handling should be done by trained technicians using recovery equipment."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy R123 (Dichlorotrifluoroethane) in Nagpur?",
+      "answer": "Sunrise Gases supplies R123 (Dichlorotrifluoroethane) from our Nagpur branches in 90 Kg. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is R123 (Dichlorotrifluoroethane) flammable?",
+      "answer": "R123 (Dichlorotrifluoroethane) is classified as non-flammable, but it is stored under pressure and can displace oxygen in enclosed spaces. Handle it through a trained technician with proper gauges, recovery equipment and ventilation."
+    }
+  ]
 }

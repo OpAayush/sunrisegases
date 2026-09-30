@@ -1,0 +1,22 @@
+---
+// Optional analytics. Set in .env (or Cloudflare build variables):
+//   PUBLIC_GA_ID=G-XXXXXXXXXX        -> Google Analytics 4 + call/WhatsApp click events
+//   PUBLIC_CF_BEACON_TOKEN=xxxxxxxx  -> Cloudflare Web Analytics (cookieless)
+const ga = import.meta.env.PUBLIC_GA_ID;
+const cf = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+---
+{ga && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>}
+{ga && (
+  <script is:inline define:vars={{ ga }}>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', ga);
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('[data-track]');
+      if (!a) return;
+      gtag('event', a.getAttribute('data-track'), { link_label: a.getAttribute('data-label') || '', page_path: location.pathname });
+    });
+  </script>
+)}
+{cf && <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: cf })}></script>}

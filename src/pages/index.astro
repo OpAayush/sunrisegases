@@ -1,4 +1,8 @@
 ---
+import ContactCTA from '../components/ContactCTA.astro';
+import { BUSINESS } from '../data/business';
+import { LOCAL_PAGES } from '../data/local-pages';
+import '../styles/local-pages.css';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -23,71 +27,56 @@ const secondaryCategories = [
   { collection: balloons, label: 'Balloons', href: '/balloons/', description: 'Custom advertising balloons for events', icon: 'icon-package' },
 ];
 
+const faqs: { q: string; a: string; lang?: string }[] = [
+  {
+    "q": "How do I book a gas cylinder in Nagpur?",
+    "a": "Call +91-9422416090 or message us on WhatsApp. Cylinder supply and refill are available 24 hours, 7 days a week, with delivery across Nagpur and nearby areas."
+  },
+  {
+    "q": "Are you a gas agency in Nagpur?",
+    "a": "Sunrise Gases is a gas manufacturer and supplier in Nagpur — industrial and specialty gases, refrigerants, dry ice, fire safety equipment, and gas equipment, serving Central India since 2013."
+  },
+  {
+    "q": "Do you deliver gas cylinders near me?",
+    "a": "Yes. We deliver across Nagpur (Sadar, Gandhi Chowk, MIDC Hingna Road) and surrounding areas including Kamptee, Hingna, and Kalmeshwar."
+  },
+  {
+    "q": "Which areas do you deliver gas cylinders to?",
+    "a": "We deliver across Nagpur and nearby towns including Kamptee, Hingna, Kalmeshwar, Butibori and Wadi, and to districts within roughly 200 km such as Wardha, Bhandara, Gondia and Chandrapur. Call to confirm delivery for your location."
+  },
+  {
+    "q": "Where are you located in Nagpur?",
+    "a": "Our registered office is at Gandhi Chowk, Sadar (enquiries, orders, billing). Our office, godown and cylinder dispatch are on MIDC Hingna Road. Cylinders are transported across Nagpur, including to Sadar."
+  },
+  {
+    "q": "नागपुर में गैस एजेंसी कहाँ है?",
+    "a": "हमारा कार्यालय मेघराज चावल, 212A, गांधी चौक, सदर, नागपुर 440001 में है और फैक्ट्री MIDC, हिंगणा रोड पर है। फोन: +91-9422416090।",
+    "lang": "hi"
+  },
+  {
+    "q": "क्या आप 24 घंटे गैस सिलेंडर की डिलीवरी करते हैं?",
+    "a": "हाँ, हम सप्ताह के सातों दिन 24 घंटे नागपुर, कामठी, हिंगणा और कलमेश्वर में गैस सिलेंडर की डिलीवरी करते हैं।",
+    "lang": "hi"
+  },
+  {
+    "q": "ऑक्सीजन सिलेंडर कहाँ से मिलता है?",
+    "a": "ऑक्सीजन, नाइट्रोजन, आर्गन, कार्बन डाइऑक्साइड, हीलियम, हाइड्रोजन, LPG और अमोनिया सिलेंडर नागपुर से सप्लाई होते हैं। 10L, 20L और 47L सिलेंडर उपलब्ध हैं।",
+    "lang": "hi"
+  },
+  {
+    "q": "ड्राई आइस कहाँ मिलती है?",
+    "a": "फूड ग्रेड ड्राई आइस ब्लॉक और पाउडर फॉर्म में नागपुर में उपलब्ध है — इवेंट, कोल्ड चेन और फूड ट्रांसपोर्ट के लिए।",
+    "lang": "hi"
+  }
+];
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How do I book a gas cylinder in Nagpur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Call +91-9422416090 or message us on WhatsApp. Cylinder supply and refill are available 24 hours, 7 days a week, with delivery across Nagpur and nearby areas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are you a gas agency in Nagpur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sunrise Gases is a gas manufacturer and supplier in Nagpur — industrial and specialty gases, refrigerants, dry ice, fire safety equipment, and gas equipment, serving Central India since 2013."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you deliver gas cylinders near me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We deliver across Nagpur (Sadar, Gandhi Chowk, MIDC Hingna Road) and surrounding areas including Kamptee, Hingna, and Kalmeshwar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "नागपुर में गैस एजेंसी कहाँ है?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "हमारा कार्यालय मेघराज चावल, 212A, गांधी चौक, सदर, नागपुर 440001 में है और फैक्ट्री MIDC, हिंगणा रोड पर है। फोन: +91-9422416090।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "क्या आप 24 घंटे गैस सिलेंडर की डिलीवरी करते हैं?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "हाँ, हम सप्ताह के सातों दिन 24 घंटे नागपुर, कामठी, हिंगणा और कलमेश्वर में गैस सिलेंडर की डिलीवरी करते हैं।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ऑक्सीजन सिलेंडर कहाँ से मिलता है?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ऑक्सीजन, नाइट्रोजन, आर्गन, कार्बन डाइऑक्साइड, हीलियम, हाइड्रोजन, LPG और अमोनिया सिलेंडर नागपुर से सप्लाई होते हैं। 10L, 20L और 47L सिलेंडर उपलब्ध हैं।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ड्राई आइस कहाँ मिलती है?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "फूड ग्रेड ड्राई आइस ब्लॉक और पाउडर फॉर्म में नागपुर में उपलब्ध है — इवेंट, कोल्ड चेन और फूड ट्रांसपोर्ट के लिए।"
-      }
-    }
-  ]
+  "mainEntity": faqs.map((f) => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
 };
 ---
 
-<BaseLayout title="Industrial & Specialty Gases — Sunrise Gases, Nagpur" description="Industrial and specialty gases manufacturer based in Nagpur. Supplying oxygen, nitrogen, argon, CO₂, hydrogen, helium, and gas equipment across Central India." schemas={[faqSchema]}>
+<BaseLayout businessSchema="full" title="Sunrise Gases Nagpur — Industrial Gas Cylinders, 24×7" description="Industrial and specialty gas cylinders in Nagpur — oxygen, nitrogen, argon, CO₂, helium, P10, dry ice. Orders 24×7. Call +91-9422416090." schemas={[faqSchema]}>
   <section class="hero">
     <div class="hero-bg-decor" aria-hidden="true">
       <img src={iconSrc('icon-flame')} alt="" />
@@ -96,6 +85,7 @@ const faqSchema = {
       <h1 class="hero-title">Industrial &amp; specialty<br />gases <span class="hero-accent">manufactured in Nagpur</span></h1>
       <p class="hero-subtitle">Oxygen &middot; Nitrogen &middot; Argon &middot; Carbon Dioxide &middot; Hydrogen &middot; Helium &middot; Dissolved Acetylene &middot; LPG &middot; Ammonia</p>
       <p class="hero-subtitle">Gas agency in Nagpur — cylinder supply, refill &amp; 24-hour delivery.</p>
+      <ContactCTA variant="hero" />
     </div>
   </section>
 
@@ -159,37 +149,51 @@ const faqSchema = {
     </div>
   </section>
 
+  <section class="lp" style="padding-bottom:0">
+    <h2 class="lp-h2" style="margin-top:0">Gas cylinder delivery across Nagpur and nearby areas</h2>
+    <p class="lp-p">Sunrise Gases delivers industrial and specialty gas cylinders across Nagpur and to towns and districts within roughly 200 km. Call or WhatsApp with the gas, quantity and location and we will confirm availability, price and delivery time.</p>
+    <ul class="lp-chips">{BUSINESS.serviceCore.slice(0, 10).map((a) => <li>{a}</li>)}</ul>
+    <p class="lp-p" style="margin-top:0.75rem"><a class="lp-link" href="/service-area/">See all delivery areas &rarr;</a></p>
+    <h2 class="lp-h2">Our two Nagpur locations</h2>
+    <div class="lp-grid">
+      {BUSINESS.branches.map((b) => (
+        <div class="lp-card">
+          <h3 class="lp-q" style="margin-top:0">{b.name} <span style="font-weight:400">({b.role})</span></h3>
+          <p class="lp-p">{b.streetAddress}, Nagpur {b.postalCode}</p>
+          <a class="lp-link" href={`/locations/${b.slug}/`}>Branch details &amp; map &rarr;</a>
+        </div>
+      ))}
+    </div>
+    <h2 class="lp-h2">How to order</h2>
+    <ol class="lp-steps">
+      <li>Call {BUSINESS.phone} or WhatsApp us the gas or product, quantity and delivery location.</li>
+      <li>We confirm availability, price and delivery time.</li>
+      <li>Your cylinders are transported to your address.</li>
+    </ol>
+    <h2 class="lp-h2">Popular services in Nagpur</h2>
+    <ul class="lp-chips">{LOCAL_PAGES.map((l) => <li><a class="lp-link" href={`/${l.slug}/`}>{l.crumb}</a></li>)}<li><a class="lp-link" href="/service-area/">Delivery areas</a></li></ul>
+    <h2 class="lp-h2">More from Sunrise Gases</h2>
+    <ul class="lp-chips">
+      <li><a class="lp-link" href="/refrigerants/r134a/">R134a refrigerant</a></li>
+      <li><a class="lp-link" href="/refrigerants/r404a/">R404A refrigerant</a></li>
+      <li><a class="lp-link" href="/refrigerants/r407c/">R407C refrigerant</a></li>
+      <li><a class="lp-link" href="/refrigerants/r410a/">R410A refrigerant</a></li>
+      <li><a class="lp-link" href="/fire-safety/abc-powder-fire-extinguishers/">ABC fire extinguishers</a></li>
+      <li><a class="lp-link" href="/balloons/advertising-balloons/">Advertising balloons</a></li>
+      <li><a class="lp-link" href="/industries/aerospace/">Gases for aerospace</a></li>
+      <li><a class="lp-link" href="/industries/power-and-energy/">Gases for power &amp; energy</a></li>
+    </ul>
+  </section>
+
   <section class="faq-section">
     <h2 class="faq-section-title">Frequently Asked Questions</h2>
     <div class="faq-list">
-      <div class="faq-item">
-        <h3 class="faq-question">How do I book a gas cylinder in Nagpur?</h3>
-        <p class="faq-answer">Call +91-9422416090 or message us on WhatsApp. Cylinder supply and refill are available 24 hours, 7 days a week, with delivery across Nagpur and nearby areas.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">Are you a gas agency in Nagpur?</h3>
-        <p class="faq-answer">Sunrise Gases is a gas manufacturer and supplier in Nagpur — industrial and specialty gases, refrigerants, dry ice, fire safety equipment, and gas equipment, serving Central India since 2013.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">Do you deliver gas cylinders near me?</h3>
-        <p class="faq-answer">Yes. We deliver across Nagpur (Sadar, Gandhi Chowk, MIDC Hingna Road) and surrounding areas including Kamptee, Hingna, and Kalmeshwar.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">नागपुर में गैस एजेंसी कहाँ है?</h3>
-        <p class="faq-answer">हमारा कार्यालय मेघराज चावल, 212A, गांधी चौक, सदर, नागपुर 440001 में है और फैक्ट्री MIDC, हिंगणा रोड पर है। फोन: +91-9422416090।</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">क्या आप 24 घंटे गैस सिलेंडर की डिलीवरी करते हैं?</h3>
-        <p class="faq-answer">हाँ, हम सप्ताह के सातों दिन 24 घंटे नागपुर, कामठी, हिंगणा और कलमेश्वर में गैस सिलेंडर की डिलीवरी करते हैं।</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">ऑक्सीजन सिलेंडर कहाँ से मिलता है?</h3>
-        <p class="faq-answer">ऑक्सीजन, नाइट्रोजन, आर्गन, कार्बन डाइऑक्साइड, हीलियम, हाइड्रोजन, LPG और अमोनिया सिलेंडर नागपुर से सप्लाई होते हैं। 10L, 20L और 47L सिलेंडर उपलब्ध हैं।</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">ड्राई आइस कहाँ मिलती है?</h3>
-        <p class="faq-answer">फूड ग्रेड ड्राई आइस ब्लॉक और पाउडर फॉर्म में नागपुर में उपलब्ध है — इवेंट, कोल्ड चेन और फूड ट्रांसपोर्ट के लिए।</p>
-      </div>
+      {faqs.map((f) => (
+        <div class="faq-item" lang={f.lang}>
+          <h3 class="faq-question">{f.q}</h3>
+          <p class="faq-answer">{f.a}</p>
+        </div>
+      ))}
     </div>
   </section>
 

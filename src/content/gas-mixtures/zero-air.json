@@ -2,18 +2,52 @@
   "slug": "zero-air",
   "name": "Zero Air (Synthetic Air)",
   "components": [
-    { "gas": "Nitrogen", "ratio": "79%" },
-    { "gas": "Oxygen", "ratio": "21%" }
+    {
+      "gas": "Nitrogen",
+      "ratio": "79%"
+    },
+    {
+      "gas": "Oxygen",
+      "ratio": "21%"
+    }
   ],
   "blendRationale": "Synthetic breathing air mixture for respiratory and calibration applications. Available in multiple cylinder sizes and pressure ratings.",
-  "applications": ["Breathing air supply", "Calibration", "Laboratory", "Industrial pneumatic tools"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["1.5 Cu.M.", "7 Cu.M."] }
+  "applications": [
+    "Breathing air supply",
+    "Calibration",
+    "Laboratory",
+    "Industrial pneumatic tools"
   ],
-  "safety": { "sdsUrl": "/documents/sds/zero-air.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "1.5 Cu.M.",
+        "7 Cu.M."
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/zero-air.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [],
   "seo": {
-    "title": "Zero Air (Synthetic Air) Mixture | Sunrise Gases",
-    "description": "Zero air synthetic breathing mixture — 79% nitrogen, 21% oxygen. 99.999% purity. Available in 1.5 and 7 Cu.M. cylinders."
-  }
+    "title": "Zero Air Cylinders in Nagpur | Sunrise Gases",
+    "description": "Zero air synthetic breathing mixture — 79% nitrogen, 21% oxygen. 99.999% purity. Available in 1.5 and 7 Cu.M. cylinders. Delivery in Nagpur Call +91-9422416090"
+  },
+  "about": [
+    "Zero air is a synthetic air mixture of oxygen and nitrogen that is essentially free of hydrocarbons and other contaminants. Laboratories use it as a zero or baseline gas to calibrate analysers and as the oxidiser air for flame ionisation detectors (FID) in gas chromatographs.",
+    "Because it is blended rather than compressed from ambient air, its composition and cleanliness are consistent from cylinder to cylinder. Tell us your instrument’s purity requirement when you order."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Zero Air (Synthetic Air) in Nagpur?",
+      "answer": "Sunrise Gases supplies Zero Air (Synthetic Air) from our Nagpur branches in 1.5 Cu.M., 7 Cu.M.. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is a certificate of analysis available?",
+      "answer": "Composition and purity details are available on request. Ask when you place your order."
+    }
+  ]
 }

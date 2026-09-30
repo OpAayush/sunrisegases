@@ -2,15 +2,44 @@
   "slug": "co2-fire-extinguishers",
   "name": "CO₂ Fire Extinguishers",
   "agentType": "Carbon dioxide (CO₂)",
-  "fireClassRating": ["B", "C"],
-  "sizes": ["1 Kg", "2 Kg", "3 Kg", "4.5 Kg", "6.8 Kg", "9 Kg", "22.5 Kg"],
+  "fireClassRating": [
+    "B",
+    "C"
+  ],
+  "sizes": [
+    "1 Kg",
+    "2 Kg",
+    "3 Kg",
+    "4.5 Kg",
+    "6.8 Kg",
+    "9 Kg",
+    "22.5 Kg"
+  ],
   "dischargeTime": "8–15 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "../../assets/products/extinguisher-co2.svg", "alt": "CO₂ fire extinguisher, 1–22.5 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/extinguisher-co2.svg",
+      "alt": "CO₂ fire extinguisher, 1–22.5 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "CO₂ Fire Extinguishers | Sunrise Gases",
+    "title": "CO₂ Fire Extinguisher in Nagpur | Sunrise Gases",
     "description": "CO₂ fire extinguishers for Class B and C fires. Ideal for electrical equipment. Available in 1-22.5 Kg. Supplied from Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "Do you refill CO₂ Fire Extinguishers extinguishers in Nagpur?",
+      "answer": "Call or WhatsApp us with the extinguisher type and capacity and we will confirm refilling or replacement. We are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Which fires is a CO₂ Fire Extinguishers extinguisher for?",
+      "answer": "It is rated for B, C. Always check the label on your extinguisher and never use an unsuitable type on electrical or flammable-liquid fires."
+    }
+  ],
+  "hindi": "नागपुर में CO₂ अग्निशामक यंत्र — बिजली के उपकरण, सर्वर रूम और प्रयोगशाला के लिए। रिफिलिंग या नया यंत्र लेने के लिए +91-9422416090 पर कॉल या WhatsApp करें।",
+  "about": [
+    "CO₂ extinguishers put out Class B and electrical fires by displacing oxygen and cooling. They leave no residue, which makes them a good choice for server rooms, control panels and laboratories.",
+    "Use them in ventilated spaces and hold the horn by its handle, as it becomes very cold. CO₂ extinguishers are weighed during inspection to check the charge."
+  ]
 }

@@ -1,13 +1,19 @@
 ---
+import '@fontsource/barlow-condensed/latin-700.css';
+import '@fontsource/barlow-condensed/latin-800.css';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/jetbrains-mono/latin-400.css';
+import '@fontsource/playfair-display/latin-600.css';
+import interLatin400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import barlow700 from '@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff2?url';
+import playfair600 from '@fontsource/playfair-display/files/playfair-display-latin-600-normal.woff2?url';
+import StickyContact from '../components/StickyContact.astro';
+import { businessGraph } from '../data/business';
+import { COLLECTION_LABELS } from '../lib/facts';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import '@fontsource/barlow-condensed/700.css';
-import '@fontsource/barlow-condensed/800.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '@fontsource/inter/600.css';
-import '@fontsource/jetbrains-mono/400.css';
-import '@fontsource/playfair-display/600.css';
 import '../styles/tokens.css';
 
 export interface Props {
@@ -16,26 +22,39 @@ export interface Props {
   canonical?: string;
   schemas?: Record<string, unknown>[];
   noindex?: boolean;
+  businessSchema?: 'full';
+  mdHref?: string;
+  crumbName?: string;
 }
 
-const { title, description, canonical, schemas, noindex } = Astro.props;
+const { title, description, canonical, schemas, noindex, businessSchema, mdHref, crumbName } = Astro.props;
+const SEG_LABELS: Record<string, string> = { ...COLLECTION_LABELS, about: 'About', contact: 'Contact', 'quality-and-safety': 'Quality & safety', 'service-area': 'Delivery areas', locations: 'Locations' };
+const segs = Astro.url.pathname.split('/').filter(Boolean);
+const showCrumbs = segs.length > 0 && segs[0] !== '404';
+const crumbs = [{ name: 'Home', href: '/' }];
+segs.forEach((sg, i) => {
+  const last = i === segs.length - 1;
+  crumbs.push({ name: last ? (crumbName ?? SEG_LABELS[sg] ?? title.split(' | ')[0]) : (SEG_LABELS[sg] ?? sg), href: '/' + segs.slice(0, i + 1).join('/') + '/' });
+});
+const hasCrumbSchema = JSON.stringify(schemas ?? []).includes('BreadcrumbList');
+const autoCrumbSchema = showCrumbs && !hasCrumbSchema ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: `https://sunrisegases.com${c.href}` })) } : null;
 const canonicalUrl = canonical || `https://sunrisegases.com${Astro.url.pathname}`;
 const siteName = 'Sunrise Gases';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <meta name="geo.region" content="IN-MH" />
     <meta name="geo.placename" content="Nagpur" />
-    <meta name="geo.position" content="21.1154769;79.0007651" />
-    <meta name="ICBM" content="21.1154769, 79.0007651" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en-in" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -58,49 +77,12 @@ const siteName = 'Sunrise Gases';
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://sunrisegases.com/#business",
-      "name": "Sunrise Gases",
-      "description": "Industrial and specialty gases manufacturer in Nagpur, supplying across Central India. Open 24 hours, 7 days a week.",
-      "url": "https://sunrisegases.com",
-      "telephone": "+91-9422416090",
-      "email": "contact@sunrisegases.com",
-      "foundingDate": "2013",
-      "areaServed": "Central India",
-      "openingHours": "Mo-Su 00:00-23:59",
-      "sameAs": [
-        "https://www.google.com/maps/place/?q=place_id:5443013244051232339",
-        "https://wa.me/919422416090"
-      ],
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "name": "Registered Office",
-          "streetAddress": "Meghraj Chawl, 212A, Gandhi Chowk, Sadar",
-          "addressLocality": "Nagpur",
-          "addressRegion": "Maharashtra",
-          "postalCode": "440001",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "name": "Works",
-          "streetAddress": "Sharma Engineering Works, W52, near Digdoh Gram Panchayat, MIDC, Hingna Road",
-          "addressLocality": "Nagpur",
-          "addressRegion": "Maharashtra",
-          "postalCode": "440016",
-          "addressCountry": "IN"
-        }
-      ],
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 21.1154769,
-        "longitude": 79.0007651
-      },
-      "hasMap": "https://www.google.com/maps?q=21.1154769,79.0007651"
-    })} />
+    <link rel="preload" as="font" type="font/woff2" href={interLatin400} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={barlow700} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={playfair600} crossorigin />
+    {mdHref && <link rel="alternate" type="text/markdown" href={`https://sunrisegases.com${mdHref}`} />}
+    {businessSchema === 'full' && <script is:inline type="application/ld+json" set:html={JSON.stringify(businessGraph())} />}
+    {autoCrumbSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(autoCrumbSchema)} />}
     {schemas?.map((schema) => (
       <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
@@ -109,9 +91,13 @@ const siteName = 'Sunrise Gases';
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <Nav />
     <main id="main-content">
+      {showCrumbs && (
+        <nav class="crumbs" aria-label="Breadcrumb"><ol>{crumbs.map((c, i) => (<li>{i === crumbs.length - 1 ? <span aria-current="page">{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>))}</ol></nav>
+      )}
       <slot />
     </main>
     <Footer />
+    <StickyContact pageTitle={title} />
   </body>
 </html>
 
@@ -265,4 +251,11 @@ const siteName = 'Sunrise Gases';
     .product-summary { font-size: 0.8125rem; }
     .product-formula { font-size: 1.125rem; }
   }
+</style>
+
+<style is:global>
+  .crumbs { max-width: var(--space-container); margin: 0 auto; padding: 1rem 1.5rem 0; font-size: var(--text-small); }
+  .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .crumbs li + li::before { content: "/"; margin-right: 0.4rem; color: var(--color-driftwood); }
+  .crumbs a { color: var(--color-accent-text); }
 </style>

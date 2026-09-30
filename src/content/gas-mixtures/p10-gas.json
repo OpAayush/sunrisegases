@@ -2,21 +2,80 @@
   "slug": "p10-gas",
   "name": "P10 (Methane + Argon)",
   "components": [
-    { "gas": "Methane", "ratio": "10%" },
-    { "gas": "Argon", "ratio": "90%" }
+    {
+      "gas": "Methane",
+      "ratio": "10%"
+    },
+    {
+      "gas": "Argon",
+      "ratio": "90%"
+    }
   ],
   "blendRationale": "P10 is a methane-argon mixture used primarily in radiation detection and proportional counting applications.",
-  "applications": ["Radiation detection", "Proportional counters", "Laboratory instruments"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["7 Cu.M."] }
+  "applications": [
+    "Radiation detection",
+    "Proportional counters",
+    "Laboratory instruments",
+    "XRF flow-proportional detectors",
+    "Alpha and beta particle counting"
   ],
-  "safety": { "sdsUrl": "/documents/sds/p10.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "7 Cu.M."
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/p10.pdf",
+    "hazardClass": "Flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-p10.svg", "alt": "P10 methane-argon calibration gas cylinder, 7 Cu.M., Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/p10-gas-cylinder.webp", "alt": "P10 methane-argon gas cylinder, 7 Cu.M., Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-p10.svg",
+      "alt": "P10 methane-argon calibration gas cylinder, 7 Cu.M., Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/p10-gas-cylinder.webp",
+      "alt": "P10 methane-argon gas cylinder, 7 Cu.M., Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "P10 Gas — Methane + Argon Mixture | Sunrise Gases",
-    "description": "P10 proportional counting gas — methane 10%, argon 90%. Used in radiation detection. Available in 7 Cu.M. cylinders."
-  }
+    "title": "P10 Gas (90% Argon + 10% Methane) | Sunrise Gases Nagpur",
+    "description": "P10 gas (90% argon + 10% methane) for XRF, proportional counters and radiation detectors. 7 Cu.M. cylinders from Nagpur, open 24×7. Call +91-9422416090."
+  },
+  "overview": "P10 gas is a mixture of 90% argon and 10% methane. It is the standard fill gas for gas-flow proportional counters, and is used in XRF spectrometers and radiation detectors. Sunrise Gases supplies P10 gas in 7 Cu.M. cylinders from Nagpur, open 24 hours a day.",
+  "about": [
+    "P10 (also written P-10 or P 10) is 10% methane in 90% argon. The argon is ionised by radiation or X-rays, while the methane acts as a quenching gas: it absorbs stray ultraviolet photons and stabilises the discharge so the detector gives a stable, proportional signal.",
+    "P10 is most often used to supply the flow-proportional counter in wavelength-dispersive XRF spectrometers, and in alpha and beta particle counting systems, radiation monitors and some research detectors. Your instrument manual gives the flow rate and pressure it needs.",
+    "When you enquire, share the instrument model, required outlet pressure, quantity and whether you will exchange empty cylinders. Because P10 contains methane, use a regulator suitable for flammable-gas mixtures, ventilate the room and keep ignition sources away."
+  ],
+  "faq": [
+    {
+      "question": "What is P10 gas?",
+      "answer": "P10 gas is a calibration and detector gas made of 90% argon and 10% methane by volume. It is used mainly in gas-flow proportional counters, XRF spectrometers and radiation detection equipment."
+    },
+    {
+      "question": "What is the composition of P10 gas?",
+      "answer": "P10 is 90% argon (Ar) and 10% methane (CH₄) by volume."
+    },
+    {
+      "question": "Is P10 gas flammable?",
+      "answer": "Yes. P10 contains 10% methane and is normally supplied as a flammable gas mixture. Keep cylinders away from ignition sources, use it in ventilated areas and follow the Safety Data Sheet."
+    },
+    {
+      "question": "What is P10 gas used for in XRF?",
+      "answer": "In wavelength-dispersive XRF spectrometers, P10 flows through the flow-proportional detector that counts X-rays, particularly from lighter elements."
+    },
+    {
+      "question": "Where can I buy P10 gas in Nagpur?",
+      "answer": "Sunrise Gases supplies P10 gas in 7 Cu.M. cylinders from our Nagpur branches. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is P10 the same as P-10 or P 10?",
+      "answer": "Yes. P10, P-10 and P 10 are different spellings of the same 90% argon, 10% methane mixture."
+    }
+  ],
+  "hindi": "नागपुर में P10 गैस (90% आर्गन + 10% मीथेन) — XRF स्पेक्ट्रोमीटर और प्रोपोर्शनल काउंटर के लिए। 7 Cu.M. सिलेंडर के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

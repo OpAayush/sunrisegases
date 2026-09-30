@@ -4,20 +4,68 @@
   "formula": "C₂H₂",
   "summary": "Dissolved acetylene for welding, cutting, and brazing. Available in industrial and ultra-high-purity grades.",
   "grades": [
-    { "name": "Industrial", "purity": "99.90%", "uses": ["gas welding", "cutting", "brazing"] },
-    { "name": "Ultra High Pure", "purity": "99.999%", "uses": ["calibration", "specialty applications"] }
+    {
+      "name": "Industrial",
+      "purity": "99.90%",
+      "uses": [
+        "gas welding",
+        "cutting",
+        "brazing"
+      ]
+    },
+    {
+      "name": "Ultra High Pure",
+      "purity": "99.999%",
+      "uses": [
+        "calibration",
+        "specialty applications"
+      ]
+    }
   ],
-  "supplyForms": ["dissolved cylinder"],
+  "supplyForms": [
+    "dissolved cylinder"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["5 Cu.M.", "7 Cu.M."] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "5 Cu.M.",
+        "7 Cu.M."
+      ]
+    }
   ],
-  "applications": ["Gas welding and cutting", "Brazing and soldering", "Metal fabrication"],
-  "safety": { "sdsUrl": "/documents/sds/acetylene.pdf", "hazardClass": "Flammable gas" },
+  "applications": [
+    "Gas welding and cutting",
+    "Brazing and soldering",
+    "Metal fabrication"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/acetylene.pdf",
+    "hazardClass": "Flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/dissolved-acetylene.jpg", "alt": "Dissolved acetylene gas cylinder, 5–7 Cu.M., Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/dissolved-acetylene.jpg",
+      "alt": "Dissolved acetylene gas cylinder, 5–7 Cu.M., Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Dissolved Acetylene Gas Supplier | Sunrise Gases",
-    "description": "Dissolved acetylene for welding, cutting, and brazing. Industrial (99.90%) and UHP (99.999%) grades. Supplied from Nagpur."
-  }
+    "title": "Dissolved Acetylene Gas in Nagpur | Sunrise Gases",
+    "description": "Dissolved acetylene cylinders in Nagpur for oxy-acetylene welding and cutting. Delivery across Nagpur, 24×7. Call +91-9422416090."
+  },
+  "about": [
+    "Dissolved acetylene (C₂H₂) is acetylene gas dissolved in acetone inside a porous mass in the cylinder, which makes it safe to store and transport. Burned with oxygen it gives the hottest common fuel-gas flame, so it is used for oxy-acetylene welding, cutting, brazing and heating.",
+    "Acetylene becomes unstable at higher pressures: draw it at no more than about 1 bar (15 psi) line pressure, keep cylinders upright and fit flashback arrestors. Never use copper or high-copper alloy fittings with acetylene."
+  ],
+  "faq": [
+    {
+      "question": "What is dissolved acetylene used for?",
+      "answer": "Dissolved acetylene is burned with oxygen for welding, flame cutting, brazing and heating of metals in workshops, fabrication yards and construction sites."
+    },
+    {
+      "question": "Where can I get dissolved acetylene cylinders in Nagpur?",
+      "answer": "Sunrise Gases supplies dissolved acetylene cylinders from our Nagpur branches. Call or WhatsApp us — we are open 24 hours, 7 days a week."
+    }
+  ],
+  "hindi": "नागपुर में डिज़ॉल्व्ड एसिटिलीन गैस सिलेंडर — ऑक्सी-एसिटिलीन वेल्डिंग, कटिंग और ब्रेज़िंग के लिए। सिलेंडर को हमेशा सीधा रखें। ऑर्डर के लिए +91-9422416090 पर कॉल या WhatsApp करें।"
 }

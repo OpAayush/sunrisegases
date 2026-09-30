@@ -4,21 +4,51 @@
   "formula": "Ar",
   "summary": "Industrial argon gas for welding shielding and metal fabrication. Supplied as compressed gas from Nagpur.",
   "grades": [
-    { "name": "Industrial", "purity": "99.9%", "uses": ["MIG/TIG welding shielding", "metal fabrication"] }
+    {
+      "name": "Industrial",
+      "purity": "99.9%",
+      "uses": [
+        "MIG/TIG welding shielding",
+        "metal fabrication"
+      ]
+    }
   ],
-  "supplyForms": ["compressed cylinder", "liquid (cryogenic)"],
+  "supplyForms": [
+    "compressed cylinder",
+    "liquid (cryogenic)"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["10L", "20L", "47L"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "10L",
+        "20L",
+        "47L"
+      ]
+    }
   ],
-  "applications": ["Welding and metal fabrication", "Heat treatment", "Electronics"],
-  "safety": { "sdsUrl": "/documents/sds/argon.pdf", "hazardClass": "Non-flammable gas" },
+  "applications": [
+    "Welding and metal fabrication",
+    "Heat treatment",
+    "Electronics"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/argon.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/argon.jpg", "alt": "Industrial argon gas cylinder, 47L, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/argon-shield.webp", "alt": "Argon shielding gas for MIG/TIG welding, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/argon.jpg",
+      "alt": "Industrial argon gas cylinder, 47L, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/argon-shield.webp",
+      "alt": "Argon shielding gas for MIG/TIG welding, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Industrial Argon Gas Supplier | Sunrise Gases",
-    "description": "Industrial argon gas for welding, metal fabrication, and heat treatment. Supplied as compressed gas. Manufactured in Nagpur."
+    "title": "Argon Gas Cylinders in Nagpur | Sunrise Gases",
+    "description": "Argon gas cylinders in Nagpur for TIG and MIG welding. Refill and delivery across Nagpur, orders 24×7. Call +91-9422416090."
   },
   "faq": [
     {
@@ -41,5 +71,10 @@
       "question": "Can I refill argon cylinders?",
       "answer": "Yes. Argon cylinder refill in 10L, 20L, and 47L sizes is available from our Nagpur facility, 24 hours a day."
     }
-  ]
+  ],
+  "about": [
+    "Argon (Ar) is an inert noble gas, about 0.93% of air. It is the standard shielding gas for TIG welding and, mixed with CO₂ or oxygen, for MIG/MAG welding of steel, stainless steel and aluminium. It is also used in steel making and to protect reactive metals during heat treatment.",
+    "Argon is heavier than air and can collect in low areas, causing oxygen deficiency. Store and use cylinders in ventilated spaces and secure them upright."
+  ],
+  "hindi": "नागपुर में आर्गन गैस सिलेंडर — TIG और MIG वेल्डिंग, स्टेनलेस स्टील और एल्यूमिनियम के काम के लिए। आर्गन सिलेंडर के लिए +91-9422416090 पर कॉल या WhatsApp करें; डिलीवरी नागपुर और आसपास के ज़िलों में।"
 }

@@ -1,0 +1,2 @@
+export const ROUTED = ['gases', 'gas-mixtures', 'specialty-gases', 'refrigerants', 'cryogenic', 'equipment', 'fire-safety', 'balloons', 'industries'] as const;
+export const STATIC_PAGES = ['/', '/gases/', '/gas-mixtures/', '/specialty-gases/', '/refrigerants/', '/cryogenic/', '/equipment/', '/fire-safety/', '/balloons/', '/industries/', '/about/', '/quality-and-safety/', '/contact/', '/service-area/', '/locations/sadar/', '/locations/hingna-midc/'];

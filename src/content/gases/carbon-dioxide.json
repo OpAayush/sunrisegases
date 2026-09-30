@@ -4,22 +4,64 @@
   "formula": "CO₂",
   "summary": "Carbon dioxide for welding, food processing, and industrial applications. Available in industrial and ultra-high-purity grades.",
   "grades": [
-    { "name": "Industrial", "purity": "99.90%", "uses": ["MIG welding", "food and beverage", "industrial processing"] },
-    { "name": "Ultra High Pure", "purity": "99.999%", "uses": ["calibration", "laboratory", "specialty applications"] }
+    {
+      "name": "Industrial",
+      "purity": "99.90%",
+      "uses": [
+        "MIG welding",
+        "food and beverage",
+        "industrial processing"
+      ]
+    },
+    {
+      "name": "Ultra High Pure",
+      "purity": "99.999%",
+      "uses": [
+        "calibration",
+        "laboratory",
+        "specialty applications"
+      ]
+    }
   ],
-  "supplyForms": ["compressed cylinder", "bulk"],
+  "supplyForms": [
+    "compressed cylinder",
+    "bulk"
+  ],
   "packaging": [
-    { "type": "Cylinder", "sizes": ["4.5 Kg", "6.8 Kg", "9 Kg", "15 Kg", "30 Kg"] }
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "4.5 Kg",
+        "6.8 Kg",
+        "9 Kg",
+        "15 Kg",
+        "30 Kg"
+      ]
+    }
   ],
-  "applications": ["MIG welding", "Food and beverage carbonation", "Fire suppression", "Industrial processing"],
-  "safety": { "sdsUrl": "/documents/sds/carbon-dioxide.pdf", "hazardClass": "Non-flammable gas" },
+  "applications": [
+    "MIG welding",
+    "Food and beverage carbonation",
+    "Fire suppression",
+    "Industrial processing"
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/carbon-dioxide.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-co2.svg", "alt": "Carbon dioxide gas cylinder, 4.5–30 Kg, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/co2-cylinder.webp", "alt": "Carbon dioxide gas cylinder, 4.5–30 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-co2.svg",
+      "alt": "Carbon dioxide gas cylinder, 4.5–30 Kg, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/co2-cylinder.webp",
+      "alt": "Carbon dioxide gas cylinder, 4.5–30 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Carbon Dioxide — Industrial & UHP Grades | Sunrise Gases",
-    "description": "Carbon dioxide gas for welding, food processing, and industrial use. Industrial (99.90%) and Ultra High Pure (99.999%) grades. Supplied from Nagpur."
+    "title": "CO₂ Gas Cylinder Refill in Nagpur | Sunrise Gases",
+    "description": "CO₂ gas cylinder refill in Nagpur for welding, carbonation and water treatment. Delivery across Nagpur, 24×7. Call +91-9422416090."
   },
   "faq": [
     {
@@ -30,5 +72,10 @@
       "question": "Can I get a CO2 cylinder refill?",
       "answer": "Yes. CO2 cylinder refill is available from our Nagpur facility, open 24 hours, 7 days a week."
     }
-  ]
+  ],
+  "about": [
+    "Carbon dioxide (CO₂) is supplied as a liquefied gas in cylinders. Industrial CO₂ is used as a shielding gas component in MIG/MAG welding, for pH control in water treatment and in fire extinguishers; food-grade CO₂ is used for carbonation and for making dry ice. Mention food-grade when you enquire.",
+    "Cylinders contain liquid CO₂, so keep them upright and secured. CO₂ is heavier than air and can build up in low or enclosed spaces, so ensure good ventilation."
+  ],
+  "hindi": "नागपुर में CO₂ (कार्बन डाइऑक्साइड) गैस सिलेंडर — वेल्डिंग, वॉटर ट्रीटमेंट, कार्बोनेशन और ड्राई आइस के लिए। CO₂ सिलेंडर रिफिल के लिए +91-9422416090 पर संपर्क करें।"
 }

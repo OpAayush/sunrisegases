@@ -2,15 +2,41 @@
   "slug": "dry-chemical-powder-extinguishers",
   "name": "Dry Chemical Powder Fire Extinguishers",
   "agentType": "Dry chemical powder",
-  "fireClassRating": ["A", "B", "C"],
-  "sizes": ["4 Kg", "6 Kg", "9 Kg"],
+  "fireClassRating": [
+    "A",
+    "B",
+    "C"
+  ],
+  "sizes": [
+    "4 Kg",
+    "6 Kg",
+    "9 Kg"
+  ],
   "dischargeTime": "10–20 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "../../assets/products/extinguisher-dcp.svg", "alt": "Dry chemical powder fire extinguisher, 4–9 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/extinguisher-dcp.svg",
+      "alt": "Dry chemical powder fire extinguisher, 4–9 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Dry Chemical Powder Fire Extinguishers | Sunrise Gases",
+    "title": "DCP Fire Extinguisher in Nagpur | Sunrise Gases",
     "description": "Dry chemical powder fire extinguishers for Class A, B, and C fires. Available in 4, 6, and 9 Kg. Supplied from Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "Do you refill Dry Chemical Powder Fire Extinguishers extinguishers in Nagpur?",
+      "answer": "Call or WhatsApp us with the extinguisher type and capacity and we will confirm refilling or replacement. We are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Which fires is a Dry Chemical Powder Fire Extinguishers extinguisher for?",
+      "answer": "It is rated for A, B, C. Always check the label on your extinguisher and never use an unsuitable type on electrical or flammable-liquid fires."
+    }
+  ],
+  "hindi": "नागपुर में DCP (ड्राई केमिकल पाउडर) अग्निशामक यंत्र — पेट्रोल पंप, वर्कशॉप और जनरेटर रूम की आग के लिए। रिफिलिंग के लिए +91-9422416090 पर कॉल या WhatsApp करें।",
+  "about": [
+    "Dry chemical powder (DCP) extinguishers typically use a bicarbonate-based powder to smother Class B (flammable liquid) and Class C (gas) fires. They suit petrol pumps, workshops, generator rooms and industrial sites and give fast knockdown of flammable-liquid fires.",
+    "DCP is not effective on Class A fires such as wood and paper, and it leaves a residue. Inspect regularly and refill after every use, even a short discharge."
+  ]
 }

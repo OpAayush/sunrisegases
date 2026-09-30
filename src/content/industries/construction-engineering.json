@@ -2,9 +2,25 @@
   "slug": "construction-and-engineering",
   "name": "Construction and Engineering",
   "summary": "Supplying industrial gases for construction, structural fabrication, and engineering projects across Central India.",
-  "relevantProducts": ["oxygen", "argon", "carbon-dioxide", "dissolved-acetylene", "hydrogen"],
+  "relevantProducts": [
+    "oxygen",
+    "argon",
+    "carbon-dioxide",
+    "dissolved-acetylene",
+    "hydrogen"
+  ],
   "seo": {
-    "title": "Construction & Engineering Gas Solutions | Sunrise Gases",
+    "title": "Construction & Welding Gases in Nagpur | Sunrise Gases",
     "description": "Oxygen, argon, CO₂, acetylene, and hydrogen for construction and engineering projects. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Construction and engineering work relies on cutting and welding gases: oxygen with dissolved acetylene or LPG for cutting steel, argon and CO₂ (or Agroshield) for welding, plus nitrogen for pressure testing pipelines and tanks.",
+    "We supply fabrication shops, contractors and engineering firms across Nagpur, MIDC Hingna and Butibori. Ask us about regular supply for your site."
+  ],
+  "faq": [
+    {
+      "question": "Which gases do you supply for construction and engineering?",
+      "answer": "Relevant products include oxygen, argon, carbon dioxide, dissolved acetylene, hydrogen. Call or WhatsApp us with your requirement and we will advise."
+    }
+  ]
 }

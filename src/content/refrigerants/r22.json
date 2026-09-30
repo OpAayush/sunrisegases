@@ -4,16 +4,45 @@
   "grade": "99.9%",
   "odp": 0.055,
   "gwp": 1810,
-  "retrofitCompatibility": ["R407C", "R422D"],
-  "packaging": [
-    { "type": "Cylinder", "sizes": ["10 Kg", "61 Kg"] }
+  "retrofitCompatibility": [
+    "R407C",
+    "R422D"
   ],
-  "safety": { "sdsUrl": "/documents/sds/r22.pdf", "hazardClass": "Non-flammable gas" },
+  "packaging": [
+    {
+      "type": "Cylinder",
+      "sizes": [
+        "10 Kg",
+        "61 Kg"
+      ]
+    }
+  ],
+  "safety": {
+    "sdsUrl": "/documents/sds/r22.pdf",
+    "hazardClass": "Non-flammable gas"
+  },
   "images": [
-    { "src": "../../assets/products/cylinder-refrigerant.svg", "alt": "R22 refrigerant gas cylinder, 10–61 Kg, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-refrigerant.svg",
+      "alt": "R22 refrigerant gas cylinder, 10–61 Kg, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "R22 Refrigerant Gas Supplier | Sunrise Gases",
+    "title": "R22 Refrigerant Gas in Nagpur | Sunrise Gases",
     "description": "R22 (Chlorodifluoromethane) refrigerant gas. 99.9% purity in 10 and 61 Kg cylinders. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "R22 (HCFC-22) is a single-component refrigerant that was widely used in older split and window air conditioners and in cold-storage systems. It is being phased out under the Montreal Protocol because it depletes the ozone layer, and it is now used mainly to service existing equipment.",
+    "If your system is old, ask about servicing or retrofit options. Recovery and handling should be done by trained technicians."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy R22 (Chlorodifluoromethane) in Nagpur?",
+      "answer": "Sunrise Gases supplies R22 (Chlorodifluoromethane) from our Nagpur branches in 10 Kg, 61 Kg. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Is R22 (Chlorodifluoromethane) flammable?",
+      "answer": "R22 (Chlorodifluoromethane) is classified as non-flammable, but it is stored under pressure and can displace oxygen in enclosed spaces. Handle it through a trained technician with proper gauges, recovery equipment and ventilation."
+    }
+  ]
 }

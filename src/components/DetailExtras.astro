@@ -1,0 +1,84 @@
+---
+import { getCollection } from 'astro:content';
+import ContactCTA from './ContactCTA.astro';
+import { LOCAL_PAGES } from '../data/local-pages';
+import { buildFacts, COLLECTION_LABELS } from '../lib/facts';
+
+interface Props { part: 'top' | 'bottom'; data: any; collection: string; showFaq?: boolean }
+const { part, data, collection, showFaq = true } = Astro.props;
+const facts = part === 'top' ? buildFacts(collection, data) : [];
+let related: { href: string; name: string }[] = [];
+if (part === 'bottom') {
+  const all = await getCollection(collection as any);
+  related = all.filter((e: any) => e.data.slug !== data.slug).slice(0, 8).map((e: any) => ({ href: `/${collection}/${e.data.slug}/`, name: e.data.name }));
+}
+const faqSchema = part === 'bottom' && showFaq && data.faq?.length
+  ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: data.faq.map((f: any) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } })) }
+  : null;
+---
+{part === 'top' && (
+  <>
+    {data.overview && <p class="dx-overview">{data.overview}</p>}
+    <p class="dx-local">Supplied in Nagpur &middot; delivery within roughly 200 km &middot; orders taken 24&times;7</p>
+    {facts.length > 0 && (
+      <section class="dx-section">
+        <h2 class="dx-h2">Key facts</h2>
+        <table class="dx-table">
+          <caption class="sr-only">Key facts for {data.name}</caption>
+          <tbody>{facts.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
+        </table>
+      </section>
+    )}
+    {data.about?.length > 0 && (
+      <section class="dx-section">
+        <h2 class="dx-h2">About {data.name}</h2>
+        {data.about.map((p: string) => <p class="dx-p">{p}</p>)}
+      </section>
+    )}
+  </>
+)}
+{part === 'bottom' && (
+  <>
+    {showFaq && data.faq?.length > 0 && (
+      <section class="dx-section">
+        <h2 class="dx-h2">Frequently asked questions</h2>
+        {data.faq.map((f: any) => (
+          <div class="dx-faq"><h3 class="dx-q">{f.question}</h3><p class="dx-p">{f.answer}</p></div>
+        ))}
+      </section>
+    )}
+    {data.hindi && (
+      <section class="dx-section" lang="hi">
+        <h2 class="dx-h2">हिंदी में जानकारी</h2>
+        <p class="dx-p">{data.hindi}</p>
+      </section>
+    )}
+    <ContactCTA product={data.name} />
+    <nav class="dx-section" aria-label="Services in Nagpur">
+      <h2 class="dx-h2">Services in Nagpur</h2>
+      <ul class="dx-related">{LOCAL_PAGES.map((l) => <li><a href={`/${l.slug}/`}>{l.crumb}</a></li>)}<li><a href="/service-area/">Delivery areas</a></li></ul>
+    </nav>
+    {related.length > 0 && (
+      <nav class="dx-section" aria-label="Related products">
+        <h2 class="dx-h2">More {COLLECTION_LABELS[collection]?.toLowerCase()}</h2>
+        <ul class="dx-related">{related.map((r) => <li><a href={r.href}>{r.name}</a></li>)}</ul>
+      </nav>
+    )}
+    {faqSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </>
+)}
+<style>
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .dx-overview { font-size: 1.125rem; line-height: 1.6; max-width: 70ch; margin: 0 0 1.5rem; }
+  .dx-section { margin: 0 0 2rem; }
+  .dx-local { font-size: var(--text-small); color: var(--color-text-secondary); margin: -0.75rem 0 1.5rem; }
+  .dx-h2 { font-family: var(--font-display); font-weight: 700; font-size: var(--text-h2); margin-bottom: 0.75rem; }
+  .dx-p { max-width: 70ch; margin-bottom: 0.75rem; color: var(--color-text); }
+  .dx-table { width: 100%; max-width: 760px; border-collapse: collapse; background: var(--color-card); border-radius: 12px; overflow: hidden; font-size: var(--text-small); }
+  .dx-table th, .dx-table td { text-align: left; vertical-align: top; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--color-border); }
+  .dx-table th { width: 34%; font-weight: 600; color: var(--color-text-secondary); }
+  .dx-faq { margin-bottom: 1rem; }
+  .dx-q { font-size: var(--text-h3); font-weight: 600; margin-bottom: 0.25rem; }
+  .dx-related { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .dx-related a { display: inline-block; padding: 0.5rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-tags); background: var(--color-card); font-size: var(--text-small); font-weight: 500; }
+</style>

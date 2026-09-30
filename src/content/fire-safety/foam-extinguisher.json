@@ -2,15 +2,39 @@
   "slug": "foam-fire-extinguishers",
   "name": "Foam Based Fire Extinguishers",
   "agentType": "Foam",
-  "fireClassRating": ["A", "B"],
-  "sizes": ["9 Ltr", "50 Ltr"],
+  "fireClassRating": [
+    "A",
+    "B"
+  ],
+  "sizes": [
+    "9 Ltr",
+    "50 Ltr"
+  ],
   "dischargeTime": "30–60 seconds",
   "refillInterval": "Annual inspection, refill after use",
   "images": [
-    { "src": "../../assets/products/extinguisher-foam.svg", "alt": "Foam based fire extinguisher, 9–50 Ltr, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/extinguisher-foam.svg",
+      "alt": "Foam based fire extinguisher, 9–50 Ltr, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Foam Based Fire Extinguishers | Sunrise Gases",
+    "title": "Foam Fire Extinguisher in Nagpur | Sunrise Gases",
     "description": "Foam based fire extinguishers for Class A and B fires. Available in 9 and 50 Ltr capacities. Supplied from Nagpur."
-  }
+  },
+  "faq": [
+    {
+      "question": "Do you refill Foam Based Fire Extinguishers extinguishers in Nagpur?",
+      "answer": "Call or WhatsApp us with the extinguisher type and capacity and we will confirm refilling or replacement. We are open 24 hours, 7 days a week."
+    },
+    {
+      "question": "Which fires is a Foam Based Fire Extinguishers extinguisher for?",
+      "answer": "It is rated for A, B. Always check the label on your extinguisher and never use an unsuitable type on electrical or flammable-liquid fires."
+    }
+  ],
+  "hindi": "नागपुर में फोम अग्निशामक यंत्र — पेट्रोल, तेल और पेंट जैसे ज्वलनशील तरल की आग के लिए। बिजली की आग पर फोम का उपयोग न करें। रिफिलिंग के लिए +91-9422416090 पर कॉल या WhatsApp करें।",
+  "about": [
+    "Foam extinguishers spray a water-foam solution that forms a blanket on burning liquids and cools solids. They suit Class A and Class B fires such as petrol, oil, paint and wood.",
+    "Do not use foam on live electrical equipment because the solution conducts electricity. Check the pressure gauge and service date regularly."
+  ]
 }

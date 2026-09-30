@@ -1,0 +1,23 @@
+---
+import { telLink, waLink, mailtoLink } from '../data/business';
+interface Props { pageTitle?: string }
+const { pageTitle } = Astro.props;
+const wa = waLink(`Hi Sunrise Gases, I am on your page "${pageTitle ?? 'website'}" and would like a quote.\nGas / product: \nQuantity: \nDelivery location: `);
+const mail = mailtoLink('Enquiry from website', `Hello Sunrise Gases,\n\nPage: ${pageTitle ?? ''}\nGas / product: \nQuantity: \nDelivery location: \n`);
+---
+<div class="sticky-contact" role="complementary" aria-label="Quick contact">
+  <a href={telLink} class="sc sc--call">Call</a>
+  <a href={wa} class="sc sc--wa" target="_blank" rel="noopener">WhatsApp</a>
+  <a href={mail} class="sc sc--mail">Email</a>
+</div>
+<style is:global>
+  .sticky-contact { display: none; }
+  @media (max-width: 768px) {
+    .sticky-contact { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; gap: 0.5rem; padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom)); background: var(--color-bg); box-shadow: 0 -2px 8px rgba(0,0,0,0.12); }
+    body { padding-bottom: 64px; }
+    .sc { flex: 1; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border-radius: var(--radius-buttons); font-weight: 600; font-size: var(--text-small); color: #fff; }
+    .sc--call { background: var(--color-accent-deep); }
+    .sc--wa { background: #0b7a43; }
+    .sc--mail { background: var(--color-text); }
+  }
+</style>

@@ -3,17 +3,45 @@
   "name": "Gas Handling Equipments and Accessories",
   "category": "accessories",
   "specs": [
-    { "label": "Products", "value": "Gas Manifolds, Cylinder Caps, Cylinder Trolleys, Industrial Regulators (Single Stage, Double Gauge)" },
-    { "label": "Safety equipment", "value": "Safety Guard for Cylinder Valve, Cylinder Cascade" },
-    { "label": "Material", "value": "Brass, stainless steel, steel" }
+    {
+      "label": "Products",
+      "value": "Gas Manifolds, Cylinder Caps, Cylinder Trolleys, Industrial Regulators (Single Stage, Double Gauge)"
+    },
+    {
+      "label": "Safety equipment",
+      "value": "Safety Guard for Cylinder Valve, Cylinder Cascade"
+    },
+    {
+      "label": "Material",
+      "value": "Brass, stainless steel, steel"
+    }
   ],
   "images": [
-    { "src": "../../assets/products/cylinder-cap.svg", "alt": "Gas cylinder valve protective cap, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/trolley.svg", "alt": "Gas cylinder trolley, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/gas-cylinder-trolley.webp", "alt": "Gas cylinder trolley for safe cylinder handling, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-cap.svg",
+      "alt": "Gas cylinder valve protective cap, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/trolley.svg",
+      "alt": "Gas cylinder trolley, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/gas-cylinder-trolley.webp",
+      "alt": "Gas cylinder trolley for safe cylinder handling, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Gas Handling Accessories & Equipment | Sunrise Gases",
+    "title": "Gas Handling Accessories Nagpur | Sunrise Gases",
     "description": "Gas handling equipment: manifolds, regulators, cylinder caps, trolleys, safety guards, and cascade systems. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Gas handling accessories include hoses, fittings, flashback arrestors, trolleys, cylinder caps and safety chains. Using the right accessories keeps a gas set-up leak-free and safe.",
+    "Replace hoses that are cracked or worn, use flashback arrestors on fuel-gas lines and always secure cylinders upright. Tell us your gas and set-up and we can suggest the right accessories."
+  ],
+  "faq": [
+    {
+      "question": "Where can I buy Gas Handling Equipments and Accessories in Nagpur?",
+      "answer": "Sunrise Gases supplies Gas Handling Equipments and Accessories from our Nagpur branches. Call +91-9422416090 or WhatsApp us — we are open 24 hours, 7 days a week."
+    }
+  ]
 }

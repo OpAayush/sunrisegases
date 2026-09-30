@@ -5,13 +5,38 @@
   "purity": "99.999%",
   "certification": "Certificate of analysis available on request",
   "traceability": "Batch traceable with analytical certification",
-  "applications": ["Laboratory analysis", "Instrument calibration", "Research and development", "Electronics manufacturing"],
+  "applications": [
+    "Laboratory analysis",
+    "Instrument calibration",
+    "Research and development",
+    "Electronics manufacturing"
+  ],
   "images": [
-    { "src": "../../assets/products/cylinder-uhp.svg", "alt": "Ultra high pure gas cylinder, 99.999% purity, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/calibration-gas-mixtures.webp", "alt": "Calibration gas mixtures for instrument calibration, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cylinder-uhp.svg",
+      "alt": "Ultra high pure gas cylinder, 99.999% purity, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/calibration-gas-mixtures.webp",
+      "alt": "Calibration gas mixtures for instrument calibration, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Ultra High Pure Gases — 99.999% Purity | Sunrise Gases",
+    "title": "Ultra High Purity Gases (99.999%) Nagpur | Sunrise Gases",
     "description": "Ultra high pure gases for calibration, laboratory, and research applications. 99.999% purity with batch traceability. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Ultra-high-purity (UHP) gases are typically 99.999% pure or better and are used where trace impurities would affect results — gas chromatography, spectroscopy, electronics work and instrument calibration. Purity is only as good as the regulator and lines used, so use stainless-steel, leak-tight hardware.",
+    "Ask for a certificate of analysis where you need documented purity."
+  ],
+  "faq": [
+    {
+      "question": "What does 99.999% purity mean?",
+      "answer": "It means 99.999% of the gas is the named gas, with no more than 10 ppm of impurities in total."
+    },
+    {
+      "question": "Where can I buy ultra high purity gas in Nagpur?",
+      "answer": "Sunrise Gases supplies UHP gases from Nagpur. Call or WhatsApp with the gas, purity and quantity you need."
+    }
+  ]
 }

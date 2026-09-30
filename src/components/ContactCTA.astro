@@ -1,0 +1,35 @@
+---
+import { BUSINESS, telLink, waLink, mailtoLink } from '../data/business';
+interface Props { product?: string; variant?: 'card' | 'hero'; heading?: string }
+const { product, variant = 'card', heading } = Astro.props;
+const msg = product
+  ? `Hi Sunrise Gases, I need ${product} in Nagpur.\nQuantity: \nDelivery location: `
+  : `Hi Sunrise Gases, I would like a quote.\nGas / product: \nQuantity: \nDelivery location: `;
+const title = heading ?? (product ? `Need ${product} in Nagpur?` : 'Need gas cylinders in Nagpur?');
+const label = product ?? 'general';
+const mail = mailtoLink(product ? `Enquiry: ${product}` : 'Enquiry: gas cylinders', `Hello Sunrise Gases,\n\nI need ${product ?? 'gas cylinders'} in Nagpur.\nQuantity: \nDelivery location: \n`);
+---
+<section class={`cta cta--${variant}`}>
+  {variant === 'card' && (
+    <div class="cta-text">
+      <h2 class="cta-title">{title}</h2>
+      <p class="cta-sub">Call, WhatsApp or email us — orders are taken 24 hours a day, 7 days a week.</p>
+    </div>
+  )}
+  <div class="cta-actions">
+    <a class="btn btn--call" href={telLink}>Call {BUSINESS.phone}</a>
+    <a class="btn btn--wa" href={waLink(msg)} target="_blank" rel="noopener">WhatsApp us</a>
+    <a class="btn btn--mail" href={mail}>Email us</a>
+  </div>
+</section>
+<style>
+  .cta--card { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-cards); padding: 1.5rem; margin: 2rem 0; }
+  .cta--hero { margin-top: 1.25rem; }
+  .cta-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-h2); line-height: 1.15; }
+  .cta-sub { color: var(--color-text-secondary); font-size: var(--text-small); margin-top: 0.25rem; }
+  .cta-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.6rem 1.25rem; border-radius: var(--radius-buttons); font-weight: 600; font-size: var(--text-small); color: #fff; }
+  .btn--call { background: var(--color-accent-deep); }
+  .btn--wa { background: #0b7a43; }
+  .btn--mail { background: transparent; color: var(--color-text); border: 1.5px solid var(--color-text); }
+</style>

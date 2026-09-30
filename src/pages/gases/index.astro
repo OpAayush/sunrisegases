@@ -1,4 +1,5 @@
 ---
+import '../../styles/local-pages.css';
 import ProductImage from '../../components/ProductImage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
@@ -6,11 +7,13 @@ import { getCollection } from 'astro:content';
 const gases = await getCollection('gases');
 ---
 
-<BaseLayout title="Industrial Gases & Cylinders | Sunrise Gases" description="Complete range of industrial and specialty gases manufactured in Nagpur: oxygen, nitrogen, argon, carbon dioxide, hydrogen, helium, acetylene, LPG, ammonia.">
+<BaseLayout title="Industrial Gas Cylinders in Nagpur | Sunrise Gases" description="Complete range of industrial and specialty gases manufactured in Nagpur: oxygen, nitrogen, argon, carbon dioxide, hydrogen, helium, acetylene, LPG, ammonia.">
   <header class="catalog-hero">
     <h1 class="catalog-title">Industrial gases</h1>
     <p class="catalog-subtitle">Manufactured and supplied across Central India from our Nagpur facility.</p>
   </header>
+
+  <div class="lp" style="padding-block: 1.25rem 0"><p class="lp-p">Sunrise Gases supplies industrial gases in cylinders from Nagpur: oxygen, nitrogen, argon, carbon dioxide, hydrogen, helium, dissolved acetylene, LPG and ammonia. Open a gas for uses, grades, cylinder sizes and safety notes, or see <a class="lp-link" href="/gas-cylinder-refill-nagpur/">cylinder refill</a>, <a class="lp-link" href="/cylinder-rental-and-exchange-nagpur/">rental and exchange</a> and <a class="lp-link" href="/bulk-industrial-gas-supply-nagpur/">bulk supply</a> in Nagpur. Orders are taken 24 hours a day on +91-9422416090.</p></div>
 
   <section class="catalog-grid">
     {gases.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((gas) => {

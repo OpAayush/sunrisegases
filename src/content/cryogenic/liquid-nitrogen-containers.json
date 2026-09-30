@@ -3,12 +3,33 @@
   "name": "Liquid Nitrogen Containers",
   "sublimationOrBoilOff": "—",
   "storageAndHandling": "Cryocans designed for safe liquid nitrogen storage and transport. Vacuum insulated for minimal boil-off.",
-  "applications": ["Liquid nitrogen storage and transport", "Cryogenic sample preservation", "Medical and laboratory supply"],
+  "applications": [
+    "Liquid nitrogen storage and transport",
+    "Cryogenic sample preservation",
+    "Medical and laboratory supply"
+  ],
   "images": [
-    { "src": "../../assets/products/cryocan.svg", "alt": "Liquid nitrogen cryocan, vacuum insulated, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/cryocan.svg",
+      "alt": "Liquid nitrogen cryocan, vacuum insulated, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Liquid Nitrogen Containers — Cryocans | Sunrise Gases",
+    "title": "Liquid Nitrogen Cryocans Nagpur | Sunrise Gases",
     "description": "Cryocans and liquid nitrogen containers for safe storage and transport of LN₂. Vacuum insulated. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Liquid nitrogen containers (cryocans and dewars) are vacuum-insulated vessels for storing and transporting LN₂ in small quantities. Losses depend on size and insulation, so choose a size that matches how quickly you use the liquid.",
+    "Containers must never be sealed airtight; their caps and necks are designed to vent boil-off."
+  ],
+  "faq": [
+    {
+      "question": "Can I refill my own liquid nitrogen container?",
+      "answer": "Call or WhatsApp us with your container’s make and capacity and we will confirm whether we can refill it."
+    },
+    {
+      "question": "Why must a liquid nitrogen container never be sealed?",
+      "answer": "Liquid nitrogen constantly boils off into gas. A sealed container would build up pressure and could burst."
+    }
+  ]
 }

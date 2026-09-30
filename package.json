@@ -8,8 +8,8 @@
         "check": "astro check",
         "preview": "wrangler dev",
         "deploy": "astro build && wrangler deploy",
-        "sitemap": "node scripts/update-sitemap.mjs",
-        "types": "wrangler types"
+        "types": "wrangler types",
+        "indexnow": "node scripts/indexnow.mjs"
     },
     "dependencies": {
         "@astrojs/cloudflare": "^14.1.7",

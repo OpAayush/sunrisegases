@@ -2,21 +2,73 @@
   "slug": "advertising-balloons",
   "name": "Advertising Balloons",
   "summary": "Custom-printed sky and advertising balloons for events, promotions, and brand visibility. Helium-filled, available in multiple shapes, sizes, and colors.",
-  "sizes": ["8 Ft", "10 Ft", "12 Ft", "15 Ft", "20 Ft"],
-  "customization": ["Customized digital printing as per artwork", "Multiple shapes — Oval, Round, Cube, Heart, Custom", "Pantone-matched colors", "High thickness material"],
+  "sizes": [
+    "8 Ft",
+    "10 Ft",
+    "12 Ft",
+    "15 Ft",
+    "20 Ft"
+  ],
+  "customization": [
+    "Customized digital printing as per artwork",
+    "Multiple shapes — Oval, Round, Cube, Heart, Custom",
+    "Pantone-matched colors",
+    "High thickness material"
+  ],
   "heliumRequirement": "Filled on-site or supplied with helium cylinders. Variety of sizes available.",
-  "applications": ["Grand openings", "Trade shows and exhibitions", "Product launches", "Festivals and events", "Brand promotions"],
+  "applications": [
+    "Grand openings",
+    "Trade shows and exhibitions",
+    "Product launches",
+    "Festivals and events",
+    "Brand promotions"
+  ],
   "images": [
-    { "src": "../../assets/products/advertising-balloon-1.webp", "alt": "Advertising balloon at event, 8–20 Ft, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/advertising-balloon-2.webp", "alt": "Branded advertising balloon display, 8–20 Ft, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/balloon-round.svg", "alt": "Round advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/balloon-oval.svg", "alt": "Oval advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/balloon-cube.svg", "alt": "Cube advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/balloon-heart.svg", "alt": "Heart-shaped advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" },
-    { "src": "../../assets/products/balloon-custom.svg", "alt": "Custom shape advertising balloon, 8–20 Ft, Sunrise Gases Nagpur" }
+    {
+      "src": "../../assets/products/advertising-balloon-1.webp",
+      "alt": "Advertising balloon at event, 8–20 Ft, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/advertising-balloon-2.webp",
+      "alt": "Branded advertising balloon display, 8–20 Ft, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/balloon-round.svg",
+      "alt": "Round advertising balloon, 8–20 Ft, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/balloon-oval.svg",
+      "alt": "Oval advertising balloon, 8–20 Ft, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/balloon-cube.svg",
+      "alt": "Cube advertising balloon, 8–20 Ft, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/balloon-heart.svg",
+      "alt": "Heart-shaped advertising balloon, 8–20 Ft, Sunrise Gases Nagpur"
+    },
+    {
+      "src": "../../assets/products/balloon-custom.svg",
+      "alt": "Custom shape advertising balloon, 8–20 Ft, Sunrise Gases Nagpur"
+    }
   ],
   "seo": {
-    "title": "Custom Advertising Balloons for Events | Sunrise Gases",
+    "title": "Custom Advertising Balloons in Nagpur | Sunrise Gases",
     "description": "Custom sky and advertising balloons for events and promotions. Helium-filled, multiple shapes and sizes, full-color printing. Supplied from Nagpur."
-  }
+  },
+  "about": [
+    "Advertising balloons are large printed balloons filled with helium so they float above an event, shop opening or inauguration, or filled with air for arches and displays. Helium-filled balloons attract attention from a distance and can carry your logo and message.",
+    "Helium requirement depends on balloon size — check the key facts above and order helium with the balloon. Avoid flying balloons in strong wind and keep them clear of power lines."
+  ],
+  "faq": [
+    {
+      "question": "Do you supply helium and advertising balloons together in Nagpur?",
+      "answer": "Sunrise Gases supplies both advertising balloons and helium cylinders, so you can arrange them in one call."
+    },
+    {
+      "question": "How much helium does an advertising balloon need?",
+      "answer": "It depends on the balloon size. The helium requirement for each size is listed in the key facts on this page."
+    }
+  ]
 }
