@@ -7,9 +7,11 @@
         "build": "astro build",
         "check": "astro check",
         "preview": "wrangler dev",
-        "deploy": "astro build && wrangler deploy",
+        "prebuild": "node scripts/prebuild.mjs",
+        "deploy": "npm run build && wrangler deploy",
         "types": "wrangler types",
-        "indexnow": "node scripts/indexnow.mjs"
+        "indexnow": "node scripts/indexnow.mjs",
+        "seo:audit": "node scripts/seo-audit.mjs"
     },
     "dependencies": {
         "@astrojs/cloudflare": "^14.1.7",
